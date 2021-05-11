@@ -1,6 +1,8 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.SceneManagement;
+
 
 public class playermove : MonoBehaviour
 {
@@ -14,6 +16,7 @@ public class playermove : MonoBehaviour
     public Transform animatorGO;
     float animatorGOInitial;
     Animator anim;
+    public float playerHealth = 100;
 
     // Start is called before the first frame update
     void Start()
@@ -87,4 +90,23 @@ public class playermove : MonoBehaviour
     }
 
     //grounded check code ends
+
+    private void OnTriggerEnter2D(Collider2D collision)
+    {
+        if (collision.tag == "Enemy")
+        {
+            playerHealth -= 10;
+        }
+
+        if (playerHealth == 0)
+        {
+            Death();
+        }
+    }
+
+    private void Death()
+    {
+        AmmoText.ammoAmount = 0;
+        SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex);
+    }
 }

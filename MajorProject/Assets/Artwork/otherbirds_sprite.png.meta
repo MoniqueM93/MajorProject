@@ -1,0 +1,900 @@
+fileFormatVersion: 2
+guid: f796d3455db8104468aee7b5ed0dfbad
+TextureImporter:
+  internalIDToNameTable:
+  - first:
+      213: -1846928944376735130
+    second: otherbirds_sprite_0
+  - first:
+      213: 2490717242487693413
+    second: otherbirds_sprite_1
+  - first:
+      213: 4748382115588123915
+    second: otherbirds_sprite_2
+  - first:
+      213: 1324290087856632141
+    second: otherbirds_sprite_3
+  - first:
+      213: 1826500108945452018
+    second: otherbirds_sprite_4
+  - first:
+      213: 6083194967459363969
+    second: otherbirds_sprite_5
+  - first:
+      213: -4988453370153924634
+    second: otherbirds_sprite_6
+  - first:
+      213: -8128854680887615141
+    second: otherbirds_sprite_7
+  - first:
+      213: 10833955436150769
+    second: otherbirds_sprite_8
+  - first:
+      213: 4533125498885920959
+    second: otherbirds_sprite_9
+  - first:
+      213: 8749163188694756049
+    second: otherbirds_sprite_11
+  - first:
+      213: 7135213403679252033
+    second: otherbirds_sprite_12
+  - first:
+      213: 8448514666371215544
+    second: otherbirds_sprite_13
+  - first:
+      213: -3237870091560373202
+    second: otherbirds_sprite_15
+  - first:
+      213: -7269657880879458024
+    second: otherbirds_sprite_16
+  - first:
+      213: 2138760333807298870
+    second: otherbirds_sprite_17
+  - first:
+      213: 8879448804660407449
+    second: otherbirds_sprite_18
+  - first:
+      213: -4460839995191812288
+    second: otherbirds_sprite_19
+  - first:
+      213: -5565541193524145374
+    second: otherbirds_sprite_20
+  - first:
+      213: 6476689498966561551
+    second: otherbirds_sprite_21
+  - first:
+      213: 4541621002358211203
+    second: otherbirds_sprite_22
+  - first:
+      213: -7019789765711601319
+    second: otherbirds_sprite_23
+  - first:
+      213: -4120564481126832719
+    second: otherbirds_sprite_24
+  - first:
+      213: -7460909732828738658
+    second: otherbirds_sprite_25
+  - first:
+      213: 9061927705518059187
+    second: otherbirds_sprite_26
+  - first:
+      213: 1048128564147809672
+    second: otherbirds_sprite_27
+  - first:
+      213: -6066176072630033155
+    second: otherbirds_sprite_28
+  - first:
+      213: -8450262822551105998
+    second: otherbirds_sprite_29
+  - first:
+      213: 5407415662255776666
+    second: otherbirds_sprite_30
+  - first:
+      213: -7300809584497874031
+    second: otherbirds_sprite_31
+  - first:
+      213: 5494082732354584830
+    second: otherbirds_sprite_32
+  - first:
+      213: 6311270356002017251
+    second: otherbirds_sprite_33
+  externalObjects: {}
+  serializedVersion: 11
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    sRGBTexture: 1
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+  isReadable: 0
+  streamingMipmaps: 0
+  streamingMipmapsPriority: 0
+  vTOnly: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: 1
+  maxTextureSize: 2048
+  textureSettings:
+    serializedVersion: 2
+    filterMode: -1
+    aniso: -1
+    mipBias: -100
+    wrapU: 1
+    wrapV: 1
+    wrapW: 1
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spritePixelsToUnits: 100
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spriteGenerateFallbackPhysicsShape: 1
+  alphaUsage: 1
+  alphaIsTransparency: 1
+  spriteTessellationDetail: -1
+  textureType: 8
+  textureShape: 1
+  singleChannelComponent: 0
+  flipbookRows: 1
+  flipbookColumns: 1
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  ignorePngGamma: 0
+  applyGammaDecoding: 0
+  platformSettings:
+  - serializedVersion: 3
+    buildTarget: DefaultTexturePlatform
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: Standalone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: iPhone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: Android
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: otherbirds_sprite_0
+      rect:
+        serializedVersion: 2
+        x: 39
+        y: 706
+        width: 95
+        height: 100
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 66a990919e36e56e0800000000000000
+      internalID: -1846928944376735130
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: otherbirds_sprite_1
+      rect:
+        serializedVersion: 2
+        x: 145
+        y: 706
+        width: 95
+        height: 99
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 5606b6ab22ec09220800000000000000
+      internalID: 2490717242487693413
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: otherbirds_sprite_2
+      rect:
+        serializedVersion: 2
+        x: 250
+        y: 706
+        width: 96
+        height: 98
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b0da2794064a5e140800000000000000
+      internalID: 4748382115588123915
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: otherbirds_sprite_3
+      rect:
+        serializedVersion: 2
+        x: 356
+        y: 706
+        width: 95
+        height: 100
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d41f34a81d2d06210800000000000000
+      internalID: 1324290087856632141
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: otherbirds_sprite_4
+      rect:
+        serializedVersion: 2
+        x: 462
+        y: 706
+        width: 95
+        height: 99
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 2fbe7effb28095910800000000000000
+      internalID: 1826500108945452018
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: otherbirds_sprite_5
+      rect:
+        serializedVersion: 2
+        x: 39
+        y: 597
+        width: 95
+        height: 99
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 18cfbdeb799db6450800000000000000
+      internalID: 6083194967459363969
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: otherbirds_sprite_6
+      rect:
+        serializedVersion: 2
+        x: 145
+        y: 597
+        width: 95
+        height: 101
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 6e7006df61475cab0800000000000000
+      internalID: -4988453370153924634
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: otherbirds_sprite_7
+      rect:
+        serializedVersion: 2
+        x: 251
+        y: 597
+        width: 95
+        height: 93
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b512cea7cb1803f80800000000000000
+      internalID: -8128854680887615141
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: otherbirds_sprite_8
+      rect:
+        serializedVersion: 2
+        x: 353
+        y: 597
+        width: 93
+        height: 96
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 1ffb841dc6d762000800000000000000
+      internalID: 10833955436150769
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: otherbirds_sprite_9
+      rect:
+        serializedVersion: 2
+        x: 462
+        y: 599
+        width: 95
+        height: 98
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: fb85c5baf95e8ee30800000000000000
+      internalID: 4533125498885920959
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: otherbirds_sprite_11
+      rect:
+        serializedVersion: 2
+        x: 39
+        y: 491
+        width: 95
+        height: 99
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 1da2318a0954b6970800000000000000
+      internalID: 8749163188694756049
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: otherbirds_sprite_12
+      rect:
+        serializedVersion: 2
+        x: 83
+        y: 491
+        width: 6
+        height: 5
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 14e58e269ce550360800000000000000
+      internalID: 7135213403679252033
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: otherbirds_sprite_13
+      rect:
+        serializedVersion: 2
+        x: 145
+        y: 491
+        width: 95
+        height: 99
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 8b0fbb0b3572f3570800000000000000
+      internalID: 8448514666371215544
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: otherbirds_sprite_15
+      rect:
+        serializedVersion: 2
+        x: 251
+        y: 491
+        width: 95
+        height: 99
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e24bea38e46c013d0800000000000000
+      internalID: -3237870091560373202
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: otherbirds_sprite_16
+      rect:
+        serializedVersion: 2
+        x: 356
+        y: 491
+        width: 95
+        height: 99
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 8199f837cacfc1b90800000000000000
+      internalID: -7269657880879458024
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: otherbirds_sprite_17
+      rect:
+        serializedVersion: 2
+        x: 38
+        y: 380
+        width: 96
+        height: 101
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 639a74421376ead10800000000000000
+      internalID: 2138760333807298870
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: otherbirds_sprite_18
+      rect:
+        serializedVersion: 2
+        x: 145
+        y: 380
+        width: 95
+        height: 100
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 99cec0b74a32a3b70800000000000000
+      internalID: 8879448804660407449
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: otherbirds_sprite_19
+      rect:
+        serializedVersion: 2
+        x: 251
+        y: 380
+        width: 95
+        height: 99
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 04f9cbea8a9e712c0800000000000000
+      internalID: -4460839995191812288
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: otherbirds_sprite_20
+      rect:
+        serializedVersion: 2
+        x: 356
+        y: 380
+        width: 95
+        height: 101
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 2239031a5c933c2b0800000000000000
+      internalID: -5565541193524145374
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: otherbirds_sprite_21
+      rect:
+        serializedVersion: 2
+        x: 462
+        y: 380
+        width: 95
+        height: 100
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f03976ac8c2d1e950800000000000000
+      internalID: 6476689498966561551
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: otherbirds_sprite_22
+      rect:
+        serializedVersion: 2
+        x: 39
+        y: 272
+        width: 95
+        height: 98
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 382c3063d34170f30800000000000000
+      internalID: 4541621002358211203
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: otherbirds_sprite_23
+      rect:
+        serializedVersion: 2
+        x: 145
+        y: 272
+        width: 95
+        height: 99
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 95166d88662b49e90800000000000000
+      internalID: -7019789765711601319
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: otherbirds_sprite_24
+      rect:
+        serializedVersion: 2
+        x: 251
+        y: 272
+        width: 95
+        height: 92
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 1b5e754af60d0d6c0800000000000000
+      internalID: -4120564481126832719
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: otherbirds_sprite_25
+      rect:
+        serializedVersion: 2
+        x: 356
+        y: 272
+        width: 95
+        height: 95
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e9b0d79a026857890800000000000000
+      internalID: -7460909732828738658
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: otherbirds_sprite_26
+      rect:
+        serializedVersion: 2
+        x: 461
+        y: 273
+        width: 96
+        height: 98
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 3beacab6c3f62cd70800000000000000
+      internalID: 9061927705518059187
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: otherbirds_sprite_27
+      rect:
+        serializedVersion: 2
+        x: 506
+        y: 273
+        width: 6
+        height: 4
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 88d68f83063bb8e00800000000000000
+      internalID: 1048128564147809672
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: otherbirds_sprite_28
+      rect:
+        serializedVersion: 2
+        x: 39
+        y: 166
+        width: 95
+        height: 98
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: df4a9ed700d90dba0800000000000000
+      internalID: -6066176072630033155
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: otherbirds_sprite_29
+      rect:
+        serializedVersion: 2
+        x: 83
+        y: 166
+        width: 6
+        height: 5
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 23ec62bfbb2aaba80800000000000000
+      internalID: -8450262822551105998
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: otherbirds_sprite_30
+      rect:
+        serializedVersion: 2
+        x: 143
+        y: 163
+        width: 98
+        height: 100
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a93a3a525effa0b40800000000000000
+      internalID: 5407415662255776666
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: otherbirds_sprite_31
+      rect:
+        serializedVersion: 2
+        x: 189
+        y: 163
+        width: 6
+        height: 6
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 19bac3f3d505eaa90800000000000000
+      internalID: -7300809584497874031
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: otherbirds_sprite_32
+      rect:
+        serializedVersion: 2
+        x: 251
+        y: 163
+        width: 95
+        height: 96
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ef04a9cd227ee3c40800000000000000
+      internalID: 5494082732354584830
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: otherbirds_sprite_33
+      rect:
+        serializedVersion: 2
+        x: 356
+        y: 163
+        width: 95
+        height: 93
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 3ef04f243f2269750800000000000000
+      internalID: 6311270356002017251
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    outline: []
+    physicsShape: []
+    bones: []
+    spriteID: 5e97eb03825dee720800000000000000
+    internalID: 0
+    vertices: []
+    indices: 
+    edges: []
+    weights: []
+    secondaryTextures: []
+  spritePackingTag: 
+  pSDRemoveMatte: 0
+  pSDShowRemoveMatteOption: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

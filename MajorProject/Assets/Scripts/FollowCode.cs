@@ -8,6 +8,8 @@ public class FollowCode : MonoBehaviour
     public int steps; // number of steps to stay behind - assign in inspector
     private Queue<Vector3> record = new Queue<Vector3>();
     private Vector3 lastRecord;
+    public float chickAnimator;
+    Animator animChick;
 
     // Update is called once per frame
     void FixedUpdate()
