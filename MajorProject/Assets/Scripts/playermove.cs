@@ -18,12 +18,15 @@ public class playermove : MonoBehaviour
     Animator anim;
     public float playerHealth = 100;
 
+    public static playermove instance;
+
     // Start is called before the first frame update
     void Start()
     {
         myRB = GetComponent<Rigidbody2D>();
         animatorGOInitial = animatorGO.localScale.x;
         anim = GetComponentInChildren<Animator>();
+
     }
 
     // Update is called once per frame
