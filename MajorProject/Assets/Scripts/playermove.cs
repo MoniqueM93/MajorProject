@@ -16,7 +16,7 @@ public class playermove : MonoBehaviour
     public Transform animatorGO;
     float animatorGOInitial;
     Animator anim;
-    public float playerHealth = 100;
+    public Transform respawnPoint;
 
     public static playermove instance;
 
@@ -26,7 +26,7 @@ public class playermove : MonoBehaviour
         myRB = GetComponent<Rigidbody2D>();
         animatorGOInitial = animatorGO.localScale.x;
         anim = GetComponentInChildren<Animator>();
-
+        respawnPoint = GameObject.FindGameObjectWithTag("Respawn").transform;
     }
 
     // Update is called once per frame
@@ -37,7 +37,7 @@ public class playermove : MonoBehaviour
         verticalSpeed = myRB.velocity.y;
 
         float move = Input.GetAxis("Horizontal"); //checking for left and right input on keyboard or controller
-        print("move is " + move);
+ //       print("move is " + move);
 
         //Flip Animator GameObject based on input
         if (move > 0)
@@ -98,10 +98,10 @@ public class playermove : MonoBehaviour
     {
         if (collision.tag == "Enemy")
         {
-            playerHealth -= 10;
+            GameManager.playerHealth -= 10;
         }
 
-        if (playerHealth == 0)
+        if (GameManager.playerHealth == 0)
         {
             Death();
         }
@@ -109,7 +109,10 @@ public class playermove : MonoBehaviour
 
     private void Death()
     {
-        AmmoText.ammoAmount = 0;
-        SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex);
+        gameObject.transform.position = respawnPoint.position;
+        GameManager.playerHealth = 10;
+ //       AmmoText.ammoAmount = 0;
+ //       SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex);
     }
+
 }

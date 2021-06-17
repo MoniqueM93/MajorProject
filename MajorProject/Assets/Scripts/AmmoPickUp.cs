@@ -8,7 +8,7 @@ public class AmmoPickUp : MonoBehaviour
     {
         if (col.gameObject.tag.Equals("Player"))
         {
-            AmmoText.ammoAmount += 3;
+            GameManager.seedAmount += 3;
             Destroy(gameObject);
         }
     }

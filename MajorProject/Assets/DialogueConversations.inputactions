@@ -1,0 +1,52 @@
+{
+    "name": "DialogueConversations",
+    "maps": [
+        {
+            "name": "Gameplay",
+            "id": "cd31e63b-2b99-4390-a411-37b9b05f3851",
+            "actions": [
+                {
+                    "name": "New action",
+                    "type": "Button",
+                    "id": "33ad05b3-d51b-4ff4-8670-8ebe2d550bb8",
+                    "expectedControlType": "Button",
+                    "processors": "",
+                    "interactions": ""
+                },
+                {
+                    "name": "Dialogue",
+                    "type": "Button",
+                    "id": "7a711243-93b4-48b2-aa38-a04ac42e823c",
+                    "expectedControlType": "Button",
+                    "processors": "",
+                    "interactions": ""
+                }
+            ],
+            "bindings": [
+                {
+                    "name": "",
+                    "id": "6c6a69a9-e9f9-44c0-a896-ea40e475f332",
+                    "path": "",
+                    "interactions": "",
+                    "processors": "",
+                    "groups": "",
+                    "action": "New action",
+                    "isComposite": false,
+                    "isPartOfComposite": false
+                },
+                {
+                    "name": "",
+                    "id": "6b4589ce-9994-4268-be6f-8906a7b3fb10",
+                    "path": "<Mouse>/leftButton",
+                    "interactions": "",
+                    "processors": "",
+                    "groups": "",
+                    "action": "Dialogue",
+                    "isComposite": false,
+                    "isPartOfComposite": false
+                }
+            ]
+        }
+    ],
+    "controlSchemes": []
+}

@@ -15,7 +15,7 @@ public class ShootScript : MonoBehaviour
             Shoot();
         }
 
-        if (AmmoText.ammoAmount > 0)
+        if (GameManager.seedAmount > 0)
         {
             canShoot = true;
         }
@@ -30,7 +30,7 @@ public class ShootScript : MonoBehaviour
         if (!canShoot)
             return;
 
-        AmmoText.ammoAmount -= 1;
+        GameManager.seedAmount -= 1;
         GameObject si = Instantiate(shootingItem, shootingPoint);
         si.transform.parent = null;
     }
