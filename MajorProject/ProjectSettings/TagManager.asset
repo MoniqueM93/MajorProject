@@ -9,6 +9,7 @@ TagManager:
   - Tilemap
   - DropDown
   - pickUp
+  - FightTriggerTag
   layers:
   - Default
   - TransparentFX

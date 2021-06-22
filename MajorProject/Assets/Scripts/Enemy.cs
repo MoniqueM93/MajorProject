@@ -4,44 +4,80 @@ using UnityEngine;
 
 public class Enemy : MonoBehaviour
 {
-    public Rigidbody2D enemyRB;
-    public float healthBar = 50;
-    public float deathNum = 0;
+    private Rigidbody2D enemyRB;
+    private playermove player;
+    public float moveSpeed;
+    private Vector3 directionToPlayer;
+    private Vector3 localScale;
+    public FightTrigger fightTrigger;
 
-    public bool hasSpottedPlayer;
-    public CapsuleCollider2D radiusCollide;
-    public BoxCollider2D bodyCollide;
+    [SerializeField] GameObject firingSeed;
+    float fireRate;
+    float nextFire;
 
-    // Start is called before the first frame update
-    void Start()
+    private void Start()
     {
-        radiusCollide = gameObject.GetComponent<CapsuleCollider2D>();
-        bodyCollide = gameObject.GetComponent<BoxCollider2D>();
+        enemyRB = GetComponent<Rigidbody2D>();
+        player = FindObjectOfType(typeof(playermove)) as playermove;
+        moveSpeed = 5f;
+        localScale = transform.localScale;
+
+        GameObject fight = GameObject.FindGameObjectWithTag("FightTriggerTag");
+
+    //    fightTrigger = fight.GetComponent<FightTrigger>();
+
+        //For firing
+        fireRate = 7f;
+        nextFire = Time.time;
     }
 
-    // Update is called once per frame
-    void Update()
+    private void Update()
     {
-
+        if(fightTrigger.hasPassed == true)
+        {
+            print("Ready to go");
+            MoveEnemy();
+            TimeToFire();
+        }
     }
 
-    private void OnTriggerEnter2D(Collider2D Enemy)
+    private void MoveEnemy()
     {
-        if (Enemy.tag == "Bullet" && healthBar <= 10)
+        directionToPlayer = (player.transform.position - transform.position).normalized;
+        enemyRB.velocity = new Vector2(directionToPlayer.x, directionToPlayer.y) * moveSpeed;
+    }
+
+    void TimeToFire()
+    {
+        if (Time.time > nextFire)
+        {
+            print("Fire");
+            Instantiate(firingSeed, transform.position, Quaternion.identity);
+            nextFire = Time.time + fireRate;
+        }
+    }
+
+    private void LateUpdate()
+    {
+        if (enemyRB.velocity.x > 0)
+        {
+            transform.localScale = new Vector3(localScale.x, localScale.y, localScale.z);
+        } else if (enemyRB.velocity.x < 0)
+        {
+            transform.localScale = new Vector3(-localScale.x, localScale.y, localScale.z);
+        }
+    }
+
+    public void OnTriggerEnter2D(Collider2D collisionBullet)
+    {
+        if (collisionBullet.gameObject.tag.Equals("Bullet"))
+        {
+            GameManager.enemyHealth -= 10;
+        }
+
+        if (GameManager.enemyHealth <= 0)
         {
             Destroy(gameObject);
         }
-        else
-        {
-            healthBar -= 10;
-        }
-
-        if (Enemy.gameObject.tag.Equals("Player") && hasSpottedPlayer == false)
-        {
-            gameObject.GetComponent<CapsuleCollider2D>().enabled = false;
-            GameManager.playerHealth += 10;
-            hasSpottedPlayer = true;
-        }
     }
-
 }

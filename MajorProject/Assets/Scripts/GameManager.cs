@@ -10,6 +10,9 @@ public class GameManager : MonoBehaviour
     public Text seedAmountText;
     public static int playerHealth = 100;
     public Text playerHealthText;
+    public static int enemyHealth = 100;
+    public Text enemyHealthText;
+
 
     // Start is called before the first frame update
     void Start()
@@ -29,5 +32,8 @@ public class GameManager : MonoBehaviour
 
         if (playerHealth > 0)
             playerHealthText.text = playerHealth + " health";
+
+        if (enemyHealth > 0)
+            enemyHealthText.text = enemyHealth + " enemy";
     }
 }
