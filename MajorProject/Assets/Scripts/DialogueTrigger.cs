@@ -30,6 +30,7 @@ public class DialogueTrigger : MonoBehaviour
         {
             TriggerDialogue();
             dialoguePrompt.SetActive(false);
+            Time.timeScale = 0f;
         }
     }
 
