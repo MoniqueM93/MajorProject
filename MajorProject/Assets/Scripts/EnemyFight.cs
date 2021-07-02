@@ -24,7 +24,7 @@ public class EnemyFight : MonoBehaviour
         if (radiusCol.gameObject.tag.Equals("Player"))
         {
             gameObject.GetComponent<CapsuleCollider2D>().enabled = false;
-            GameManager.playerHealth += 10;
+        //    GameManager.playerHealth += 10;
             hasSpottedPlayer = true;
         }
     }

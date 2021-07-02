@@ -10,10 +10,15 @@ public class Enemy : MonoBehaviour
     private Vector3 directionToPlayer;
     private Vector3 localScale;
     public FightTrigger fightTrigger;
+    public bool isInjured = false;
+    public bool isShooting = false;
 
     [SerializeField] GameObject firingSeed;
     float fireRate;
     float nextFire;
+
+    public Transform fleeTarget;
+    private float fleeSpeed = 7f;
 
     private void Start()
     {
@@ -21,6 +26,8 @@ public class Enemy : MonoBehaviour
         player = FindObjectOfType(typeof(playermove)) as playermove;
         moveSpeed = 5f;
         localScale = transform.localScale;
+
+
 
         GameObject fight = GameObject.FindGameObjectWithTag("FightTriggerTag");
 
@@ -35,9 +42,16 @@ public class Enemy : MonoBehaviour
     {
         if(fightTrigger.hasPassed == true)
         {
-            print("Ready to go");
+        //    print("Ready to go");
             MoveEnemy();
             TimeToFire();
+            isShooting = true;
+        }
+
+        if (GameManager.enemyHealth < 10 && isInjured == true)
+        {
+            TimeToFlee();
+            isShooting = false;
         }
     }
 
@@ -75,8 +89,25 @@ public class Enemy : MonoBehaviour
             GameManager.enemyHealth -= 10;
         }
 
-        if (GameManager.enemyHealth <= 0)
+        if (GameManager.enemyHealth < 10)
         {
+            isInjured = true;
+        }
+    }
+
+    public void TimeToFlee()
+    {
+        if (isInjured == true)
+        {
+            transform.position = Vector3.MoveTowards(transform.position, fleeTarget.position, fleeSpeed * Time.deltaTime);
+        }
+    }
+
+    private void OnTriggerStay2D(Collider2D collision)
+    {
+        if (collision.gameObject.tag.Equals("WayPoint"))
+        {
+            print("I have collided");
             Destroy(gameObject);
         }
     }

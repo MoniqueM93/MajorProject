@@ -10,6 +10,7 @@ TagManager:
   - DropDown
   - pickUp
   - FightTriggerTag
+  - WayPoint
   layers:
   - Default
   - TransparentFX
