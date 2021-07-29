@@ -16,6 +16,8 @@ public class OpeningCamera : MonoBehaviour
 
     public bool hasFinishedMove = false;
 
+    public DialogueTrigger textTrigger;
+
     public GameObject tutorialScreen;
 
     public void cameraPosition()
@@ -52,6 +54,7 @@ public class OpeningCamera : MonoBehaviour
         if (hasFinishedMove == true)
         {
             gameObject.SetActive(false);
+            textTrigger.TriggerDialogue();
         }
     }
 }

@@ -8,6 +8,7 @@ public class DialogueTrigger : MonoBehaviour
     public GameObject dialoguePrompt;
     public bool clickToTalk;
 
+
     public void TriggerDialogue()
     {
         FindObjectOfType<DialogueManager>().dialogueCanvasAppear();
@@ -43,4 +44,5 @@ public class DialogueTrigger : MonoBehaviour
             dialoguePrompt.SetActive(false);
         }
     }
+
 }
