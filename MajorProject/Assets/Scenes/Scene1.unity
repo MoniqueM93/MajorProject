@@ -309,6 +309,23 @@ PrefabInstance:
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 5a719e2806005fb4f9453d038cdecefd, type: 3}
+--- !u!1 &443424373 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 2216346254223104999, guid: a91181defd9b07f4280f966a98ae4296, type: 3}
+  m_PrefabInstance: {fileID: 942217209}
+  m_PrefabAsset: {fileID: 0}
+--- !u!114 &443424382
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 443424373}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 094192ffef3ac044bb085640fe9cb53e, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &593366125
 GameObject:
   m_ObjectHideFlags: 0
@@ -520,8 +537,20 @@ PrefabInstance:
       value: -137
       objectReference: {fileID: 0}
     - target: {fileID: 2003083001110625072, guid: 549a2141ce55ed54aadf0b1dadcfb1a6, type: 3}
+      propertyPath: m_fontSize
+      value: 0.6
+      objectReference: {fileID: 0}
+    - target: {fileID: 2003083001110625072, guid: 549a2141ce55ed54aadf0b1dadcfb1a6, type: 3}
       propertyPath: m_margin.w
       value: -0.32646704
+      objectReference: {fileID: 0}
+    - target: {fileID: 2003083001110625072, guid: 549a2141ce55ed54aadf0b1dadcfb1a6, type: 3}
+      propertyPath: m_margin.y
+      value: 0.11384463
+      objectReference: {fileID: 0}
+    - target: {fileID: 2003083001110625072, guid: 549a2141ce55ed54aadf0b1dadcfb1a6, type: 3}
+      propertyPath: m_fontSizeBase
+      value: 0.6
       objectReference: {fileID: 0}
     - target: {fileID: 2003083001110625078, guid: 549a2141ce55ed54aadf0b1dadcfb1a6, type: 3}
       propertyPath: m_IsActive
@@ -1014,7 +1043,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 750404243}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: -18.04, y: -1.78, z: 0.69}
+  m_LocalPosition: {x: -18.04, y: -1.78, z: 72.3}
   m_LocalScale: {x: 1.1933944, y: 2.1233077, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
@@ -1042,51 +1071,64 @@ MonoBehaviour:
       today?'
     - 'FRIEND
 
-      I stole one of those rectangle things...'
+      I stole one of those big rectangle things the humans are always
+      staring at. It was so heavy, I dropped it.'
     - 'FRIEND
 
-      The one''s the humans always use.'
-    - "FRIEND\nIt was so\r heavy, I dropped it."
-    - "FRIEND\nI made\r the human panic, it was great."
+      I made the human panic and it was great!'
     - 'FRIEND
 
       How about you?'
+    - 'GULLIVER
+
+      Nothing...'
     - 'FRIEND
 
-      The one''s the humans always use.'
+      Nothing? Nothing at all?'
+    - 'GULLIVER
+
+      Stealing was never my talent. The humans are too fast and
+      react too quickly. I don''t get the same thrill as you do.'
     - 'FRIEND
 
-      The one''s the humans always use.'
+      You''re a Seagull! It''s your job to terrorise the humans.'
+    - 'GULLIVER
+
+      I do my fair share!'
     - 'FRIEND
 
-      The one''s the humans always use.'
+      By being obnoxiously loud, yes.'
     - 'FRIEND
 
-      The one''s the humans always use.'
+      But that''s child''s play, you need to kick it up to the next
+      level and make the humans fear you.'
+    - 'GULLIVER
+
+      I think I''m happy with just being loud.'
     - 'FRIEND
 
-      The one''s the humans always use.'
+      Are you sure you''re even a Seagull?'
     - 'FRIEND
 
-      The one''s the humans always use.'
+      See that human down there? Go and steal her food. You need to
+      practice'
+    - 'GULLIVER
+
+      I''ll pass.'
     - 'FRIEND
 
-      The one''s the humans always use.'
+      No, you won''t. I''m going to guide you. Just walk over to catch
+      her off gaurd...'
     - 'FRIEND
 
-      The one''s the humans always use.'
+      ...and once you''re close enoughm grab the food and fly. Can''t
+      go wrong.'
+    - 'GULLIVER
+
+      Ok. but if I get caught, it''s your fault.'
     - 'FRIEND
 
-      The one''s the humans always use.'
-    - 'FRIEND
-
-      The one''s the humans always use.'
-    - 'FRIEND
-
-      The one''s the humans always use.'
-    - 
-    - 
-    - 
+      I''m hungry, so don''t mess it up.'
   dialoguePrompt: {fileID: 0}
   clickToTalk: 0
 --- !u!20 &754132412 stripped
@@ -1303,6 +1345,87 @@ PrefabInstance:
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: a91181defd9b07f4280f966a98ae4296, type: 3}
+--- !u!1 &973777320
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 973777324}
+  - component: {fileID: 973777323}
+  - component: {fileID: 973777322}
+  m_Layer: 0
+  m_Name: Human
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!23 &973777322
+MeshRenderer:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 973777320}
+  m_Enabled: 1
+  m_CastShadows: 1
+  m_ReceiveShadows: 1
+  m_DynamicOccludee: 1
+  m_MotionVectors: 1
+  m_LightProbeUsage: 1
+  m_ReflectionProbeUsage: 1
+  m_RayTracingMode: 2
+  m_RayTraceProcedural: 0
+  m_RenderingLayerMask: 1
+  m_RendererPriority: 0
+  m_Materials:
+  - {fileID: 10303, guid: 0000000000000000f000000000000000, type: 0}
+  m_StaticBatchInfo:
+    firstSubMesh: 0
+    subMeshCount: 0
+  m_StaticBatchRoot: {fileID: 0}
+  m_ProbeAnchor: {fileID: 0}
+  m_LightProbeVolumeOverride: {fileID: 0}
+  m_ScaleInLightmap: 1
+  m_ReceiveGI: 1
+  m_PreserveUVs: 0
+  m_IgnoreNormalsForChartDetection: 0
+  m_ImportantGI: 0
+  m_StitchLightmapSeams: 1
+  m_SelectedEditorRenderState: 3
+  m_MinimumChartSize: 4
+  m_AutoUVMaxDistance: 0.5
+  m_AutoUVMaxAngle: 89
+  m_LightmapParameters: {fileID: 0}
+  m_SortingLayerID: 0
+  m_SortingLayer: 0
+  m_SortingOrder: 0
+  m_AdditionalVertexStreams: {fileID: 0}
+--- !u!33 &973777323
+MeshFilter:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 973777320}
+  m_Mesh: {fileID: 10202, guid: 0000000000000000e000000000000000, type: 0}
+--- !u!4 &973777324
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 973777320}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 10.28, y: -4.33, z: 66.8461}
+  m_LocalScale: {x: 2.4976, y: 8.730501, z: 1}
+  m_Children: []
+  m_Father: {fileID: 0}
+  m_RootOrder: 12
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &1016092851
 GameObject:
   m_ObjectHideFlags: 0
@@ -1480,6 +1603,129 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 4
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!1 &1292713282
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1292713286}
+  - component: {fileID: 1292713285}
+  - component: {fileID: 1292713284}
+  - component: {fileID: 1292713283}
+  - component: {fileID: 1292713287}
+  m_Layer: 0
+  m_Name: HumanFood
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!61 &1292713283
+BoxCollider2D:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1292713282}
+  m_Enabled: 1
+  m_Density: 1
+  m_Material: {fileID: 0}
+  m_IsTrigger: 1
+  m_UsedByEffector: 0
+  m_UsedByComposite: 0
+  m_Offset: {x: 0, y: 0}
+  m_SpriteTilingProperty:
+    border: {x: 0, y: 0, z: 0, w: 0}
+    pivot: {x: 0, y: 0}
+    oldSize: {x: 0, y: 0}
+    newSize: {x: 0, y: 0}
+    adaptiveTilingThreshold: 0
+    drawMode: 0
+    adaptiveTiling: 0
+  m_AutoTiling: 0
+  serializedVersion: 2
+  m_Size: {x: 0.99999994, y: 1}
+  m_EdgeRadius: 0
+--- !u!23 &1292713284
+MeshRenderer:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1292713282}
+  m_Enabled: 1
+  m_CastShadows: 1
+  m_ReceiveShadows: 1
+  m_DynamicOccludee: 1
+  m_MotionVectors: 1
+  m_LightProbeUsage: 1
+  m_ReflectionProbeUsage: 1
+  m_RayTracingMode: 2
+  m_RayTraceProcedural: 0
+  m_RenderingLayerMask: 1
+  m_RendererPriority: 0
+  m_Materials:
+  - {fileID: 10303, guid: 0000000000000000f000000000000000, type: 0}
+  m_StaticBatchInfo:
+    firstSubMesh: 0
+    subMeshCount: 0
+  m_StaticBatchRoot: {fileID: 0}
+  m_ProbeAnchor: {fileID: 0}
+  m_LightProbeVolumeOverride: {fileID: 0}
+  m_ScaleInLightmap: 1
+  m_ReceiveGI: 1
+  m_PreserveUVs: 0
+  m_IgnoreNormalsForChartDetection: 0
+  m_ImportantGI: 0
+  m_StitchLightmapSeams: 1
+  m_SelectedEditorRenderState: 3
+  m_MinimumChartSize: 4
+  m_AutoUVMaxDistance: 0.5
+  m_AutoUVMaxAngle: 89
+  m_LightmapParameters: {fileID: 0}
+  m_SortingLayerID: 0
+  m_SortingLayer: 0
+  m_SortingOrder: 0
+  m_AdditionalVertexStreams: {fileID: 0}
+--- !u!33 &1292713285
+MeshFilter:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1292713282}
+  m_Mesh: {fileID: 10202, guid: 0000000000000000e000000000000000, type: 0}
+--- !u!4 &1292713286
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1292713282}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 7.1872997, y: -2.44, z: 66.8461}
+  m_LocalScale: {x: 1.7458, y: 1.2200524, z: 1}
+  m_Children: []
+  m_Father: {fileID: 0}
+  m_RootOrder: 13
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &1292713287
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1292713282}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 4c888231d66a02d4f94b9bae5918a41b, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  foodStolen: 0
+  dialogueSecondBegin: 0
 --- !u!1 &1324470203
 GameObject:
   m_ObjectHideFlags: 0

@@ -13,6 +13,7 @@ public class DialogueTrigger : MonoBehaviour
     {
         FindObjectOfType<DialogueManager>().dialogueCanvasAppear();
         FindObjectOfType<DialogueManager>().StartDialogue(dialogue);
+        Time.timeScale = 0f;
     }
 
     private void OnTriggerEnter2D(Collider2D collision)

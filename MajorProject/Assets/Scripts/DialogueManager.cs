@@ -59,6 +59,7 @@ public class DialogueManager : MonoBehaviour
     {
         Debug.Log("End of convo");
         Time.timeScale = 1f;
+        dialogueCanvasDisappear();
     }
 
     public void dialogueCanvasAppear()
