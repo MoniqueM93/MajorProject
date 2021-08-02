@@ -2,17 +2,25 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
-public class Scene1PickUp : MonoBehaviour
+public class Scene1Script : MonoBehaviour
 {
-    public bool foodStolen;
-    public bool dialogueSecondBegin;
-    private Scene1Script pickupRef;
+    public bool foodPickedUp = false;
+    public GameObject theFood;
 
-    private void Update()
+    private void OnTriggerEnter2D(Collider2D foodTrigger)
     {
-        if (foodStolen == true)
+        if (theFood != null)
         {
-            dialogueSecondBegin = true;
+            foodPickedUp = false;
         }
+        else if (theFood = null)
+        {
+            foodPickedUp = true;
+        }
+    }
+
+    private void OnTriggerExit2D(Collider2D collision)
+    {
+        foodPickedUp = false;
     }
 }

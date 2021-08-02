@@ -54,7 +54,7 @@ public class OpeningCamera : MonoBehaviour
         if (hasFinishedMove == true)
         {
             gameObject.SetActive(false);
-            textTrigger.TriggerDialogue();
+ //           textTrigger.TriggerDialogue();
         }
     }
 }

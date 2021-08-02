@@ -10,6 +10,9 @@ public class DialogueManager : MonoBehaviour
     public TMP_Text dialogueText;
     [SerializeField] private GameObject dialogueCanvas;
 
+    //Scene One
+    public Scene1Friend toEndConvo;
+
     private Queue<string> sentences;
 
     // Start is called before the first frame update
@@ -60,6 +63,9 @@ public class DialogueManager : MonoBehaviour
         Debug.Log("End of convo");
         Time.timeScale = 1f;
         dialogueCanvasDisappear();
+
+        //for Scene One
+        toEndConvo.openingTalkDone = true;
     }
 
     public void dialogueCanvasAppear()

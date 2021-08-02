@@ -2,17 +2,32 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
-public class Scene1Script : MonoBehaviour
+public class Scene1PickUp : MonoBehaviour
 {
-    private Scene1PickUp foodItem;
+    public bool beenStolen = false;
+    public GameObject interactPrompt;
 
-    public void OnTriggerStay2D(Collider2D collision)
+    Scene1Script foodTaken;
+
+    private void OnTriggerEnter2D(Collider2D collision)
     {
-        if (collision.gameObject.tag.Equals("Player") && Input.GetKey(KeyCode.UpArrow))
+        if (collision.gameObject.tag.Equals("Player"))
         {
-            print("Has collided");
-         //   Destroy(gameObject);
-         //   foodItem.foodStolen = true;
+            beenStolen = true;
+            interactPrompt.SetActive(true);
         }
+    }
+
+    private void OnTriggerStay2D(Collider2D collision)
+    {
+        if (beenStolen = true && Input.GetKey(KeyCode.UpArrow))
+        {
+            gameObject.SetActive(false);
+        }
+    }
+
+    private void OnTriggerExit2D(Collider2D collision)
+    {
+        interactPrompt.SetActive(false);
     }
 }
