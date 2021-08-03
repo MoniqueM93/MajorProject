@@ -13,6 +13,9 @@ public class DialogueManager : MonoBehaviour
     //Scene One
     public Scene1Friend toEndConvo;
 
+    // Scene Two
+    public GulliverSelfDialogue scene2End;
+
     private Queue<string> sentences;
 
     // Start is called before the first frame update
@@ -66,6 +69,9 @@ public class DialogueManager : MonoBehaviour
 
         //for Scene One
         toEndConvo.openingTalkDone = true;
+
+        //for Scene Two
+        scene2End.openingTalkDoneS2 = true;
     }
 
     public void dialogueCanvasAppear()
