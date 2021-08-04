@@ -12,7 +12,7 @@ public class GulliverSelfDialogue : MonoBehaviour
 
     private void FixedUpdate()
     {
-        if (cameraRef.hasFinishedMove == true)
+        if (cameraRef.hasFinishedMove == true && openingTalkDoneS2 == false)
         {
             selfDialogue1.SetActive(true);
             selfDialogue1Text.TriggerDialogue();
@@ -21,6 +21,7 @@ public class GulliverSelfDialogue : MonoBehaviour
         if (openingTalkDoneS2 == true)
         {
             selfDialogue1.SetActive(false);
+
         }
     }
 }

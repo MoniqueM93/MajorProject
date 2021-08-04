@@ -3,6 +3,7 @@ using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.UI;
 using TMPro;
+using UnityEngine.SceneManagement;
 
 public class DialogueManager : MonoBehaviour
 {
@@ -18,10 +19,16 @@ public class DialogueManager : MonoBehaviour
 
     private Queue<string> sentences;
 
+    Scene currentScene;
+    string sceneName;
+
     // Start is called before the first frame update
     void Start()
     {
         sentences = new Queue<string>();
+        Scene currentScene = SceneManager.GetActiveScene();
+
+        sceneName = currentScene.name;
     }
 
     public void StartDialogue(Dialogue dialogue)
@@ -68,10 +75,16 @@ public class DialogueManager : MonoBehaviour
         dialogueCanvasDisappear();
 
         //for Scene One
-        toEndConvo.openingTalkDone = true;
+        if (sceneName == "Scene1")
+        {
+            toEndConvo.openingTalkDone = true;
+        }
 
         //for Scene Two
-        scene2End.openingTalkDoneS2 = true;
+        if (sceneName == "Scene2")
+        {
+            scene2End.openingTalkDoneS2 = true;
+        }
     }
 
     public void dialogueCanvasAppear()

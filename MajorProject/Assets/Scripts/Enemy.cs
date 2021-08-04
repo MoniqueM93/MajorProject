@@ -20,6 +20,8 @@ public class Enemy : MonoBehaviour
     public Transform fleeTarget;
     private float fleeSpeed = 7f;
 
+    public GameObject enemyCanvas;
+
     private void Start()
     {
         enemyRB = GetComponent<Rigidbody2D>();
@@ -40,12 +42,15 @@ public class Enemy : MonoBehaviour
 
     private void Update()
     {
+        enemyCanvas.transform.position = new Vector3(transform.position.x, transform.position.y - 2, 0);
+
         if(fightTrigger.hasPassed == true)
         {
         //    print("Ready to go");
             MoveEnemy();
             TimeToFire();
             isShooting = true;
+            enemyCanvas.SetActive(true);
         }
 
         if (GameManager.enemyHealth < 10 && isInjured == true)
