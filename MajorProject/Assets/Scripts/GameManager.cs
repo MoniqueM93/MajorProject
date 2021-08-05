@@ -33,7 +33,7 @@ public class GameManager : MonoBehaviour
         if (playerHealth > 0)
             playerHealthText.text = playerHealth + " health";
 
-        if (enemyHealth > 0)
-            enemyHealthText.text = enemyHealth + " enemy";
+    //    if (enemyHealth > 0)
+    //        enemyHealthText.text = enemyHealth + " enemy";
     }
 }
