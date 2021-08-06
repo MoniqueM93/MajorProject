@@ -17,6 +17,10 @@ public class DialogueManager : MonoBehaviour
     // Scene Two
     public GulliverSelfDialogue scene2End;
 
+    //For Scene 2.1
+    public bool talkHasEnded = false;
+    public dialogueToBaby nestColliderRef;
+
     private Queue<string> sentences;
 
     Scene currentScene;
@@ -84,6 +88,17 @@ public class DialogueManager : MonoBehaviour
         if (sceneName == "Scene2")
         {
             scene2End.openingTalkDoneS2 = true;
+        }
+
+        //for scene 2.1
+        if (sceneName == "Scene2-1")
+        {
+            talkHasEnded = true;
+
+            if (talkHasEnded == true && nestColliderRef.nestHasCollided == true)
+            {
+                print("Scene Change Incoming");
+            }
         }
     }
 
