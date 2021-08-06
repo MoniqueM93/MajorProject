@@ -148,7 +148,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 11120584}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 44.18, y: 26.3, z: 0}
+  m_LocalPosition: {x: 24.3, y: 24, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 1935917333}
@@ -167,9 +167,9 @@ CircleCollider2D:
   m_IsTrigger: 1
   m_UsedByEffector: 0
   m_UsedByComposite: 0
-  m_Offset: {x: 0, y: 0}
+  m_Offset: {x: -6.9524946, y: 5.5466805}
   serializedVersion: 2
-  m_Radius: 0.5
+  m_Radius: 8.986166
 --- !u!4 &15781955 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 3523868752140323694, guid: b9a301d35789f31409b9aaa0746161bb, type: 3}
@@ -185,6 +185,42 @@ Transform:
   m_CorrespondingSourceObject: {fileID: 3523868752140323694, guid: b9a301d35789f31409b9aaa0746161bb, type: 3}
   m_PrefabInstance: {fileID: 1214430761}
   m_PrefabAsset: {fileID: 0}
+--- !u!1 &102333915 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 3771227890625568866, guid: a8b94aacdb2640040802750222c6f71e, type: 3}
+  m_PrefabInstance: {fileID: 515829955}
+  m_PrefabAsset: {fileID: 0}
+--- !u!4 &102333919 stripped
+Transform:
+  m_CorrespondingSourceObject: {fileID: 3771227890625568857, guid: a8b94aacdb2640040802750222c6f71e, type: 3}
+  m_PrefabInstance: {fileID: 515829955}
+  m_PrefabAsset: {fileID: 0}
+--- !u!61 &102333921
+BoxCollider2D:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 102333915}
+  m_Enabled: 1
+  m_Density: 1
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_UsedByEffector: 0
+  m_UsedByComposite: 0
+  m_Offset: {x: 0.45173097, y: 0.09572625}
+  m_SpriteTilingProperty:
+    border: {x: 0, y: 0, z: 0, w: 0}
+    pivot: {x: 0, y: 0}
+    oldSize: {x: 0, y: 0}
+    newSize: {x: 0, y: 0}
+    adaptiveTilingThreshold: 0
+    drawMode: 0
+    adaptiveTiling: 0
+  m_AutoTiling: 0
+  serializedVersion: 2
+  m_Size: {x: 5.5173116, y: 2.2763486}
+  m_EdgeRadius: 0
 --- !u!1001 &104772719
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -1035,6 +1071,10 @@ MonoBehaviour:
   isShooting: 0
   firingSeed: {fileID: 549553660297261428, guid: f80d56608d257ea4caa07345ab6ff504, type: 3}
   fleeTarget: {fileID: 11120585}
+  isFleeing: 0
+  enemyGone: 0
+  postFightDialogue: {fileID: 0}
+  postFightDialogueText: {fileID: 0}
 --- !u!61 &461749186
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -1252,6 +1292,10 @@ PrefabInstance:
     - target: {fileID: 3771227890625568866, guid: a8b94aacdb2640040802750222c6f71e, type: 3}
       propertyPath: m_Name
       value: BabyBird
+      objectReference: {fileID: 0}
+    - target: {fileID: 3771227890625568868, guid: a8b94aacdb2640040802750222c6f71e, type: 3}
+      propertyPath: m_Constraints
+      value: 7
       objectReference: {fileID: 0}
     m_RemovedComponents:
     - {fileID: 3771227890625568856, guid: a8b94aacdb2640040802750222c6f71e, type: 3}
@@ -1870,6 +1914,10 @@ MonoBehaviour:
   isShooting: 0
   firingSeed: {fileID: 549553660297261428, guid: f80d56608d257ea4caa07345ab6ff504, type: 3}
   fleeTarget: {fileID: 11120585}
+  isFleeing: 0
+  enemyGone: 0
+  postFightDialogue: {fileID: 979286858}
+  postFightDialogueText: {fileID: 979286860}
 --- !u!50 &919803049
 Rigidbody2D:
   serializedVersion: 4
@@ -1890,7 +1938,7 @@ Rigidbody2D:
   m_Interpolate: 0
   m_SleepingMode: 1
   m_CollisionDetection: 0
-  m_Constraints: 0
+  m_Constraints: 4
 --- !u!114 &919803050
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -2065,6 +2113,60 @@ PrefabInstance:
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: b9a301d35789f31409b9aaa0746161bb, type: 3}
+--- !u!1 &979286858
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 979286859}
+  - component: {fileID: 979286860}
+  m_Layer: 0
+  m_Name: PostFightDialogue
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 0
+--- !u!4 &979286859
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 979286858}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 1802130683}
+  m_RootOrder: 2
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &979286860
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 979286858}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 293e7b7a341767b4c991644a6e6cc797, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  dialogue:
+    name: 
+    sentences:
+    - 'GULLIVER
+
+      Get out of here, you demons!'
+    - 'GULLIVER
+
+      I hope that baby is ok. I better find them.'
+  dialoguePrompt: {fileID: 0}
+  clickToTalk: 0
 --- !u!1 &981213901
 GameObject:
   m_ObjectHideFlags: 0
@@ -2595,6 +2697,10 @@ MonoBehaviour:
   isShooting: 0
   firingSeed: {fileID: 549553660297261428, guid: f80d56608d257ea4caa07345ab6ff504, type: 3}
   fleeTarget: {fileID: 11120585}
+  isFleeing: 0
+  enemyGone: 0
+  postFightDialogue: {fileID: 0}
+  postFightDialogueText: {fileID: 0}
 --- !u!61 &1101597987
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -3034,6 +3140,10 @@ MonoBehaviour:
   isShooting: 0
   firingSeed: {fileID: 549553660297261428, guid: f80d56608d257ea4caa07345ab6ff504, type: 3}
   fleeTarget: {fileID: 11120585}
+  isFleeing: 0
+  enemyGone: 0
+  postFightDialogue: {fileID: 0}
+  postFightDialogueText: {fileID: 0}
 --- !u!61 &1229576526
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -4057,7 +4167,66 @@ MonoBehaviour:
   fightBlock: {fileID: 1746307481}
   fightBlockTrigger: {fileID: 206196373}
   fightDialogueTrigger: {fileID: 0}
+  enemyRef: {fileID: 919803048}
   hasCollided: 0
+  hasWonFight: 0
+--- !u!1 &1792167259
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1792167261}
+  - component: {fileID: 1792167260}
+  m_Layer: 0
+  m_Name: BabyDialogue
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!61 &1792167260
+BoxCollider2D:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1792167259}
+  m_Enabled: 1
+  m_Density: 1
+  m_Material: {fileID: 0}
+  m_IsTrigger: 1
+  m_UsedByEffector: 0
+  m_UsedByComposite: 0
+  m_Offset: {x: 0.38790143, y: -0.08220005}
+  m_SpriteTilingProperty:
+    border: {x: 0, y: 0, z: 0, w: 0}
+    pivot: {x: 0, y: 0}
+    oldSize: {x: 0, y: 0}
+    newSize: {x: 0, y: 0}
+    adaptiveTilingThreshold: 0
+    drawMode: 0
+    adaptiveTiling: 0
+  m_AutoTiling: 0
+  serializedVersion: 2
+  m_Size: {x: 4.601939, y: 1.9247482}
+  m_EdgeRadius: 0
+--- !u!4 &1792167261
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1792167259}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 102333919}
+  m_RootOrder: 1
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!4 &1802130683 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 2216346254223104985, guid: a91181defd9b07f4280f966a98ae4296, type: 3}

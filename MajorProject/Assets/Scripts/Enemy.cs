@@ -1,6 +1,7 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.SceneManagement;
 
 public class Enemy : MonoBehaviour
 {
@@ -20,6 +21,15 @@ public class Enemy : MonoBehaviour
     public Transform fleeTarget;
     private float fleeSpeed = 7f;
 
+    public bool isFleeing = false;
+    public bool enemyGone = false;
+
+    public GameObject postFightDialogue;
+    public DialogueTrigger postFightDialogueText;
+
+    Scene currentScene;
+    string sceneName;
+
     private void Start()
     {
         enemyRB = GetComponent<Rigidbody2D>();
@@ -27,7 +37,9 @@ public class Enemy : MonoBehaviour
         moveSpeed = 5f;
         localScale = transform.localScale;
 
-
+        //to gather scene data
+        Scene currentScene = SceneManager.GetActiveScene();
+        sceneName = currentScene.name;
 
         GameObject fight = GameObject.FindGameObjectWithTag("FightTriggerTag");
 
@@ -41,7 +53,7 @@ public class Enemy : MonoBehaviour
     private void Update()
     {
 
-        if(fightTrigger.hasPassed == true)
+        if (fightTrigger.hasPassed == true && isInjured == false)
         {
         //    print("Ready to go");
             MoveEnemy();
@@ -101,6 +113,8 @@ public class Enemy : MonoBehaviour
         if (isInjured == true)
         {
             transform.position = Vector3.MoveTowards(transform.position, fleeTarget.position, fleeSpeed * Time.deltaTime);
+            isFleeing = true;
+            moveSpeed = 15f;
         }
     }
 
@@ -109,7 +123,13 @@ public class Enemy : MonoBehaviour
         if (collision.gameObject.tag.Equals("WayPoint"))
         {
             print("I have collided");
-            Destroy(gameObject);
+            gameObject.SetActive(false);
+
+            if (sceneName == "Scene2")
+            {
+                postFightDialogue.SetActive(true);
+                postFightDialogueText.TriggerDialogue();
+            }
         }
     }
 }

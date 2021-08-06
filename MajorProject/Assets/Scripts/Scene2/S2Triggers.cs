@@ -10,7 +10,12 @@ public class S2Triggers : MonoBehaviour
 
 
 
+    public Enemy enemyRef;
+
     public bool hasCollided = false;
+
+    public bool hasWonFight = false;
+
 
     private void OnTriggerEnter2D(Collider2D collision)
     {
