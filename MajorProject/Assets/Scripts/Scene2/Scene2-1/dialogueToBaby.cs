@@ -16,14 +16,17 @@ public class dialogueToBaby : MonoBehaviour
 
     public GameObject nestTriggers;
 
+    public GameObject openingTrigger;
+
     public bool nestHasCollided = false;
 
     private void Start()
     {
         localScale = transform.localScale;
 
-        talkAtStart.SetActive(true);
-        talkAtStartText.TriggerDialogue();
+
+//        talkAtStart.SetActive(true);
+//        talkAtStartText.TriggerDialogue();
     }
 
     private void Update()
@@ -39,11 +42,19 @@ public class dialogueToBaby : MonoBehaviour
 
     private void OnTriggerEnter2D(Collider2D collision)
     {
+        if(collision.gameObject == openingTrigger)
+        {
+            talkAtStart.SetActive(true);
+            talkAtStartText.TriggerDialogue();
+            openingTrigger.SetActive(false);
+        }
+
         if (collision.gameObject == nestTriggers)
         {
             nestHasCollided = true;
             talkAtNest.SetActive(true);
             talkAtNestText.TriggerDialogue();
+            nestTriggers.SetActive(false);
         }
     }
 }
