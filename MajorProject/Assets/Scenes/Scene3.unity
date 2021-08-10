@@ -1711,7 +1711,8 @@ MonoBehaviour:
       Your beak has a really bad chip. How are we going to fix that?'
     - 'GULLIVER
 
-      You must be hungry , I better find you some food.'
+      You must be hungry , I better find you some food. Stay here
+      and rest.'
     - 'GULLIVER
 
       Bessie would know what to do. She lives in the nest on the
@@ -2874,6 +2875,10 @@ MonoBehaviour:
 
       Stores are still not selling to birds these days. Keep an eye
       out for Eadie. She can guide you there.'
+    - 'BESSIE
+
+      I can see you nest from here, so I will keep an eye on the little
+      one.'
     - 'GULLIVER
 
       Thank you Bessie. I will get on that.'

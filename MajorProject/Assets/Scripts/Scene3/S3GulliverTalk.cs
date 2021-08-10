@@ -32,12 +32,18 @@ public class S3GulliverTalk : MonoBehaviour
         }
     }
 
-    private void OnTriggerStay2D(Collider2D collision)
+    private void OnTriggerEnter2D(Collider2D collision)
     {
         if (collision.gameObject == bessieTrigger)
         {
             bessiePrompt.SetActive(true);
+        }
+    }
 
+    private void OnTriggerStay2D(Collider2D collision)
+    {
+        if (collision.gameObject == bessieTrigger)
+        {
 
             if (Input.GetKey(KeyCode.UpArrow))
             {
