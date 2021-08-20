@@ -9,7 +9,7 @@ public class EnemyDialogueS2 : MonoBehaviour
     public S2Triggers triggerRef;
     public DialogueTrigger enemyDialogueText;
 
-    public LeadEnemyTalk ifTalkingDone;
+    //public LeadEnemyTalk ifTalkingDone;
 
 
     private void FixedUpdate()

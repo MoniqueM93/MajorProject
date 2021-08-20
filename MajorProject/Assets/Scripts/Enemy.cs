@@ -27,6 +27,8 @@ public class Enemy : MonoBehaviour
     public GameObject postFightDialogue;
     public DialogueTrigger postFightDialogueText;
 
+    public bool readyToSceneChange = false;
+
     Scene currentScene;
     string sceneName;
 
@@ -129,6 +131,7 @@ public class Enemy : MonoBehaviour
             {
                 postFightDialogue.SetActive(true);
                 postFightDialogueText.TriggerDialogue();
+                readyToSceneChange = true;
             }
         }
     }

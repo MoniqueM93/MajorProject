@@ -518,7 +518,7 @@ SpriteRenderer:
   m_SortingLayerID: 0
   m_SortingLayer: 0
   m_SortingOrder: 0
-  m_Sprite: {fileID: 21300000, guid: 7b12629022d40254eaa3c149d0a2aaba, type: 3}
+  m_Sprite: {fileID: 21300000, guid: f57bd8878a5028041b668a608f07dc88, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
   m_FlipY: 0
@@ -1075,6 +1075,7 @@ MonoBehaviour:
   enemyGone: 0
   postFightDialogue: {fileID: 0}
   postFightDialogueText: {fileID: 0}
+  readyToSceneChange: 0
 --- !u!61 &461749186
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -1922,6 +1923,7 @@ MonoBehaviour:
   enemyGone: 0
   postFightDialogue: {fileID: 979286858}
   postFightDialogueText: {fileID: 979286860}
+  readyToSceneChange: 0
 --- !u!50 &919803049
 Rigidbody2D:
   serializedVersion: 4
@@ -1958,7 +1960,6 @@ MonoBehaviour:
   enemyDialogue: {fileID: 1009461441}
   triggerRef: {fileID: 1770209433}
   enemyDialogueText: {fileID: 1009461442}
-  ifTalkingDone: {fileID: 0}
 --- !u!114 &930228692 stripped
 MonoBehaviour:
   m_CorrespondingSourceObject: {fileID: 2003082999719846243, guid: 549a2141ce55ed54aadf0b1dadcfb1a6, type: 3}
@@ -1990,6 +1991,10 @@ PrefabInstance:
       propertyPath: scene2End
       value: 
       objectReference: {fileID: 1770209432}
+    - target: {fileID: 8267251548424762328, guid: 5a719e2806005fb4f9453d038cdecefd, type: 3}
+      propertyPath: postTextRef
+      value: 
+      objectReference: {fileID: 919803048}
     - target: {fileID: 8267251548424762328, guid: 5a719e2806005fb4f9453d038cdecefd, type: 3}
       propertyPath: dialogueText
       value: 
@@ -2705,6 +2710,7 @@ MonoBehaviour:
   enemyGone: 0
   postFightDialogue: {fileID: 0}
   postFightDialogueText: {fileID: 0}
+  readyToSceneChange: 0
 --- !u!61 &1101597987
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -3148,6 +3154,7 @@ MonoBehaviour:
   enemyGone: 0
   postFightDialogue: {fileID: 0}
   postFightDialogueText: {fileID: 0}
+  readyToSceneChange: 0
 --- !u!61 &1229576526
 BoxCollider2D:
   m_ObjectHideFlags: 0

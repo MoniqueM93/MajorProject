@@ -1,6 +1,7 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.SceneManagement;
 
 public class S4Triggers : MonoBehaviour
 {
@@ -21,7 +22,7 @@ public class S4Triggers : MonoBehaviour
         {
             if (Input.GetKey(KeyCode.UpArrow))
             {
-                print("Enter pet store");
+                SceneManager.LoadScene("Scene5");
             }
         }
     }

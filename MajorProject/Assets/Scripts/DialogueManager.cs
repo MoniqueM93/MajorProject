@@ -16,6 +16,7 @@ public class DialogueManager : MonoBehaviour
 
     // Scene Two
     public GulliverSelfDialogue scene2End;
+    public Enemy postTextRef;
 
     //For Scene 2.1
     public bool talkHasEnded = false;
@@ -88,6 +89,11 @@ public class DialogueManager : MonoBehaviour
         if (sceneName == "Scene2")
         {
             scene2End.openingTalkDoneS2 = true;
+
+            if (postTextRef.readyToSceneChange == true)
+            {
+                SceneManager.LoadScene("Scene2-1");
+            }
         }
 
         //for scene 2.1
@@ -97,7 +103,7 @@ public class DialogueManager : MonoBehaviour
 
             if (talkHasEnded == true && nestColliderRef.nestHasCollided == true)
             {
-                print("Scene Change Incoming");
+                SceneManager.LoadScene("Scene3");
             }
         }
     }

@@ -17,6 +17,7 @@ public class Scene1Friend : MonoBehaviour
     public OpeningCamera cameraScript;
 
     public bool hasTheFood = false;
+    public bool S1AllTalkDone = false;
 
     public bool openingTalkDone = false;
 
@@ -58,6 +59,7 @@ public class Scene1Friend : MonoBehaviour
         {
             stealSuccess.SetActive(true);
             stolenSuccessText.TriggerDialogue();
+            S1AllTalkDone = true;
         }
     }
 
