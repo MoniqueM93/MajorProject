@@ -26,6 +26,7 @@ public class S7Triggers : MonoBehaviour
     //if the player goes to bird after speaking to Bessie
     public GameObject postChickTalk;
     public DialogueTrigger postChickTalkText;
+    public bool hasTheChick = false;
 
     private void OnTriggerEnter2D(Collider2D collision)
     {
@@ -68,14 +69,14 @@ public class S7Triggers : MonoBehaviour
             {
                 postChickTalk.SetActive(true);
                 postChickTalkText.TriggerDialogue();
-                print("swap incoming");
+                hasTheChick = true;
             }
         }
     }
 
     private void OnTriggerExit2D(Collider2D collision)
     {
-        if (collision.gameObject == chickTrigger)
+        if (collision.gameObject == chickTrigger && hasTheChick == false)
         {
             chickTalkPrompt.SetActive(false);
         }
@@ -83,6 +84,11 @@ public class S7Triggers : MonoBehaviour
         if (collision.gameObject == bessieTrigger)
         {
             bessiePrompt.SetActive(false);
+        }
+
+        if (collision.gameObject == chickTrigger && hasTheChick == true)
+        {
+            print("Change incoming");
         }
     }
 }
