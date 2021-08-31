@@ -2804,9 +2804,17 @@ PrefabInstance:
       propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_MethodName
       value: DisplayNextSentence
       objectReference: {fileID: 0}
+    - target: {fileID: 2003083000828319668, guid: 549a2141ce55ed54aadf0b1dadcfb1a6, type: 3}
+      propertyPath: m_IsActive
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 2003083000828319671, guid: 549a2141ce55ed54aadf0b1dadcfb1a6, type: 3}
       propertyPath: m_LocalPosition.y
       value: 86
+      objectReference: {fileID: 0}
+    - target: {fileID: 2003083000828319671, guid: 549a2141ce55ed54aadf0b1dadcfb1a6, type: 3}
+      propertyPath: m_LocalPosition.z
+      value: -4156
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 549a2141ce55ed54aadf0b1dadcfb1a6, type: 3}
