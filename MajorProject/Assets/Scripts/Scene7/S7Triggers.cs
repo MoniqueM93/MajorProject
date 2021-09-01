@@ -28,6 +28,16 @@ public class S7Triggers : MonoBehaviour
     public DialogueTrigger postChickTalkText;
     public bool hasTheChick = false;
 
+    //talk to bessie when you have the chick
+    public GameObject toBessieWithChick;
+    public DialogueTrigger toBessieWithChickText;
+
+    //when it is time to leave the map
+    public GameObject leavePrompt;
+    public GameObject leaveTrigger;
+
+    public GameObject babyChick;
+
     private void OnTriggerEnter2D(Collider2D collision)
     {
         if (collision.gameObject == chickTrigger)
@@ -38,6 +48,11 @@ public class S7Triggers : MonoBehaviour
         if(collision.gameObject == bessieTrigger)
         {
             bessiePrompt.SetActive(true);
+        }
+
+        if (collision.gameObject == leaveTrigger)
+        {
+            leavePrompt.SetActive(true);
         }
     }
 
@@ -52,7 +67,7 @@ public class S7Triggers : MonoBehaviour
             }
         }
 
-        if (collision.gameObject == bessieTrigger)
+        if (collision.gameObject == bessieTrigger && hasTheChick == false)
         {
             if (Input.GetKey(KeyCode.UpArrow))
             {
@@ -72,6 +87,24 @@ public class S7Triggers : MonoBehaviour
                 hasTheChick = true;
             }
         }
+
+        if (collision.gameObject == bessieTrigger && hasTheChick == true)
+        {
+            if (Input.GetKey(KeyCode.UpArrow))
+            {
+                toBessieWithChick.SetActive(true);
+                toBessieWithChickText.TriggerDialogue();
+                leaveTrigger.SetActive(true);
+            }
+        }
+
+        if (collision.gameObject == leaveTrigger)
+        {
+            if (Input.GetKey(KeyCode.UpArrow))
+            {
+                print("scene is changing");
+            }
+        }
     }
 
     private void OnTriggerExit2D(Collider2D collision)
@@ -88,7 +121,13 @@ public class S7Triggers : MonoBehaviour
 
         if (collision.gameObject == chickTrigger && hasTheChick == true)
         {
-            print("Change incoming");
+            babyChick.GetComponent<FollowCode>().enabled = true;
+            babyChick.GetComponent<FollowMovements>().enabled = true;
+        }
+
+        if (collision.gameObject == leaveTrigger)
+        {
+            leavePrompt.SetActive(false);
         }
     }
 }
