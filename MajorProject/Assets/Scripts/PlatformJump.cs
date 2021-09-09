@@ -31,7 +31,7 @@ public class PlatformJump : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        if (Input.GetKey(KeyCode.DownArrow) && birdIsThere == true)
+        if (Input.GetKey(KeyCode.S) && birdIsThere == true)
         {
             gameObject.GetComponent<BoxCollider2D>().enabled = false;
             dropTime = 1f;

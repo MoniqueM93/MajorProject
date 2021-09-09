@@ -60,7 +60,7 @@ public class S15Triggers : MonoBehaviour
     {
         if(collision.gameObject == bessieChar)
         {
-            if (Input.GetKey(KeyCode.UpArrow))
+            if (Input.GetKey(KeyCode.W))
             {
                 bessieTalk.SetActive(true);
                 bessieTalkText.TriggerDialogue();
@@ -70,7 +70,7 @@ public class S15Triggers : MonoBehaviour
 
         if(collision.gameObject == nestArea)
         {
-            if (Input.GetKey(KeyCode.UpArrow))
+            if (Input.GetKey(KeyCode.W))
             {
                 nestAreaTalk.SetActive(true);
                 nestAreaTalkText.TriggerDialogue();
@@ -79,7 +79,7 @@ public class S15Triggers : MonoBehaviour
 
         if (collision.gameObject == leaveArea)
         {
-            if (Input.GetKey(KeyCode.UpArrow))
+            if (Input.GetKey(KeyCode.W))
             {
                 print("Scene will now change");
             }

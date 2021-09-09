@@ -90,7 +90,7 @@ public class S14Triggers : MonoBehaviour
     {
         if (collision.gameObject == friendAChar)
         {
-            if (Input.GetKey(KeyCode.UpArrow))
+            if (Input.GetKey(KeyCode.W))
             {
                 friendATalk.SetActive(true);
                 friendATalkText.TriggerDialogue();
@@ -100,7 +100,7 @@ public class S14Triggers : MonoBehaviour
 
         if (collision.gameObject == friendAChar && famTalkDone == true)
         {
-            if (Input.GetKey(KeyCode.UpArrow))
+            if (Input.GetKey(KeyCode.W))
             {
                 friendATalk2.SetActive(true);
                 friendATalk2Text.TriggerDialogue();
@@ -110,7 +110,7 @@ public class S14Triggers : MonoBehaviour
 
         if(collision.gameObject == famChar && groundedRef.grounded == true)
         {
-            if (Input.GetKey(KeyCode.UpArrow) && famTalkDone == false)
+            if (Input.GetKey(KeyCode.W) && famTalkDone == false)
             {
                 famTalkDone = true;
                 StartCoroutine("ToTalkToFamily");
@@ -120,7 +120,7 @@ public class S14Triggers : MonoBehaviour
         //when leaving area
         if (collision.gameObject == leaveArea && leaveIsActive == true)
         {
-            if (Input.GetKey(KeyCode.UpArrow))
+            if (Input.GetKey(KeyCode.W))
             {
                 print("End of scene");
             }

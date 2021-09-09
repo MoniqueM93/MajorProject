@@ -54,7 +54,7 @@ public class S3GulliverTalk : MonoBehaviour
         if (collision.gameObject == bessieTrigger)
         {
 
-            if (Input.GetKey(KeyCode.UpArrow))
+            if (Input.GetKey(KeyCode.W))
             {
                 talkToBessie.SetActive(true);
                 talkToBessieText.TriggerDialogue();
@@ -63,7 +63,7 @@ public class S3GulliverTalk : MonoBehaviour
             }
         }
 
-        if (collision.gameObject == leaveArea && Input.GetKey(KeyCode.UpArrow)){
+        if (collision.gameObject == leaveArea && Input.GetKey(KeyCode.W)){
             SceneManager.LoadScene("Scene4");
         }
     }

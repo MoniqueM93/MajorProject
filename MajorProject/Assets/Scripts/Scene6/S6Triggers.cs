@@ -39,7 +39,7 @@ public class S6Triggers : MonoBehaviour
     {
         if (collision.gameObject == friendATalk)
         {
-            if (Input.GetKey(KeyCode.UpArrow))
+            if (Input.GetKey(KeyCode.W))
             {
                 friendATalk.SetActive(true);
                 friendATalkText.TriggerDialogue();
@@ -48,7 +48,7 @@ public class S6Triggers : MonoBehaviour
         
         if (collision.gameObject == friendBTalk)
         {
-            if (Input.GetKey(KeyCode.UpArrow))
+            if (Input.GetKey(KeyCode.W))
             {
                 friendBTalk.SetActive(true);
                 friendBTalkText.TriggerDialogue();
@@ -57,7 +57,7 @@ public class S6Triggers : MonoBehaviour
 
         if (collision.gameObject == leaveTrigger)
         {
-            if (Input.GetKey(KeyCode.UpArrow) && readyToSwitch == false)
+            if (Input.GetKey(KeyCode.W) && readyToSwitch == false)
             {
                 print("GO THE NEXT LEVEL!");
                 readyToSwitch = true;

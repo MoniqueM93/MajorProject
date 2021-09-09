@@ -67,7 +67,7 @@ public class S12Triggers : MonoBehaviour
     {
         if (collision.gameObject == friendA)
         {
-            if (Input.GetKey(KeyCode.UpArrow))
+            if (Input.GetKey(KeyCode.W))
             {
                 friendATalk.SetActive(true);
                 friendATalkText.TriggerDialogue();
@@ -76,7 +76,7 @@ public class S12Triggers : MonoBehaviour
 
         if (collision.gameObject == friendB)
         {
-            if (Input.GetKey(KeyCode.UpArrow))
+            if (Input.GetKey(KeyCode.W))
             {
                 friendBTalk.SetActive(true);
                 friendBTalkText.TriggerDialogue();
@@ -85,7 +85,7 @@ public class S12Triggers : MonoBehaviour
 
         if (collision.gameObject == friendC)
         {
-            if (Input.GetKey(KeyCode.UpArrow))
+            if (Input.GetKey(KeyCode.W))
             {
                 friendCTalk.SetActive(true);
                 friendCTalkText.TriggerDialogue();
@@ -94,7 +94,7 @@ public class S12Triggers : MonoBehaviour
 
         if (collision.gameObject == leaveArea && readyToLeave == false)
         {
-            if (Input.GetKey(KeyCode.UpArrow))
+            if (Input.GetKey(KeyCode.W))
             {
                 print("Let's go home");
                 readyToLeave = true;

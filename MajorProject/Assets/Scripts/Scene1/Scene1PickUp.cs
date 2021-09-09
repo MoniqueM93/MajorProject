@@ -20,7 +20,7 @@ public class Scene1PickUp : MonoBehaviour
 
     private void OnTriggerStay2D(Collider2D collision)
     {
-        if (beenStolen = true && Input.GetKey(KeyCode.UpArrow))
+        if (beenStolen = true && Input.GetKey(KeyCode.W))
         {
             gameObject.SetActive(false);
         }

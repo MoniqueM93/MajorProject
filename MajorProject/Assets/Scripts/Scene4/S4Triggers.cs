@@ -20,7 +20,7 @@ public class S4Triggers : MonoBehaviour
     {
         if (collision.gameObject == doorTrigger)
         {
-            if (Input.GetKey(KeyCode.UpArrow))
+            if (Input.GetKey(KeyCode.W))
             {
                 SceneManager.LoadScene("Scene5");
             }

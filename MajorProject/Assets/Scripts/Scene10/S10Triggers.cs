@@ -45,7 +45,7 @@ public class S10Triggers : MonoBehaviour
     {
         if (collision.gameObject == thisFriendA)
         {
-            if (Input.GetKey(KeyCode.UpArrow))
+            if (Input.GetKey(KeyCode.W))
             {
                 friendATalk.SetActive(true);
                 friendATalkText.TriggerDialogue();
@@ -55,7 +55,7 @@ public class S10Triggers : MonoBehaviour
 
         if (collision.gameObject == thisFriendB)
         {
-            if (Input.GetKey(KeyCode.UpArrow))
+            if (Input.GetKey(KeyCode.W))
             {
                 friendBTalk.SetActive(true);
                 friendBTalkText.TriggerDialogue();
@@ -64,7 +64,7 @@ public class S10Triggers : MonoBehaviour
 
         if (collision.gameObject == petDoor && isTalkDone == true && canEnterPetStore == false)
         {
-            if (Input.GetKey(KeyCode.UpArrow))
+            if (Input.GetKey(KeyCode.W))
             {
                 print("To the next level");
                 canEnterPetStore = true;

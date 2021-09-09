@@ -78,7 +78,7 @@ public class S13Triggers : MonoBehaviour
     {
         if (collision.gameObject == bessieChar)
         {
-            if (Input.GetKey(KeyCode.UpArrow))
+            if (Input.GetKey(KeyCode.W))
             {
                 bessieTalk.SetActive(true);
                 bessieTalkText.TriggerDialogue();
@@ -90,7 +90,7 @@ public class S13Triggers : MonoBehaviour
 
         if (collision.gameObject == chickTalk2 && hasSpokeToBessie == true && sceneChange == false)
         {
-            if (Input.GetKey(KeyCode.UpArrow))
+            if (Input.GetKey(KeyCode.W))
             {
                 chickTalk2.SetActive(true);
                 chickTalk2Text.TriggerDialogue();

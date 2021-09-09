@@ -92,7 +92,7 @@ public class S17Triggers : MonoBehaviour
     {
         if (collision.gameObject == friendChar && hasSpokeToFriend == false)
         {
-            if (Input.GetKey(KeyCode.UpArrow))
+            if (Input.GetKey(KeyCode.W))
             {
                 hasSpokeToFriend = true;
                 friendTalk.SetActive(true);
@@ -102,7 +102,7 @@ public class S17Triggers : MonoBehaviour
 
         if (collision.gameObject == chickTrigger)
         {
-            if (Input.GetKey(KeyCode.UpArrow))
+            if (Input.GetKey(KeyCode.W))
             {
                 chickTalk.SetActive(true);
                 chickTalkText.TriggerDialogue();
@@ -114,7 +114,7 @@ public class S17Triggers : MonoBehaviour
 
         if(collision.gameObject == leaveArea && hasSpokeToChick == true && gameOver == false)
         {
-            if (Input.GetKey(KeyCode.UpArrow) && closingDialogueSpoken == false)
+            if (Input.GetKey(KeyCode.W) && closingDialogueSpoken == false)
             {
                 leavePrompt.SetActive(false);
                 closingDialogueSpoken = true;

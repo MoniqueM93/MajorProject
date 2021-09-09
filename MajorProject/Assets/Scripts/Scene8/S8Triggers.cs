@@ -58,7 +58,7 @@ public class S8Triggers : MonoBehaviour
     {
         if(collision.gameObject == friendA && isFirstTalkDone == false && isSecondTalkDone == false)
         {
-            if(Input.GetKey(KeyCode.UpArrow))
+            if(Input.GetKey(KeyCode.W))
             {
                 friendAFirst.SetActive(true);
                 friendAFirstText.TriggerDialogue();
@@ -69,7 +69,7 @@ public class S8Triggers : MonoBehaviour
 
         if (collision.gameObject == friendB)
         {
-            if (Input.GetKey(KeyCode.UpArrow))
+            if (Input.GetKey(KeyCode.W))
             {
                 friendBTalk.SetActive(true);
                 friendBTalkText.TriggerDialogue();
@@ -79,7 +79,7 @@ public class S8Triggers : MonoBehaviour
 
         if (collision.gameObject == friendA && isFirstTalkDone == true && isSecondTalkDone == true)
         {
-            if (Input.GetKey(KeyCode.UpArrow))
+            if (Input.GetKey(KeyCode.W))
             {
                 friendASecond.SetActive(true);
                 friendASecondText.TriggerDialogue();
@@ -89,7 +89,7 @@ public class S8Triggers : MonoBehaviour
 
         if (collision.gameObject == doorTrigger)
         {
-            if (Input.GetKey(KeyCode.UpArrow))
+            if (Input.GetKey(KeyCode.W))
             {
                 print("This scene shall change");
             }

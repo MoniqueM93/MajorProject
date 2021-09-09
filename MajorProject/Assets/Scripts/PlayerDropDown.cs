@@ -25,7 +25,7 @@ public class PlayerDropDown : MonoBehaviour
 
     public void Update()
     {
-        if(Input.GetKey(KeyCode.DownArrow) && birdOnLedge == true)
+        if(Input.GetKey(KeyCode.S) && birdOnLedge == true)
         {
             gameObject.GetComponent<CapsuleCollider2D>().enabled = false;
             dropTime = 0.5f;

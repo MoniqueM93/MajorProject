@@ -50,12 +50,12 @@ public class Scene1Friend : MonoBehaviour
 
     private void OnTriggerStay2D(Collider2D collision)
     {
-        if (hasTheFood == false && Input.GetKey(KeyCode.UpArrow))
+        if (hasTheFood == false && Input.GetKey(KeyCode.W))
         {
             stealUnsuccess.SetActive(true);
             stolenUnsuccessText.TriggerDialogue();
         }
-        else if (hasTheFood ==  true && Input.GetKey(KeyCode.UpArrow))
+        else if (hasTheFood ==  true && Input.GetKey(KeyCode.W))
         {
             stealSuccess.SetActive(true);
             stolenSuccessText.TriggerDialogue();

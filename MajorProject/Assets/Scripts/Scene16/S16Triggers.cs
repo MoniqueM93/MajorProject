@@ -53,7 +53,7 @@ public class S16Triggers : MonoBehaviour
     {
         if(collision.gameObject == eadieChar)
         {
-            if (Input.GetKey(KeyCode.UpArrow))
+            if (Input.GetKey(KeyCode.W))
             {
                 eadieTalk.SetActive(true);
                 eadieTalkText.TriggerDialogue();
@@ -63,7 +63,7 @@ public class S16Triggers : MonoBehaviour
 
         if(collision.gameObject == leaveArea)
         {
-            if (Input.GetKey(KeyCode.UpArrow) && changeScene == false)
+            if (Input.GetKey(KeyCode.W) && changeScene == false)
             {
                 changeScene = true;
                 print("Scene is over");

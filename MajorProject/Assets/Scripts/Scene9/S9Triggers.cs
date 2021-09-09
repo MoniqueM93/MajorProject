@@ -70,7 +70,7 @@ public class S9Triggers : MonoBehaviour
     {
         if (collision.gameObject == foodCollect)
         {
-            if (Input.GetKey(KeyCode.UpArrow))
+            if (Input.GetKey(KeyCode.W))
             {
                 foodCollect.SetActive(false);
                 foodBeenTaken = true;
@@ -79,7 +79,7 @@ public class S9Triggers : MonoBehaviour
 
         if (collision.gameObject == doorTrigger && letsLeave == false)
         {
-            if (Input.GetKey(KeyCode.UpArrow))
+            if (Input.GetKey(KeyCode.W))
             {
                 print("Let's goooooo");
                 letsLeave = true;

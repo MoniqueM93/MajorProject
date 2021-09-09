@@ -60,7 +60,7 @@ public class S7Triggers : MonoBehaviour
     {
         if (collision.gameObject == chickTrigger && spokeToBessie == false)
         {
-            if (Input.GetKey(KeyCode.UpArrow))
+            if (Input.GetKey(KeyCode.W))
             {
                 firstChickTalk.SetActive(true);
                 firstChickTalkText.TriggerDialogue();
@@ -69,7 +69,7 @@ public class S7Triggers : MonoBehaviour
 
         if (collision.gameObject == bessieTrigger && hasTheChick == false)
         {
-            if (Input.GetKey(KeyCode.UpArrow))
+            if (Input.GetKey(KeyCode.W))
             {
                 bessieTalk.SetActive(true);
                 bessieTalkText.TriggerDialogue();
@@ -80,7 +80,7 @@ public class S7Triggers : MonoBehaviour
 
         if (collision.gameObject == chickTrigger && spokeToBessie == true)
         {
-            if (Input.GetKey(KeyCode.UpArrow))
+            if (Input.GetKey(KeyCode.W))
             {
                 postChickTalk.SetActive(true);
                 postChickTalkText.TriggerDialogue();
@@ -90,7 +90,7 @@ public class S7Triggers : MonoBehaviour
 
         if (collision.gameObject == bessieTrigger && hasTheChick == true)
         {
-            if (Input.GetKey(KeyCode.UpArrow))
+            if (Input.GetKey(KeyCode.W))
             {
                 toBessieWithChick.SetActive(true);
                 toBessieWithChickText.TriggerDialogue();
@@ -100,7 +100,7 @@ public class S7Triggers : MonoBehaviour
 
         if (collision.gameObject == leaveTrigger)
         {
-            if (Input.GetKey(KeyCode.UpArrow))
+            if (Input.GetKey(KeyCode.W))
             {
                 print("scene is changing");
             }

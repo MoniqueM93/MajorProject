@@ -88,7 +88,7 @@ public class S5Triggers : MonoBehaviour
         //to talk to eadie
         if (collision.gameObject == eadieTrigger && firstTalkDone == false)
         {
-            if (Input.GetKey(KeyCode.UpArrow))
+            if (Input.GetKey(KeyCode.W))
             {
                 EadieDialogue.SetActive(true);
                 EadieDialogueText.TriggerDialogue();
@@ -101,7 +101,7 @@ public class S5Triggers : MonoBehaviour
         //to pick up the fish bone
         if (collision.gameObject == fishBoneCollect)
         {
-            if (Input.GetKey(KeyCode.UpArrow))
+            if (Input.GetKey(KeyCode.W))
             {
                 Destroy(fishBoneCollect);
                 hasFishBone = true;
@@ -110,7 +110,7 @@ public class S5Triggers : MonoBehaviour
 
         if(collision.gameObject == eadieTrigger && hasFishBone == true && readyToLeave == false)
         {
-            if (Input.GetKey(KeyCode.UpArrow))
+            if (Input.GetKey(KeyCode.W))
             {
                 EadieTalkPrompt.SetActive(false);
                 eadieLeaveTalk.SetActive(true);
@@ -122,7 +122,7 @@ public class S5Triggers : MonoBehaviour
         //collision with the door
         if (collision.gameObject == sceneDoor)
         {
-            if (Input.GetKey(KeyCode.UpArrow))
+            if (Input.GetKey(KeyCode.W))
             {
                 //print("change scene");
                 SceneManager.LoadScene("Scene6");
