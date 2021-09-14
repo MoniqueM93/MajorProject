@@ -24,8 +24,8 @@ public class Enemy : MonoBehaviour
     public bool isFleeing = false;
     public bool enemyGone = false;
 
-    public GameObject postFightDialogue;
-    public DialogueTrigger postFightDialogueText;
+    //public GameObject postFightDialogue;
+    //public DialogueTrigger postFightDialogueText;
 
     public bool readyToSceneChange = false;
 
@@ -122,17 +122,17 @@ public class Enemy : MonoBehaviour
 
     private void OnTriggerStay2D(Collider2D collision)
     {
-        if (collision.gameObject.tag.Equals("WayPoint"))
-        {
-            print("I have collided");
-            gameObject.SetActive(false);
+//        if (collision.gameObject.tag.Equals("WayPoint"))
+//        {
+//            print("I have collided");
+//            gameObject.SetActive(false);
 
-            if (sceneName == "Scene2")
-            {
-                postFightDialogue.SetActive(true);
-                postFightDialogueText.TriggerDialogue();
-                readyToSceneChange = true;
-            }
-        }
+//            if (sceneName == "Scene2")
+//            {
+//                postFightDialogue.SetActive(true);
+//                postFightDialogueText.TriggerDialogue();
+//                readyToSceneChange = true;
+//            }
+//        }
     }
 }

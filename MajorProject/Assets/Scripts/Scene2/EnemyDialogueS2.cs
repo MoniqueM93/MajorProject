@@ -11,6 +11,9 @@ public class EnemyDialogueS2 : MonoBehaviour
 
     //public LeadEnemyTalk ifTalkingDone;
 
+    public GameObject postFightDialogue;
+    public DialogueTrigger postFightDialogueText;
+    public GameObject postFightChickTrigger;
 
     private void FixedUpdate()
     {
@@ -26,4 +29,19 @@ public class EnemyDialogueS2 : MonoBehaviour
      //   }
     }
 
+    private void OnTriggerEnter2D(Collider2D collision)
+    {
+        if (collision.gameObject.tag.Equals("WayPoint"))
+        {
+            print("I have collided");
+            gameObject.SetActive(false);
+
+            postFightChickTrigger.SetActive(true);
+
+                postFightDialogue.SetActive(true);
+                postFightDialogueText.TriggerDialogue();
+//                readyToSceneChange = true;
+         
+        }
+    }
 }

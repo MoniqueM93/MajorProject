@@ -89,11 +89,11 @@ public class DialogueManager : MonoBehaviour
         if (sceneName == "Scene2")
         {
             scene2End.openingTalkDoneS2 = true;
-
-            if (postTextRef.readyToSceneChange == true)
-            {
-                SceneManager.LoadScene("Scene2-1");
-            }
+//
+//            if (postTextRef.readyToSceneChange == true)
+//            {
+//                SceneManager.LoadScene("Scene2-1");
+//            }
         }
 
         //for scene 2.1

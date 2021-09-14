@@ -195,6 +195,21 @@ Transform:
   m_CorrespondingSourceObject: {fileID: 3771227890625568857, guid: a8b94aacdb2640040802750222c6f71e, type: 3}
   m_PrefabInstance: {fileID: 515829955}
   m_PrefabAsset: {fileID: 0}
+--- !u!114 &102333920
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 102333915}
+  m_Enabled: 0
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: e77e3a32a75a1464dbf1b7da56a7ef19, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  leader: {fileID: 1770209423}
+  steps: 20
+  chickAnimator: 0
 --- !u!61 &102333921
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -202,7 +217,7 @@ BoxCollider2D:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 102333915}
-  m_Enabled: 1
+  m_Enabled: 0
   m_Density: 1
   m_Material: {fileID: 0}
   m_IsTrigger: 0
@@ -221,6 +236,24 @@ BoxCollider2D:
   serializedVersion: 2
   m_Size: {x: 5.5173116, y: 2.2763486}
   m_EdgeRadius: 0
+--- !u!114 &102333922
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 102333915}
+  m_Enabled: 0
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: d109594c2a51ced47975b91fefa81bcb, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  isFlying: 0
+  isLanding: 0
+  onTheGround: 0
+  isWalking: 0
+  playerRef: {fileID: 1770209426}
+  chickAnimationGO: {fileID: 320084520}
 --- !u!1001 &104772719
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -297,6 +330,10 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: 5995937950812928704, guid: 1d16a7b6d37c308418992c24fd35d928, type: 3}
+      propertyPath: m_Camera
+      value: 
+      objectReference: {fileID: 162038509}
     - target: {fileID: 5995937950812928705, guid: 1d16a7b6d37c308418992c24fd35d928, type: 3}
       propertyPath: m_Pivot.x
       value: 0
@@ -747,6 +784,11 @@ PrefabInstance:
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: b9a301d35789f31409b9aaa0746161bb, type: 3}
+--- !u!4 &320084520 stripped
+Transform:
+  m_CorrespondingSourceObject: {fileID: 3771227890643286193, guid: a8b94aacdb2640040802750222c6f71e, type: 3}
+  m_PrefabInstance: {fileID: 515829955}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1001 &411178229
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -1073,8 +1115,6 @@ MonoBehaviour:
   fleeTarget: {fileID: 11120585}
   isFleeing: 0
   enemyGone: 0
-  postFightDialogue: {fileID: 0}
-  postFightDialogueText: {fileID: 0}
   readyToSceneChange: 0
 --- !u!61 &461749186
 BoxCollider2D:
@@ -1300,7 +1340,6 @@ PrefabInstance:
       objectReference: {fileID: 0}
     m_RemovedComponents:
     - {fileID: 3771227890625568856, guid: a8b94aacdb2640040802750222c6f71e, type: 3}
-    - {fileID: 3771227890625568869, guid: a8b94aacdb2640040802750222c6f71e, type: 3}
   m_SourcePrefab: {fileID: 100100000, guid: a8b94aacdb2640040802750222c6f71e, type: 3}
 --- !u!4 &540180558 stripped
 Transform:
@@ -1442,6 +1481,63 @@ PrefabInstance:
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 549a2141ce55ed54aadf0b1dadcfb1a6, type: 3}
+--- !u!1 &590197778
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 590197779}
+  - component: {fileID: 590197780}
+  m_Layer: 0
+  m_Name: PostFightTalkTrigger
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 0
+--- !u!4 &590197779
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 590197778}
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: 20.102558, y: 4.0622897, z: -2.5205708}
+  m_LocalScale: {x: 1.7661604, y: 1.3099291, z: 1}
+  m_Children: []
+  m_Father: {fileID: 102333919}
+  m_RootOrder: 4
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!61 &590197780
+BoxCollider2D:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 590197778}
+  m_Enabled: 1
+  m_Density: 1
+  m_Material: {fileID: 0}
+  m_IsTrigger: 1
+  m_UsedByEffector: 0
+  m_UsedByComposite: 0
+  m_Offset: {x: -9.584002, y: -2.8327084}
+  m_SpriteTilingProperty:
+    border: {x: 0, y: 0, z: 0, w: 0}
+    pivot: {x: 0, y: 0}
+    oldSize: {x: 0, y: 0}
+    newSize: {x: 0, y: 0}
+    adaptiveTilingThreshold: 0
+    drawMode: 0
+    adaptiveTiling: 0
+  m_AutoTiling: 0
+  serializedVersion: 2
+  m_Size: {x: 5.689709, y: 2.2589836}
+  m_EdgeRadius: 0
 --- !u!4 &604068960 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 3523868752140323694, guid: b9a301d35789f31409b9aaa0746161bb, type: 3}
@@ -1594,6 +1690,88 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 5f7201a12d95ffc409449d95f23cf332, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+--- !u!1 &822664157
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 822664158}
+  - component: {fileID: 822664159}
+  m_Layer: 0
+  m_Name: textprompt-01
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 0
+--- !u!4 &822664158
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 822664157}
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: -3.1146812, y: 3.0469816, z: 7.801812}
+  m_LocalScale: {x: 0.301, y: 0.301, z: 0.301}
+  m_Children: []
+  m_Father: {fileID: 1720324684}
+  m_RootOrder: 0
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!212 &822664159
+SpriteRenderer:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 822664157}
+  m_Enabled: 1
+  m_CastShadows: 0
+  m_ReceiveShadows: 0
+  m_DynamicOccludee: 1
+  m_MotionVectors: 1
+  m_LightProbeUsage: 1
+  m_ReflectionProbeUsage: 1
+  m_RayTracingMode: 0
+  m_RayTraceProcedural: 0
+  m_RenderingLayerMask: 1
+  m_RendererPriority: 0
+  m_Materials:
+  - {fileID: 10754, guid: 0000000000000000f000000000000000, type: 0}
+  m_StaticBatchInfo:
+    firstSubMesh: 0
+    subMeshCount: 0
+  m_StaticBatchRoot: {fileID: 0}
+  m_ProbeAnchor: {fileID: 0}
+  m_LightProbeVolumeOverride: {fileID: 0}
+  m_ScaleInLightmap: 1
+  m_ReceiveGI: 1
+  m_PreserveUVs: 0
+  m_IgnoreNormalsForChartDetection: 0
+  m_ImportantGI: 0
+  m_StitchLightmapSeams: 1
+  m_SelectedEditorRenderState: 0
+  m_MinimumChartSize: 4
+  m_AutoUVMaxDistance: 0.5
+  m_AutoUVMaxAngle: 89
+  m_LightmapParameters: {fileID: 0}
+  m_SortingLayerID: 0
+  m_SortingLayer: 0
+  m_SortingOrder: 0
+  m_Sprite: {fileID: 21300000, guid: 133a2de5ea477824ab49430706ff5921, type: 3}
+  m_Color: {r: 1, g: 1, b: 1, a: 1}
+  m_FlipX: 0
+  m_FlipY: 0
+  m_DrawMode: 0
+  m_Size: {x: 5.66, y: 4.79}
+  m_AdaptiveModeThreshold: 0.5
+  m_SpriteTileMode: 0
+  m_WasSpriteAssigned: 1
+  m_MaskInteraction: 0
+  m_SpriteSortPoint: 0
 --- !u!1001 &860158744
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -1663,6 +1841,63 @@ PrefabInstance:
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: b9a301d35789f31409b9aaa0746161bb, type: 3}
+--- !u!1 &866651066
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 866651067}
+  - component: {fileID: 866651068}
+  m_Layer: 0
+  m_Name: NestTrigger
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &866651067
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 866651066}
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: 27.28521, y: -13.785149, z: 0.62183285}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 1720324684}
+  m_RootOrder: 1
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!61 &866651068
+BoxCollider2D:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 866651066}
+  m_Enabled: 1
+  m_Density: 1
+  m_Material: {fileID: 0}
+  m_IsTrigger: 1
+  m_UsedByEffector: 0
+  m_UsedByComposite: 0
+  m_Offset: {x: -30.525837, y: 14.123934}
+  m_SpriteTilingProperty:
+    border: {x: 0, y: 0, z: 0, w: 0}
+    pivot: {x: 0, y: 0}
+    oldSize: {x: 0, y: 0}
+    newSize: {x: 0, y: 0}
+    adaptiveTilingThreshold: 0
+    drawMode: 0
+    adaptiveTiling: 0
+  m_AutoTiling: 0
+  serializedVersion: 2
+  m_Size: {x: 4.177696, y: 3.467907}
+  m_EdgeRadius: 0
 --- !u!1001 &869029194
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -1921,8 +2156,6 @@ MonoBehaviour:
   fleeTarget: {fileID: 11120585}
   isFleeing: 0
   enemyGone: 0
-  postFightDialogue: {fileID: 979286858}
-  postFightDialogueText: {fileID: 979286860}
   readyToSceneChange: 0
 --- !u!50 &919803049
 Rigidbody2D:
@@ -1960,6 +2193,9 @@ MonoBehaviour:
   enemyDialogue: {fileID: 1009461441}
   triggerRef: {fileID: 1770209433}
   enemyDialogueText: {fileID: 1009461442}
+  postFightDialogue: {fileID: 979286858}
+  postFightDialogueText: {fileID: 979286860}
+  postFightChickTrigger: {fileID: 590197778}
 --- !u!114 &930228692 stripped
 MonoBehaviour:
   m_CorrespondingSourceObject: {fileID: 2003082999719846243, guid: 549a2141ce55ed54aadf0b1dadcfb1a6, type: 3}
@@ -2505,8 +2741,8 @@ CapsuleCollider2D:
   m_IsTrigger: 1
   m_UsedByEffector: 0
   m_UsedByComposite: 0
-  m_Offset: {x: 0, y: 9.534854}
-  m_Size: {x: 0.5, y: 21.243738}
+  m_Offset: {x: 7.74, y: -0.71}
+  m_Size: {x: 14.94481, y: 14.94481}
   m_Direction: 0
 --- !u!1001 &1074005222
 PrefabInstance:
@@ -2708,8 +2944,6 @@ MonoBehaviour:
   fleeTarget: {fileID: 11120585}
   isFleeing: 0
   enemyGone: 0
-  postFightDialogue: {fileID: 0}
-  postFightDialogueText: {fileID: 0}
   readyToSceneChange: 0
 --- !u!61 &1101597987
 BoxCollider2D:
@@ -3152,8 +3386,6 @@ MonoBehaviour:
   fleeTarget: {fileID: 11120585}
   isFleeing: 0
   enemyGone: 0
-  postFightDialogue: {fileID: 0}
-  postFightDialogueText: {fileID: 0}
   readyToSceneChange: 0
 --- !u!61 &1229576526
 BoxCollider2D:
@@ -3375,6 +3607,69 @@ PrefabInstance:
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: adfd66632f24b954786e164744fdc6a3, type: 3}
+--- !u!1 &1327530599
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1327530601}
+  - component: {fileID: 1327530600}
+  m_Layer: 0
+  m_Name: TalkAtStart
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 0
+--- !u!114 &1327530600
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1327530599}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 293e7b7a341767b4c991644a6e6cc797, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  dialogue:
+    name: 
+    sentences:
+    - "GULLIVER\r\nHey little one...are you ok?\r"
+    - "BABY BIRD\r\nTweet.\r"
+    - "GULLIVER\r\nCan you talk?\r"
+    - "BABY BIRD\r\nTweet...tweet\r"
+    - "GULLIVER\r\nI'll take that as a no...do you have a name?\r"
+    - "BABY BIRD\r\nTweet...\r"
+    - "GULLIVER\r\nYou're only a little chick, aren't you? I'm going to call you
+      Chicklette.\r"
+    - "CHICKLETTE\r\n...tweet.\r"
+    - "GULLIVER\r\nThere is no use asking where you are from, you can't tell me.\r"
+    - "GULLIVER\r\nYou're definitely not a wild bird., I've never seen a wild bird
+      around here that looks like you\r."
+    - "CHICKLETTE\r\n.....\r"
+    - "GULLIVER\r\nI can't just leave you here. You're too little to be out here
+      alone. Come with me.\r"
+  dialoguePrompt: {fileID: 0}
+  clickToTalk: 0
+--- !u!4 &1327530601
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1327530599}
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: 6.671021, y: 0.039298773, z: -0.7972908}
+  m_LocalScale: {x: 1.7661604, y: 1.0074664, z: 1}
+  m_Children: []
+  m_Father: {fileID: 102333919}
+  m_RootOrder: 2
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!4 &1352812547 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 3523868752140323694, guid: b9a301d35789f31409b9aaa0746161bb, type: 3}
@@ -3947,6 +4242,93 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 9
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!1 &1720324683
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1720324684}
+  m_Layer: 0
+  m_Name: AtTheNest
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &1720324684
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1720324683}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: -28.195318, y: -3.0969815, z: -7.801812}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children:
+  - {fileID: 822664158}
+  - {fileID: 866651067}
+  m_Father: {fileID: 0}
+  m_RootOrder: 19
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!1 &1721887853
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1721887855}
+  - component: {fileID: 1721887854}
+  m_Layer: 0
+  m_Name: TalkAtNest
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 0
+--- !u!114 &1721887854
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1721887853}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 293e7b7a341767b4c991644a6e6cc797, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  dialogue:
+    name: 
+    sentences:
+    - 'GULLIVER
+
+      Well, looks like I have a roommate for tonight. Goodnight
+      little one.'
+    - 'CHICKLETTE
+
+      Tweet...'
+  dialoguePrompt: {fileID: 0}
+  clickToTalk: 0
+--- !u!4 &1721887855
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1721887853}
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: 6.671021, y: 0.039298773, z: -0.7972908}
+  m_LocalScale: {x: 1.7661604, y: 1.0074664, z: 1}
+  m_Children: []
+  m_Father: {fileID: 102333919}
+  m_RootOrder: 1
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &1746307481
 GameObject:
   m_ObjectHideFlags: 0
@@ -4147,6 +4529,17 @@ GameObject:
   m_CorrespondingSourceObject: {fileID: 2216346254223104999, guid: a91181defd9b07f4280f966a98ae4296, type: 3}
   m_PrefabInstance: {fileID: 1627431879}
   m_PrefabAsset: {fileID: 0}
+--- !u!114 &1770209426 stripped
+MonoBehaviour:
+  m_CorrespondingSourceObject: {fileID: 2216346254223104984, guid: a91181defd9b07f4280f966a98ae4296, type: 3}
+  m_PrefabInstance: {fileID: 1627431879}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1770209423}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ecd3085b79d11774fbe5a7e06f10734e, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!114 &1770209432
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -4163,6 +4556,16 @@ MonoBehaviour:
   cameraRef: {fileID: 994019340}
   selfDialogue1Text: {fileID: 1491621935}
   openingTalkDoneS2: 0
+  postChickDialogue: {fileID: 1327530599}
+  postChickDialogueText: {fileID: 1327530600}
+  chickTalkPrompt: {fileID: 2052119732}
+  TriggerRef: {fileID: 919803050}
+  babyRef: {fileID: 102333915}
+  nestPrompt: {fileID: 822664157}
+  nestTrigger: {fileID: 866651066}
+  nestTalk: {fileID: 1721887853}
+  nestTalkText: {fileID: 1721887854}
+  hasGotBaby: 0
 --- !u!114 &1770209433
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -4236,7 +4639,7 @@ Transform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 102333919}
-  m_RootOrder: 1
+  m_RootOrder: 3
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!4 &1802130683 stripped
 Transform:
@@ -4630,6 +5033,88 @@ PrefabInstance:
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: adfd66632f24b954786e164744fdc6a3, type: 3}
+--- !u!1 &2052119732
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 2052119733}
+  - component: {fileID: 2052119734}
+  m_Layer: 0
+  m_Name: textprompt-01
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 0
+--- !u!4 &2052119733
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2052119732}
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: 2.76, y: 1.46, z: 6.46}
+  m_LocalScale: {x: 0.5276507, y: 0.39134896, z: 0.29875582}
+  m_Children: []
+  m_Father: {fileID: 102333919}
+  m_RootOrder: 5
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!212 &2052119734
+SpriteRenderer:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2052119732}
+  m_Enabled: 1
+  m_CastShadows: 0
+  m_ReceiveShadows: 0
+  m_DynamicOccludee: 1
+  m_MotionVectors: 1
+  m_LightProbeUsage: 1
+  m_ReflectionProbeUsage: 1
+  m_RayTracingMode: 0
+  m_RayTraceProcedural: 0
+  m_RenderingLayerMask: 1
+  m_RendererPriority: 0
+  m_Materials:
+  - {fileID: 10754, guid: 0000000000000000f000000000000000, type: 0}
+  m_StaticBatchInfo:
+    firstSubMesh: 0
+    subMeshCount: 0
+  m_StaticBatchRoot: {fileID: 0}
+  m_ProbeAnchor: {fileID: 0}
+  m_LightProbeVolumeOverride: {fileID: 0}
+  m_ScaleInLightmap: 1
+  m_ReceiveGI: 1
+  m_PreserveUVs: 0
+  m_IgnoreNormalsForChartDetection: 0
+  m_ImportantGI: 0
+  m_StitchLightmapSeams: 1
+  m_SelectedEditorRenderState: 0
+  m_MinimumChartSize: 4
+  m_AutoUVMaxDistance: 0.5
+  m_AutoUVMaxAngle: 89
+  m_LightmapParameters: {fileID: 0}
+  m_SortingLayerID: 0
+  m_SortingLayer: 0
+  m_SortingOrder: 0
+  m_Sprite: {fileID: 21300000, guid: 133a2de5ea477824ab49430706ff5921, type: 3}
+  m_Color: {r: 1, g: 1, b: 1, a: 1}
+  m_FlipX: 0
+  m_FlipY: 0
+  m_DrawMode: 0
+  m_Size: {x: 5.66, y: 4.79}
+  m_AdaptiveModeThreshold: 0.5
+  m_SpriteTileMode: 0
+  m_WasSpriteAssigned: 1
+  m_MaskInteraction: 0
+  m_SpriteSortPoint: 0
 --- !u!1001 &2099419881
 PrefabInstance:
   m_ObjectHideFlags: 0

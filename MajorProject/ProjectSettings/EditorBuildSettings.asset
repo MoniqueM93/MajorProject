@@ -6,6 +6,60 @@ EditorBuildSettings:
   serializedVersion: 2
   m_Scenes:
   - enabled: 1
-    path: Assets/Scenes/TestingScene.unity
-    guid: 2cda990e2423bbf4892e6590ba056729
+    path: Assets/Scenes/mainmenu.unity
+    guid: 88039ab31fffa3a4fbfeff85c95a8008
+  - enabled: 1
+    path: Assets/Scenes/Scene1.unity
+    guid: dbe5c41154853f549bcd625fbd9fe9f1
+  - enabled: 1
+    path: Assets/Scenes/Scene2.unity
+    guid: d2af2d7ac50504e4f853263d2fda42fb
+  - enabled: 1
+    path: Assets/Scenes/Scene2-1.unity
+    guid: 495e2efc64267374dbec6caac8ed6683
+  - enabled: 1
+    path: Assets/Scenes/Scene3.unity
+    guid: 8ae83b8b290e85d4a9e316a453ab6634
+  - enabled: 1
+    path: Assets/Scenes/Scene4.unity
+    guid: 21459922de2c58d4cb91c5df89aa9d53
+  - enabled: 1
+    path: Assets/Scenes/Scene5.unity
+    guid: ed040ab747a1a544db8fc680a7519a01
+  - enabled: 1
+    path: Assets/Scenes/Scene6.unity
+    guid: 87faf08e3919168419226a3985890bf6
+  - enabled: 1
+    path: Assets/Scenes/Scene7.unity
+    guid: b0592ac47a31e0a43bb562ac0f8e034f
+  - enabled: 1
+    path: Assets/Scenes/Scene8.unity
+    guid: d781908900a7cb948b335a2acde1c107
+  - enabled: 1
+    path: Assets/Scenes/Scene9.unity
+    guid: 87375f4497c6c5048a5e93fee2925a86
+  - enabled: 1
+    path: Assets/Scenes/Scene10.unity
+    guid: a603a2ec2a39c3f43a668f0f25534925
+  - enabled: 1
+    path: Assets/Scenes/Scene11.unity
+    guid: 2e529676683322c49932a725ade39966
+  - enabled: 1
+    path: Assets/Scenes/Scene12.unity
+    guid: abc238dcab2e7494fb810125d66d3bf5
+  - enabled: 1
+    path: Assets/Scenes/Scene13.unity
+    guid: 45da6c95c49aaa0459cd22c2e12ddc1c
+  - enabled: 1
+    path: Assets/Scenes/Scene14.unity
+    guid: a70c80f7b04efad499c4191584a6420c
+  - enabled: 1
+    path: Assets/Scenes/Scene15.unity
+    guid: 762d90acdd874a64ea93c743cc5fc655
+  - enabled: 1
+    path: Assets/Scenes/Scene16.unity
+    guid: 44c0d076d2dc9d84f9020f7bf91c903f
+  - enabled: 1
+    path: Assets/Scenes/Scene17.unity
+    guid: 7f40fe3755a43d34b9e403483c6dec2c
   m_configObjects: {}

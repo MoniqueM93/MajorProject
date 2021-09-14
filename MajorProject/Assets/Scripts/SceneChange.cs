@@ -38,9 +38,9 @@ public class SceneChange : MonoBehaviour
     {
         if (collision.gameObject == leaveArea)
         {
-            if (Input.GetKey(KeyCode.UpArrow))
+            if (Input.GetKey(KeyCode.W))
             {
-                SceneManager.LoadScene("Secene2");
+                SceneManager.LoadScene("Scene2");
             }
         }
     }
