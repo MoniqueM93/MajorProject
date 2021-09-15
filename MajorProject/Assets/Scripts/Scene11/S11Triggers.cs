@@ -1,6 +1,7 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.SceneManagement;
 
 public class S11Triggers : MonoBehaviour
 {
@@ -65,7 +66,7 @@ public class S11Triggers : MonoBehaviour
     {
         if(collision.gameObject == eadieChar)
         {
-            if (Input.GetKey(KeyCode.UpArrow) && spokeToEadie == false)
+            if (Input.GetKey(KeyCode.W) && spokeToEadie == false)
             {
                 eadieTalk.SetActive(true);
                 eadieTalkText.TriggerDialogue();
@@ -76,7 +77,7 @@ public class S11Triggers : MonoBehaviour
 
         if (collision.gameObject == loveBirds)
         {
-            if (Input.GetKey(KeyCode.UpArrow))
+            if (Input.GetKey(KeyCode.W))
             {
                 loveBirdsTalk.SetActive(true);
                 loveBirdsTalkText.TriggerDialogue();
@@ -88,9 +89,9 @@ public class S11Triggers : MonoBehaviour
 
         if (collision.gameObject == storeDoor && aboutToLeave == false)
         {
-            if (Input.GetKey(KeyCode.UpArrow))
+            if (Input.GetKey(KeyCode.W))
             {
-                print("Awayyy we gooo");
+                SceneManager.LoadScene("Scene12");
                 aboutToLeave = true;
             }
         }

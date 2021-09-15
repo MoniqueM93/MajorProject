@@ -20,6 +20,11 @@ public class OpeningCamera : MonoBehaviour
 
     public GameObject tutorialScreen;
 
+
+    private void Start()
+    {
+        Time.timeScale = 1;
+    }
     public void cameraPosition()
     {
         isLerping = true;
@@ -29,6 +34,7 @@ public class OpeningCamera : MonoBehaviour
 
     public void BeginButton()
     {
+        print("is moving");
         cameraPosition();
         tutorialScreen.SetActive(false);
     }

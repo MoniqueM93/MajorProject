@@ -1,7 +1,7 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
-
+using UnityEngine.SceneManagement;
 public class S12Triggers : MonoBehaviour
 {
     public GameObject friendA;
@@ -96,7 +96,7 @@ public class S12Triggers : MonoBehaviour
         {
             if (Input.GetKey(KeyCode.W))
             {
-                print("Let's go home");
+                SceneManager.LoadScene("Scene13");
                 readyToLeave = true;
             }
         }

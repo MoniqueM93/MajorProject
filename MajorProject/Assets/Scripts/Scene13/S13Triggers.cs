@@ -1,6 +1,7 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.SceneManagement;
 
 public class S13Triggers : MonoBehaviour
 {
@@ -33,7 +34,7 @@ public class S13Triggers : MonoBehaviour
     IEnumerator timeToChangeScene()
     {
         yield return new WaitForSeconds(2);
-        print("Scene has changed");
+        SceneManager.LoadScene("Scene14");
     }
 
     private void Update()

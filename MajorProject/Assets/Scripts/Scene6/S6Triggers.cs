@@ -1,7 +1,7 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
-
+using UnityEngine.SceneManagement;
 public class S6Triggers : MonoBehaviour
 {
     public GameObject friendATextPrompt;
@@ -59,7 +59,7 @@ public class S6Triggers : MonoBehaviour
         {
             if (Input.GetKey(KeyCode.W) && readyToSwitch == false)
             {
-                print("GO THE NEXT LEVEL!");
+                SceneManager.LoadScene("Scene7");
                 readyToSwitch = true;
             }
         }

@@ -18,6 +18,7 @@ public class OpeningCamS2 : MonoBehaviour
 
     private void Start()
     {
+        Time.timeScale = 1;
         cameraPosition();
     }
 

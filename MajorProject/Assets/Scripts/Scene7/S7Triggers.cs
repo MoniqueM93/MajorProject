@@ -1,6 +1,7 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.SceneManagement;
 
 public class S7Triggers : MonoBehaviour
 {
@@ -102,7 +103,7 @@ public class S7Triggers : MonoBehaviour
         {
             if (Input.GetKey(KeyCode.W))
             {
-                print("scene is changing");
+                SceneManager.LoadScene("Scene8");
             }
         }
     }

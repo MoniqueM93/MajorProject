@@ -1,6 +1,7 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.SceneManagement;
 
 public class S10Triggers : MonoBehaviour
 {
@@ -66,7 +67,7 @@ public class S10Triggers : MonoBehaviour
         {
             if (Input.GetKey(KeyCode.W))
             {
-                print("To the next level");
+                SceneManager.LoadScene("Scene11");
                 canEnterPetStore = true;
             }
         }

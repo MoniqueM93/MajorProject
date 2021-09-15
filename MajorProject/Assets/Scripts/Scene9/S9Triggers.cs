@@ -1,6 +1,7 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.SceneManagement;
 
 public class S9Triggers : MonoBehaviour
 {
@@ -81,7 +82,7 @@ public class S9Triggers : MonoBehaviour
         {
             if (Input.GetKey(KeyCode.W))
             {
-                print("Let's goooooo");
+                SceneManager.LoadScene("Scene10");
                 letsLeave = true;
             }
         }

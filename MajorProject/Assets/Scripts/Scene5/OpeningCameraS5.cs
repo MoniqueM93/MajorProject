@@ -19,6 +19,7 @@ public class OpeningCameraS5 : MonoBehaviour
     private void Start()
     {
         cameraPosition();
+        Time.timeScale = 1;
     }
 
     public void cameraPosition()

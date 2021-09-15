@@ -1,6 +1,7 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.SceneManagement;
 
 public class S15Triggers : MonoBehaviour
 {
@@ -81,7 +82,7 @@ public class S15Triggers : MonoBehaviour
         {
             if (Input.GetKey(KeyCode.W))
             {
-                print("Scene will now change");
+                SceneManager.LoadScene("Scene16");
             }
         }
     }

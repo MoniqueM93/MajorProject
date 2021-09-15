@@ -1,6 +1,7 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.SceneManagement;
 
 public class S16Triggers : MonoBehaviour
 {
@@ -66,7 +67,7 @@ public class S16Triggers : MonoBehaviour
             if (Input.GetKey(KeyCode.W) && changeScene == false)
             {
                 changeScene = true;
-                print("Scene is over");
+                SceneManager.LoadScene("Scene17");
             }
         }
     }

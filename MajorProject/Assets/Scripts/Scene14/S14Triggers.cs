@@ -1,6 +1,7 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.SceneManagement;
 
 public class S14Triggers : MonoBehaviour
 {
@@ -122,7 +123,7 @@ public class S14Triggers : MonoBehaviour
         {
             if (Input.GetKey(KeyCode.W))
             {
-                print("End of scene");
+                SceneManager.LoadScene("Scene15");
             }
         }
     }
