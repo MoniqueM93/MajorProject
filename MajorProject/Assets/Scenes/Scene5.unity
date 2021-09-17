@@ -3535,6 +3535,55 @@ MonoBehaviour:
   dialogue:
     name: 
     sentences:
-    - sfasdgdshgdf
+    - 'EADIE
+
+      You''re definitely not a regular customer here.'
+    - 'GULLIVER
+
+      You must be Eadie. Bessie''s friend?'
+    - 'EADIE
+
+      Ah yes. Bessie and I lived in the same neighbourhood. Before
+      I escaped my owners to go on a new adventure.'
+    - 'GULLIVER
+
+      Why would you leave? If you had a home?'
+    - 'EADIE
+
+      Because what''s life without a little adventure? Plus, I was
+      one of eight Parrots. A bird needs her space.'
+    - 'GULLIVER
+
+      Maybe you can help me? I found a little chick, can''t be any
+      older than a few weeks. I don''t even know what breed it is.'
+    - 'EADIE
+
+      What does it look like? Size, features?'
+    - 'GULLIVER
+
+      Small...Tiny in fact. It''s yellow with red cheeks...It also
+      has a mohawk.'
+    - 'EADIE
+
+      Sounds like you have a Cockatiel on your hands. Very sweet birds.
+      Don''t belong on the streets though. Not in this part of the world.'
+    - 'EADIE
+
+      You may have saved it''s life.'
+    - 'GULLIVER
+
+      What can it eat? I have no idea what to feed it?'
+    - 'EADIE
+
+      I can set you up with some seeds. That''s what household birds
+      are use to. '
+    - 'GULLIVER
+
+      Can i get Cuttlefish bones here? Little guy has a damaged
+      beak.'
+    - 'EADIE
+
+      You''ll find those in the back, behind the register. Be careful
+      of the humans though. That''s where they usually are.'
   dialoguePrompt: {fileID: 0}
   clickToTalk: 0
