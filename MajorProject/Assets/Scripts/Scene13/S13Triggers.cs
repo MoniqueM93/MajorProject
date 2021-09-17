@@ -31,6 +31,11 @@ public class S13Triggers : MonoBehaviour
 
     public bool sceneChange = false;
 
+    private void Start()
+    {
+        Time.timeScale = 1;
+    }
+
     IEnumerator timeToChangeScene()
     {
         yield return new WaitForSeconds(2);

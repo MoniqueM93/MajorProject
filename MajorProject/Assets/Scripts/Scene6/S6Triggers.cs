@@ -17,6 +17,11 @@ public class S6Triggers : MonoBehaviour
 
     public bool readyToSwitch = false;
 
+    private void Start()
+    {
+        Time.timeScale = 1;
+    }
+
     private void OnTriggerEnter2D(Collider2D collision)
     {
         if (collision.gameObject == friendATalk)

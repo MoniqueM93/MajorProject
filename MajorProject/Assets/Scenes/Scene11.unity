@@ -737,7 +737,14 @@ MonoBehaviour:
     sentences:
     - 'EADIE
 
-      Go talk to new birds'
+      Gulliver, the Love Birds are here. '
+    - 'EADIE
+
+      You should talk to them. In the meantime, here are some seeds
+      for the little one.'
+    - 'GULLIVER
+
+      Thank you, Eadie. This is so helpful.'
   dialoguePrompt: {fileID: 0}
   clickToTalk: 0
 --- !u!114 &426086376 stripped
@@ -1321,9 +1328,10 @@ MonoBehaviour:
   dialogue:
     name: 
     sentences:
-    - 'gfdhd
+    - 'GULLIVER
 
-      PLS BE WORKING'
+      Hey, little one. I bet a household bird has never been to
+      the beach before. Let''s go! '
   dialoguePrompt: {fileID: 747295987}
   clickToTalk: 0
 --- !u!61 &747295989
@@ -1900,9 +1908,61 @@ MonoBehaviour:
   dialogue:
     name: 
     sentences:
-    - 'fisdhgsd
+    - 'ANGEL
 
-      WE THE LOVE BIRDS'
+      That is a strange looking pigeon.'
+    - 'MANGO
+
+      That isn''t a pigeon. That is a Seagull.'
+    - 'DIXIE
+
+      I didn''t know you could adopt Seagulls in the pet store.'
+    - 'MANGO
+
+      You can''t! Seagulls are wild birds.'
+    - 'GULLIVER
+
+      That''s right. I''m a wild bird. Maybe you can help me? I
+      have this little bird here, and I don''t know where it''s from.'
+    - 'ANGEL
+
+      A Cockatoo!'
+    - 'DIXIE
+
+      That''s not a Cockatoo, they are much bigger in size. Usually
+      white with yellow feathers on it''s head. '
+    - 'MANGO
+
+      It''s a cockaitel. A baby one at that.'
+    - 'GULLIVER
+
+      It doesn''t take yet. Would you have any idea where it might
+      have come from?'
+    - 'ANGEL
+
+      Our first nest! There was a bird aviary. Lots of us there. I''m
+      sure there was a few Cockatiels too!'
+    - 'GULLIVER
+
+      Where was that?'
+    - 'MANGO
+
+      The row of houses, not far from here. The aviary was in the backyard.'
+    - 'DIXIE
+
+      You should go there. It''s worrh a try. If there are no Cockatiels,
+      then the other birds could help.'
+    - 'MANGO
+
+      You could always leave the bird here for adoption, but it looks
+      like a baby.'
+    - 'ANGEL
+
+      Yeah, it''s only a baby. It needs to be with it''s family. I
+      don''t know why it''s out here alone.'
+    - 'GULLIVER
+
+      The row of houses. Got it. We can head there tomorrow. '
   dialoguePrompt: {fileID: 0}
   clickToTalk: 0
 --- !u!1 &1216617762
@@ -2512,57 +2572,6 @@ MonoBehaviour:
   doorPrompt: {fileID: 1458113789}
   aboutToLeave: 0
   talkToChick: 0
---- !u!1 &1504484388
-GameObject:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  serializedVersion: 6
-  m_Component:
-  - component: {fileID: 1504484389}
-  - component: {fileID: 1504484390}
-  m_Layer: 0
-  m_Name: collectTalk
-  m_TagString: Untagged
-  m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
-  m_IsActive: 1
---- !u!4 &1504484389
-Transform:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1504484388}
-  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 13.905403, y: 6.394051, z: -14.501633}
-  m_LocalScale: {x: 1, y: 1.3002211, z: 1}
-  m_Children: []
-  m_Father: {fileID: 1486348339}
-  m_RootOrder: 2
-  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!114 &1504484390
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1504484388}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 293e7b7a341767b4c991644a6e6cc797, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  dialogue:
-    name: 
-    sentences:
-    - 'fasfg
-
-      Okay, let''s leave!'
-  dialoguePrompt: {fileID: 0}
-  clickToTalk: 0
 --- !u!1001 &1504902568
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -3140,57 +3149,6 @@ Transform:
   m_CorrespondingSourceObject: {fileID: 3523868752140323694, guid: b9a301d35789f31409b9aaa0746161bb, type: 3}
   m_PrefabInstance: {fileID: 2090397375}
   m_PrefabAsset: {fileID: 0}
---- !u!1 &1864563053
-GameObject:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  serializedVersion: 6
-  m_Component:
-  - component: {fileID: 1864563054}
-  - component: {fileID: 1864563055}
-  m_Layer: 0
-  m_Name: stanbyTalk
-  m_TagString: Untagged
-  m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
-  m_IsActive: 1
---- !u!4 &1864563054
-Transform:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1864563053}
-  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 13.905403, y: 6.394051, z: -14.501633}
-  m_LocalScale: {x: 1, y: 1.3002211, z: 1}
-  m_Children: []
-  m_Father: {fileID: 1486348339}
-  m_RootOrder: 1
-  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!114 &1864563055
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1864563053}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 293e7b7a341767b4c991644a6e6cc797, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  dialogue:
-    name: 
-    sentences:
-    - 'grkjnmhe
-
-      You stay here!'
-  dialoguePrompt: {fileID: 0}
-  clickToTalk: 0
 --- !u!4 &1918003356 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 3523868752140323694, guid: b9a301d35789f31409b9aaa0746161bb, type: 3}

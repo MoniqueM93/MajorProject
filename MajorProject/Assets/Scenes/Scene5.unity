@@ -559,7 +559,24 @@ MonoBehaviour:
   dialogue:
     name: 
     sentences:
-    - leaving
+    - 'EADIE
+
+      Nicely done. I could use your stealth around here.'
+    - 'EADIE
+
+      Listen, there are some Love Birds moving into the next next to
+      me later today. Why don''t you bring your little friend over?'
+    - 'EADIE
+
+      I can get some seeds for you and the Love Birds may be able to
+      guide you.'
+    - 'GULLIVER
+
+      Sounds like a plan. I''ll head back now.'
+    - 'EADIE
+
+      Make sure to stock up on shooting seeds. You''ll need them if
+      the wild birds give chase.'
   dialoguePrompt: {fileID: 0}
   clickToTalk: 0
 --- !u!4 &287433658 stripped

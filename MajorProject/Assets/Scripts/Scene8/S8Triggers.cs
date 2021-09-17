@@ -28,6 +28,11 @@ public class S8Triggers : MonoBehaviour
 
     public bool allTalkDone = false;
 
+    private void Start()
+    {
+        Time.timeScale = 1;
+    }
+
     private void Update()
     {
         if (allTalkDone == true)

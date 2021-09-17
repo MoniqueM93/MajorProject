@@ -39,6 +39,10 @@ public class S7Triggers : MonoBehaviour
 
     public GameObject babyChick;
 
+    private void Start()
+    {
+        Time.timeScale = 1;
+    }
     private void OnTriggerEnter2D(Collider2D collision)
     {
         if (collision.gameObject == chickTrigger)

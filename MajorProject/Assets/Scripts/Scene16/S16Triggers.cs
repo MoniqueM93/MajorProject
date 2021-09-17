@@ -23,7 +23,9 @@ public class S16Triggers : MonoBehaviour
 
     private void Start()
     {
-        if(eadieHasCalled == false)
+        Time.timeScale = 1;
+
+        if (eadieHasCalled == false)
         {
             StartCoroutine("EadieCallOver");
         }

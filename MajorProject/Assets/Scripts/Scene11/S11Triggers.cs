@@ -28,6 +28,11 @@ public class S11Triggers : MonoBehaviour
 
     public bool talkToChick = false;
 
+    private void Start()
+    {
+        Time.timeScale = 1;
+    }
+
     private void Update()
     {
         if(spokeToEadie == true)

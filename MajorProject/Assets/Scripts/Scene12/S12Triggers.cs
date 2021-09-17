@@ -27,6 +27,10 @@ public class S12Triggers : MonoBehaviour
     public GameObject leavePrompt;
     public bool readyToLeave = false;
 
+    private void Start()
+    {
+        Time.timeScale = 1;
+    }
     IEnumerator StartTalkDelay()
     {
         yield return new WaitForSeconds(1);

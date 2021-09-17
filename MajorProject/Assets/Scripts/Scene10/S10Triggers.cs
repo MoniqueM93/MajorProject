@@ -24,6 +24,11 @@ public class S10Triggers : MonoBehaviour
     public GameObject petDoor;
     public GameObject doorPrompt;
 
+    private void Start()
+    {
+        Time.timeScale = 1;
+    }
+
     private void OnTriggerEnter2D(Collider2D collision)
     {
         if(collision.gameObject == thisFriendA)

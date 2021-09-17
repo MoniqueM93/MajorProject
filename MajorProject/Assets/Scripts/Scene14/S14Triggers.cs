@@ -35,6 +35,11 @@ public class S14Triggers : MonoBehaviour
 
     public playermove groundedRef;
 
+    private void Start()
+    {
+        Time.timeScale = 1;
+    }
+
     private void Update()
     {
         if (leaveIsActive == true)

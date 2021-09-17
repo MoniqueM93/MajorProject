@@ -25,7 +25,9 @@ public class S15Triggers : MonoBehaviour
 
     private void Start()
     {
-        if(selfTalkDone == false)
+        Time.timeScale = 1;
+
+        if (selfTalkDone == false)
         {
             StartCoroutine("SelfTalkStart");
         }

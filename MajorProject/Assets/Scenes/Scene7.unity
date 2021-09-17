@@ -1302,9 +1302,10 @@ MonoBehaviour:
   dialogue:
     name: 
     sentences:
-    - 'gswrdh
+    - 'GULLIVER
 
-      Hi birb. I need to talk to Bessie'
+      You are such a good bird. I''m going to speak to Bessie and
+      I will come back to get you.'
   dialoguePrompt: {fileID: 0}
   clickToTalk: 0
 --- !u!1001 &580857305
@@ -1714,9 +1715,9 @@ MonoBehaviour:
   dialogue:
     name: 
     sentences:
-    - 'gosngiop
+    - 'GULLIVER
 
-      I spoke to Bessie, let''s goooo!!'
+      Follow me, Chicklette. I''m going to introduce you to Bessie.'
   dialoguePrompt: {fileID: 0}
   clickToTalk: 0
 --- !u!114 &915812240 stripped
@@ -1845,9 +1846,48 @@ MonoBehaviour:
   dialogue:
     name: 
     sentences:
-    - 'opeisjgt
+    - 'BESSIE
 
-      What a cute bird!!'
+      What a small little bird! I have heard of wild Cockatiels in
+      Australia, but not here.'
+    - 'BESSIE
+
+      Have you spoken to Eadie?'
+    - 'GULLIVER
+
+      I did. She is an interesting character.'
+    - 'BESSIE
+
+      Believe me, she is always out for adventure. She likes the pet
+      store. She sees everyone and knows everything.'
+    - 'GULLIVER
+
+      She mentioned that there are some Love Birds moving in next
+      to her today. If I bring the chick by, they may be able to help.'
+    - 'BESSIE
+
+      Wonderful! You should consider bringing them some treats. Love
+      Birds are crazy about treats.'
+    - 'GULLIVER
+
+      Is there anything you would recommend?'
+    - 'BESSIE
+
+      Fruits and vegetables are good treats for us to give.'
+    - 'BESSIE
+
+      Cooked pasta and rice can also be nice, but lack of thumbs is
+      a problem for us to prepare them.'
+    - 'BESSIE
+
+      Maybe go to the supermarket and pick up some berries or grapes.
+      Not too many though, too much sugar can be bad for them.'
+    - 'GULLIVER
+
+      Thanks, Bessie. You have been an amazing help.'
+    - 'GULLIVER
+
+      We better get going, little one.'
   dialoguePrompt: {fileID: 0}
   clickToTalk: 0
 --- !u!1 &1008502120 stripped
@@ -2320,7 +2360,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1198912329}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 8.28, y: 10.11, z: -8.83073}
+  m_LocalPosition: {x: 8.28, y: 10.11, z: -9.28}
   m_LocalScale: {x: 1.8925, y: 1.7075, z: 1}
   m_Children:
   - {fileID: 267783849}
@@ -3350,9 +3390,13 @@ MonoBehaviour:
   dialogue:
     name: 
     sentences:
-    - 'jkfgkf
+    - 'BESSIE
 
-      Go get birb'
+      The bird stayed in the nest while you were gone. I kept an on
+      eye on it from here. I didn''t want to scare it.'
+    - 'BESSIE
+
+      Bring it up here so I can have a good look.'
   dialoguePrompt: {fileID: 0}
   clickToTalk: 0
 --- !u!1001 &1746448642

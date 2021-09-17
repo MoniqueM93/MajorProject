@@ -34,6 +34,10 @@ public class S17Triggers : MonoBehaviour
     public GameObject rightBlock;
     public GameObject endingTrigger;
 
+    private void Start()
+    {
+        Time.timeScale = 1;
+    }
     private void Update()
     {
         if(hasSpokeToFriend == true)
