@@ -1309,9 +1309,40 @@ MonoBehaviour:
   dialogue:
     name: 
     sentences:
-    - 'sfasdgds
+    - 'EADIE
 
-      Haiii'
+      You did a great job caring for the little chick.'
+    - 'EADIE
+
+      So, I want to give you a little proposal.'
+    - 'GULLIVER
+
+      What kind of proposal?'
+    - 'EADIE
+
+      I''m an old bird. I like to help others, just like you did.'
+    - 'EADIE
+
+      I sneak toys and treats out of here for household birds throughout
+      the town. Including the chicks aviary.'
+    - 'EADIE
+
+      I''m looking for a messanger bird to assist me. Would you be
+      interested?'
+    - 'GULLIVER
+
+      Really? Me?'
+    - 'EADIE
+
+      Yes, you! A lot of wild birds can be greedy. But you proven to
+      be a kind, genuine bird. So you got the job!'
+    - 'GULLIVER
+
+      I don''t know what to say, thank you!'
+    - 'EADIE
+
+      Your first task, bring these egg and grass flavored seeds to
+      the aviary in the backyard.'
   dialoguePrompt: {fileID: 0}
   clickToTalk: 0
 --- !u!1 &1016051479
@@ -2094,9 +2125,9 @@ MonoBehaviour:
   dialogue:
     name: 
     sentences:
-    - 'sfasdgds
+    - 'EADIE
 
-      Up here!!'
+      Gulliver, up here!'
   dialoguePrompt: {fileID: 0}
   clickToTalk: 0
 --- !u!1 &1508613839

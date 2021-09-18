@@ -736,9 +736,31 @@ MonoBehaviour:
   dialogue:
     name: 
     sentences:
-    - 'jfgjkfg
+    - 'GULLIVER
 
-      You may proceed.'
+      Hi there, we are looking for an aviary? We heard there would
+      be one in the backyards somewhere here.'
+    - 'STEVIE
+
+      You are right. There is an aviary in the backyard of the yellow
+      house.'
+    - 'STEVIE
+
+      They lost a baby yesterday.'
+    - 'GULLIVER
+
+      I may have found, said baby.'
+    - 'STEVIE
+
+      That''s him! That''s Charlie.'
+    - 'STEVIE
+
+      Where have you been, little one? TYou''re family have been worried
+      sick.'
+    - 'STEVIE
+
+      Take him to the house, but stay away from the neighbourhood
+      cats and dogs.'
   dialoguePrompt: {fileID: 0}
   clickToTalk: 0
 --- !u!1 &339256866
@@ -1020,9 +1042,10 @@ MonoBehaviour:
   dialogue:
     name: 
     sentences:
-    - 'gshyrsd
+    - 'STEVIE
 
-      Nicely done.'
+      This place would be much safer if more wild birds were like
+      you.'
   dialoguePrompt: {fileID: 0}
   clickToTalk: 0
 --- !u!1 &472479116
@@ -2130,9 +2153,32 @@ MonoBehaviour:
   dialogue:
     name: 
     sentences:
-    - 'sdftsdy
+    - 'KIWI
 
-      YOU''RE HOME!!!!'
+      CHARLIE!'
+    - 'KIWI
+
+      Where have you been? Don''t ever sneak out on us like that again.'
+    - 'KIWI
+
+      Thank you for bringing him home. We have been worried sick.'
+    - 'GULLIVER
+
+      It was my pleasure. Charlie was a pleasant little bird to
+      have around.'
+    - 'CHICKLETTE
+
+      Tweet...'
+    - 'KIWI
+
+      Come back and visit him whenever you like. Thank you for bringing
+      him home to his family.'
+    - 'GULLIVER
+
+      That would be wonderful.'
+    - 'GULLIVER
+
+      Goodbye, little one. I will miss you.'
   dialoguePrompt: {fileID: 0}
   clickToTalk: 0
 --- !u!1001 &1318398125

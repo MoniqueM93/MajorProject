@@ -1035,7 +1035,10 @@ MonoBehaviour:
     sentences:
     - 'GULLIVER
 
-      hfgjfgjghkh'
+      I miss Chicklette.'
+    - 'GULLIVER
+
+      It''s really quiet without him.'
   dialoguePrompt: {fileID: 0}
   clickToTalk: 0
 --- !u!4 &413022427 stripped
@@ -2276,9 +2279,15 @@ MonoBehaviour:
   dialogue:
     name: 
     sentences:
-    - 'sdgdsg
+    - 'BESSIE
 
-      Hai there'
+      Hi Gulliver. You did an amazing deed with that little chick.'
+    - 'BESSIE
+
+      If you have a moment, Eadie is wanting to speak to you.'
+    - 'BESSIE
+
+      Head on over to the pet store.'
   dialoguePrompt: {fileID: 0}
   clickToTalk: 0
 --- !u!4 &1066980219 stripped

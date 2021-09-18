@@ -1962,7 +1962,16 @@ MonoBehaviour:
       don''t know why it''s out here alone.'
     - 'GULLIVER
 
-      The row of houses. Got it. We can head there tomorrow. '
+      The row of houses. Got it. We can head there later. '
+    - 'GULLIVER
+
+      Also, I brought you some berries to say thank you.'
+    - 'DIXIE
+
+      TREATS!!'
+    - 'MANGO
+
+      Thank you!'
   dialoguePrompt: {fileID: 0}
   clickToTalk: 0
 --- !u!1 &1216617762
