@@ -86,6 +86,7 @@ public class S13Triggers : MonoBehaviour
         {
             if (Input.GetKey(KeyCode.W))
             {
+                bessiePrompt.SetActive(false);
                 bessieTalk.SetActive(true);
                 bessieTalkText.TriggerDialogue();
                 babyChick.SetActive(false);
@@ -98,6 +99,7 @@ public class S13Triggers : MonoBehaviour
         {
             if (Input.GetKey(KeyCode.W))
             {
+                chickTalk2Prompt.SetActive(false);
                 chickTalk2.SetActive(true);
                 chickTalk2Text.TriggerDialogue();
                 chickTalk2Done = true;

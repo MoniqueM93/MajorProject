@@ -32,6 +32,7 @@ public class S7Triggers : MonoBehaviour
     //talk to bessie when you have the chick
     public GameObject toBessieWithChick;
     public DialogueTrigger toBessieWithChickText;
+    public bool readyToGoWithBird = false;
 
     //when it is time to leave the map
     public GameObject leavePrompt;
@@ -55,7 +56,7 @@ public class S7Triggers : MonoBehaviour
             bessiePrompt.SetActive(true);
         }
 
-        if (collision.gameObject == leaveTrigger)
+        if (collision.gameObject == leaveTrigger && readyToGoWithBird == true)
         {
             leavePrompt.SetActive(true);
         }
@@ -100,10 +101,11 @@ public class S7Triggers : MonoBehaviour
                 toBessieWithChick.SetActive(true);
                 toBessieWithChickText.TriggerDialogue();
                 leaveTrigger.SetActive(true);
+                readyToGoWithBird = true;
             }
         }
 
-        if (collision.gameObject == leaveTrigger)
+        if (collision.gameObject == leaveTrigger && readyToGoWithBird == true)
         {
             if (Input.GetKey(KeyCode.W))
             {
@@ -130,7 +132,7 @@ public class S7Triggers : MonoBehaviour
             babyChick.GetComponent<FollowMovements>().enabled = true;
         }
 
-        if (collision.gameObject == leaveTrigger)
+        if (collision.gameObject == leaveTrigger && readyToGoWithBird == true)
         {
             leavePrompt.SetActive(false);
         }
