@@ -35,6 +35,8 @@ public class S14Triggers : MonoBehaviour
 
     public playermove groundedRef;
 
+    public AudioSource catMeow;
+
     private void Start()
     {
         Time.timeScale = 1;
@@ -75,6 +77,7 @@ public class S14Triggers : MonoBehaviour
         //for enemies
         if (collision.gameObject == catChar)
         {
+            catMeow.Play();
             GameManager.playerHealth -= 5;
             catChar.GetComponent<BoxCollider2D>().enabled = false;
         }

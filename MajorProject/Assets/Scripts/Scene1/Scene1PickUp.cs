@@ -9,6 +9,8 @@ public class Scene1PickUp : MonoBehaviour
 
     Scene1Script foodTaken;
 
+    public AudioSource foodSwipe;
+
     private void OnTriggerEnter2D(Collider2D collision)
     {
         if (collision.gameObject.tag.Equals("Player"))
@@ -22,6 +24,7 @@ public class Scene1PickUp : MonoBehaviour
     {
         if (beenStolen = true && Input.GetKey(KeyCode.W))
         {
+            foodSwipe.Play();
             gameObject.SetActive(false);
         }
     }
