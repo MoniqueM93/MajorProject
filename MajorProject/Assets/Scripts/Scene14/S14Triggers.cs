@@ -69,7 +69,7 @@ public class S14Triggers : MonoBehaviour
             friendTalkPrompt.SetActive(true);
         }
 
-        if (collision.gameObject == famChar && groundedRef.grounded == true && famTalkDone == false)
+        if (collision.gameObject == famChar && famTalkDone == false)
         {
             famTalkPrompt.SetActive(true);
         }

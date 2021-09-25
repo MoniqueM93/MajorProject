@@ -109,10 +109,10 @@ public class playermove : MonoBehaviour
 
     private void Death()
     {
-        gameObject.transform.position = respawnPoint.position;
+//        gameObject.transform.position = respawnPoint.position;
         GameManager.playerHealth = 100;
  //       AmmoText.ammoAmount = 0;
- //       SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex);
+        SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex);
     }
 
 }

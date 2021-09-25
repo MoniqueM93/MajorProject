@@ -4023,9 +4023,9 @@ MonoBehaviour:
   dialogue:
     name: 
     sentences:
-    - 'scgsdgh
+    - 'GULLIVER
 
-      NAP TIME!'
+      My nest is suddenly much more lonely.'
   dialoguePrompt: {fileID: 0}
   clickToTalk: 0
 --- !u!114 &2058852181 stripped

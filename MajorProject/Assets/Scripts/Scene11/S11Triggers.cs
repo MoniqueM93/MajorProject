@@ -48,7 +48,7 @@ public class S11Triggers : MonoBehaviour
             eadiePrompt.SetActive(true);
         }
 
-        if (collision.gameObject == loveBirds)
+        if (collision.gameObject == loveBirds && spokeToEadie == true)
         {
             loveBirdsPrompt.SetActive(true);
         }
@@ -80,7 +80,7 @@ public class S11Triggers : MonoBehaviour
             }
         }
 
-        if (collision.gameObject == loveBirds)
+        if (collision.gameObject == loveBirds && spokeToEadie == true)
         {
             if (Input.GetKey(KeyCode.W))
             {
@@ -109,7 +109,7 @@ public class S11Triggers : MonoBehaviour
             eadiePrompt.SetActive(false);
         }
 
-        if (collision.gameObject == loveBirds)
+        if (collision.gameObject == loveBirds && spokeToEadie == true)
         {
             loveBirdsPrompt.SetActive(false);
         }
