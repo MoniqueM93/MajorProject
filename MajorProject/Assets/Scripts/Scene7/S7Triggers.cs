@@ -40,6 +40,8 @@ public class S7Triggers : MonoBehaviour
 
     public GameObject babyChick;
 
+    public AudioSource bessieSounds;
+
     private void Start()
     {
         Time.timeScale = 1;
@@ -77,6 +79,7 @@ public class S7Triggers : MonoBehaviour
         {
             if (Input.GetKey(KeyCode.W))
             {
+                bessieSounds.Play();
                 bessieTalk.SetActive(true);
                 bessieTalkText.TriggerDialogue();
                 spokeToBessie = true;
@@ -98,6 +101,7 @@ public class S7Triggers : MonoBehaviour
         {
             if (Input.GetKey(KeyCode.W))
             {
+                bessieSounds.Play();
                 toBessieWithChick.SetActive(true);
                 toBessieWithChickText.TriggerDialogue();
                 leaveTrigger.SetActive(true);
@@ -123,6 +127,7 @@ public class S7Triggers : MonoBehaviour
 
         if (collision.gameObject == bessieTrigger)
         {
+            bessieSounds.Stop();
             bessiePrompt.SetActive(false);
         }
 

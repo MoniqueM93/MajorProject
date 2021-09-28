@@ -28,6 +28,10 @@ public class S11Triggers : MonoBehaviour
 
     public bool talkToChick = false;
 
+    //audio files
+    public AudioSource eadieSounds;
+    public AudioSource loveBirdSound;
+
     private void Start()
     {
         Time.timeScale = 1;
@@ -73,6 +77,7 @@ public class S11Triggers : MonoBehaviour
         {
             if (Input.GetKey(KeyCode.W) && spokeToEadie == false)
             {
+                eadieSounds.Play();
                 eadieTalk.SetActive(true);
                 eadieTalkText.TriggerDialogue();
                 spokeToEadie = true;
@@ -84,6 +89,7 @@ public class S11Triggers : MonoBehaviour
         {
             if (Input.GetKey(KeyCode.W))
             {
+                loveBirdSound.Play();
                 loveBirdsTalk.SetActive(true);
                 loveBirdsTalkText.TriggerDialogue();
                 loveBirds.GetComponent<BoxCollider2D>().enabled = false;
@@ -106,6 +112,7 @@ public class S11Triggers : MonoBehaviour
     {
         if (collision.gameObject == eadieChar)
         {
+            eadieSounds.Stop();
             eadiePrompt.SetActive(false);
         }
 
