@@ -21,6 +21,9 @@ public class S3GulliverTalk : MonoBehaviour
     public GameObject leaveArea;
     public GameObject leaveCanvas;
 
+    //audio
+    public AudioSource bessieSound;
+
     private void FixedUpdate()
     {
         if (camRef.hasFinishedMove == true && openingTalkS3Done == false)
@@ -56,6 +59,7 @@ public class S3GulliverTalk : MonoBehaviour
 
             if (Input.GetKey(KeyCode.W))
             {
+                bessieSound.Play();
                 talkToBessie.SetActive(true);
                 talkToBessieText.TriggerDialogue();
                 bessiePrompt.SetActive(false);

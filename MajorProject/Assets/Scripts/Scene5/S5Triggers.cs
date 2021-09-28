@@ -36,6 +36,10 @@ public class S5Triggers : MonoBehaviour
 
     public bool firstTalkDone = false;
 
+    //Audio files
+    public AudioSource swipeSound;
+    public AudioSource eadieSounds;
+
     private void FixedUpdate()
     {
         if (S5CamRef.hasFinishedMove == true && playOpeningOnce == false)
@@ -90,6 +94,7 @@ public class S5Triggers : MonoBehaviour
         {
             if (Input.GetKey(KeyCode.W))
             {
+                eadieSounds.Play();
                 EadieDialogue.SetActive(true);
                 EadieDialogueText.TriggerDialogue();
                 EadieTalkPrompt.SetActive(false);
@@ -103,6 +108,7 @@ public class S5Triggers : MonoBehaviour
         {
             if (Input.GetKey(KeyCode.W))
             {
+                swipeSound.Play();
                 Destroy(fishBoneCollect);
                 hasFishBone = true;
             }
@@ -112,6 +118,7 @@ public class S5Triggers : MonoBehaviour
         {
             if (Input.GetKey(KeyCode.W))
             {
+                eadieSounds.Play();
                 EadieTalkPrompt.SetActive(false);
                 eadieLeaveTalk.SetActive(true);
                 eadieLeaveTalkText.TriggerDialogue();
@@ -136,6 +143,7 @@ public class S5Triggers : MonoBehaviour
         
         if  (collision.gameObject ==  eadieTrigger && firstTalkDone == true)
         {
+            eadieSounds.Stop();
             EadieDialogue.SetActive(false);
         }
 

@@ -32,6 +32,8 @@ public class S9Triggers : MonoBehaviour
 
     public bool letsLeave = false;
 
+    public AudioSource swipeSound;
+
     private void Start()
     {
         Time.timeScale = 1;
@@ -78,6 +80,7 @@ public class S9Triggers : MonoBehaviour
         {
             if (Input.GetKey(KeyCode.W))
             {
+                swipeSound.Play();
                 foodCollect.SetActive(false);
                 foodBeenTaken = true;
             }

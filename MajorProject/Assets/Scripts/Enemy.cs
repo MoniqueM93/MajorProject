@@ -29,6 +29,9 @@ public class Enemy : MonoBehaviour
 
     public bool readyToSceneChange = false;
 
+    //audio
+    public AudioSource fleeSounds;
+
     Scene currentScene;
     string sceneName;
 
@@ -78,6 +81,7 @@ public class Enemy : MonoBehaviour
 
     void TimeToFire()
     {
+        fleeSounds.Play();
         if (Time.time > nextFire)
         {
             print("Fire");

@@ -21,10 +21,14 @@ public class Scene1Friend : MonoBehaviour
 
     public bool openingTalkDone = false;
 
+    //audio
+    public AudioSource seagullSounds;
+
     private void FixedUpdate()
     {
         if (cameraScript.hasFinishedMove == true && openingTalkDone == false)
         {
+            seagullSounds.Play();
             openingTalk.SetActive(true);
             openingSpeakText.TriggerDialogue();
         }

@@ -16,8 +16,11 @@ public class OpeningCamS2 : MonoBehaviour
 
     public bool hasFinishedMove = false;
 
+    public AudioSource chickScream;
+
     private void Start()
     {
+        chickScream.Play();
         Time.timeScale = 1;
         cameraPosition();
     }
