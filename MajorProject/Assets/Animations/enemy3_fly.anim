@@ -6,7 +6,7 @@ AnimationClip:
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_Name: enemy1_fly
+  m_Name: enemy3_fly
   serializedVersion: 6
   m_Legacy: 0
   m_Compressed: 0
@@ -21,17 +21,17 @@ AnimationClip:
   - curve:
     - time: 0
       value: {fileID: 6457080526365527131, guid: 37dbc70129f637a41a3381b9803c6fe5, type: 3}
-    - time: 0.05
+    - time: 0.083333336
       value: {fileID: 7301229493634203488, guid: 37dbc70129f637a41a3381b9803c6fe5, type: 3}
-    - time: 0.13333334
+    - time: 0.16666667
       value: {fileID: 7317081455886813277, guid: 37dbc70129f637a41a3381b9803c6fe5, type: 3}
-    - time: 0.21666667
+    - time: 0.25
       value: {fileID: -2645993232879205138, guid: 37dbc70129f637a41a3381b9803c6fe5, type: 3}
-    - time: 0.3
+    - time: 0.33333334
       value: {fileID: 7317081455886813277, guid: 37dbc70129f637a41a3381b9803c6fe5, type: 3}
-    - time: 0.38333333
+    - time: 0.41666666
       value: {fileID: 7301229493634203488, guid: 37dbc70129f637a41a3381b9803c6fe5, type: 3}
-    - time: 0.46666667
+    - time: 0.5
       value: {fileID: 6457080526365527131, guid: 37dbc70129f637a41a3381b9803c6fe5, type: 3}
     attribute: m_Sprite
     path: Enemy_idle
@@ -64,7 +64,7 @@ AnimationClip:
     m_AdditiveReferencePoseClip: {fileID: 0}
     m_AdditiveReferencePoseTime: 0
     m_StartTime: 0
-    m_StopTime: 0.48333335
+    m_StopTime: 0.51666665
     m_OrientationOffsetY: 0
     m_Level: 0
     m_CycleOffset: 0

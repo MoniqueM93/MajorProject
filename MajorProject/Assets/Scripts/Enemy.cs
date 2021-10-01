@@ -24,6 +24,10 @@ public class Enemy : MonoBehaviour
     public bool isFleeing = false;
     public bool enemyGone = false;
 
+    public GameObject birdColliders;
+
+    private Vector3 directionToFleePoint;
+
     //public GameObject postFightDialogue;
     //public DialogueTrigger postFightDialogueText;
 
@@ -72,6 +76,8 @@ public class Enemy : MonoBehaviour
 
         if (GameManager.enemyHealth < 10 && isInjured == true)
         {
+            MoveToFlee();
+            birdColliders.SetActive(false);
             TimeToFlee();
             isShooting = false;
         }
@@ -81,6 +87,12 @@ public class Enemy : MonoBehaviour
     {
         directionToPlayer = (player.transform.position - transform.position).normalized;
         enemyRB.velocity = new Vector2(directionToPlayer.x, directionToPlayer.y) * moveSpeed;
+    }
+
+    private void MoveToFlee()
+    {
+        directionToFleePoint = (fleeTarget.transform.position - transform.position).normalized;
+        enemyRB.velocity = new Vector2(directionToFleePoint.x, directionToFleePoint.y) * moveSpeed;
     }
 
     void TimeToFire()
