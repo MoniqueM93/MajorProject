@@ -32,11 +32,14 @@ public class Enemy : MonoBehaviour
     //audio
     public AudioSource fleeSounds;
 
+    Animator enemyAnim;
+
     Scene currentScene;
     string sceneName;
 
     private void Start()
     {
+        enemyAnim = GetComponentInChildren<Animator>();
         enemyRB = GetComponent<Rigidbody2D>();
         player = FindObjectOfType(typeof(playermove)) as playermove;
         moveSpeed = 5f;
@@ -60,7 +63,8 @@ public class Enemy : MonoBehaviour
 
         if (fightTrigger.hasPassed == true && isInjured == false)
         {
-        //    print("Ready to go");
+            //    print("Ready to go");
+            enemyAnim.SetBool("isAttacking", true);
             MoveEnemy();
             TimeToFire();
             isShooting = true;
