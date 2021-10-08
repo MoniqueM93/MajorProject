@@ -558,7 +558,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!4 &243004393
 Transform:
   m_ObjectHideFlags: 0
@@ -633,7 +633,9 @@ MonoBehaviour:
   fleeTarget: {fileID: 349556767}
   isFleeing: 0
   enemyGone: 0
+  birdColliders: {fileID: 0}
   readyToSceneChange: 0
+  fleeSounds: {fileID: 0}
 --- !u!61 &243004397
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -1715,7 +1717,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!50 &854754192
 Rigidbody2D:
   serializedVersion: 4
@@ -1757,7 +1759,9 @@ MonoBehaviour:
   fleeTarget: {fileID: 349556767}
   isFleeing: 0
   enemyGone: 0
+  birdColliders: {fileID: 0}
   readyToSceneChange: 0
+  fleeSounds: {fileID: 0}
 --- !u!61 &854754194
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -3138,7 +3142,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!50 &1940453516
 Rigidbody2D:
   serializedVersion: 4
@@ -3180,7 +3184,9 @@ MonoBehaviour:
   fleeTarget: {fileID: 349556767}
   isFleeing: 0
   enemyGone: 0
+  birdColliders: {fileID: 0}
   readyToSceneChange: 0
+  fleeSounds: {fileID: 0}
 --- !u!61 &1940453518
 BoxCollider2D:
   m_ObjectHideFlags: 0

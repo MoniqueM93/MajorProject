@@ -24,6 +24,14 @@ public class Scene1Friend : MonoBehaviour
     //audio
     public AudioSource seagullSounds;
 
+    public Transform friendTurnAnim;
+    private float postTalkAnimator;
+
+    private void Start()
+    {
+        postTalkAnimator = friendTurnAnim.localScale.x;
+    }
+
     private void FixedUpdate()
     {
         if (cameraScript.hasFinishedMove == true && openingTalkDone == false)
@@ -36,6 +44,8 @@ public class Scene1Friend : MonoBehaviour
         if (openingTalkDone == true)
         {
             openingTalk.SetActive(false);
+
+            friendTurnAnim.localScale = new Vector3(-postTalkAnimator, friendTurnAnim.localScale.y, friendTurnAnim.localScale.z);
         }
 
         if (stealDoneRef.beenStolen == true)
@@ -58,12 +68,14 @@ public class Scene1Friend : MonoBehaviour
         {
             stealUnsuccess.SetActive(true);
             stolenUnsuccessText.TriggerDialogue();
+            speakPrompt.SetActive(false);
         }
         else if (hasTheFood ==  true && Input.GetKey(KeyCode.W))
         {
             stealSuccess.SetActive(true);
             stolenSuccessText.TriggerDialogue();
             S1AllTalkDone = true;
+            speakPrompt.SetActive(false);
         }
     }
 
