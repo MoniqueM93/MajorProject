@@ -104,6 +104,7 @@ public class S14Triggers : MonoBehaviour
                 friendATalk.SetActive(true);
                 friendATalkText.TriggerDialogue();
                 friendBlocks.SetActive(false);
+                friendTalkPrompt.SetActive(false);
             }
         }
 
@@ -114,6 +115,7 @@ public class S14Triggers : MonoBehaviour
                 friendATalk2.SetActive(true);
                 friendATalk2Text.TriggerDialogue();
                 leaveIsActive = true;
+                friendTalkPrompt.SetActive(false);
             }
         }
 
@@ -123,6 +125,7 @@ public class S14Triggers : MonoBehaviour
             {
                 famTalkDone = true;
                 StartCoroutine("ToTalkToFamily");
+                famTalkPrompt.SetActive(false);
             }
         }
 

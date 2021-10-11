@@ -57,6 +57,7 @@ public class S5Triggers : MonoBehaviour
         if (readyToLeave == true)
         {
             sceneDoor.SetActive(true);
+            EadieTalkPrompt.SetActive(false);
         }
     }
 

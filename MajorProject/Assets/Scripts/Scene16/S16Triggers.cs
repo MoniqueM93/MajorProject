@@ -61,6 +61,7 @@ public class S16Triggers : MonoBehaviour
                 eadieTalk.SetActive(true);
                 eadieTalkText.TriggerDialogue();
                 leaveArea.SetActive(true);
+                eadiePrompt.SetActive(false);
             }
         }
 

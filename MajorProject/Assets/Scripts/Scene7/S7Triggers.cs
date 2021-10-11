@@ -72,6 +72,7 @@ public class S7Triggers : MonoBehaviour
             {
                 firstChickTalk.SetActive(true);
                 firstChickTalkText.TriggerDialogue();
+                chickTalkPrompt.SetActive(false);
             }
         }
 
@@ -83,6 +84,7 @@ public class S7Triggers : MonoBehaviour
                 bessieTalk.SetActive(true);
                 bessieTalkText.TriggerDialogue();
                 spokeToBessie = true;
+                bessiePrompt.SetActive(false);
             }
 
         }
@@ -94,6 +96,7 @@ public class S7Triggers : MonoBehaviour
                 postChickTalk.SetActive(true);
                 postChickTalkText.TriggerDialogue();
                 hasTheChick = true;
+                chickTalkPrompt.SetActive(false);
             }
         }
 
@@ -106,6 +109,7 @@ public class S7Triggers : MonoBehaviour
                 toBessieWithChickText.TriggerDialogue();
                 leaveTrigger.SetActive(true);
                 readyToGoWithBird = true;
+                bessiePrompt.SetActive(false);
             }
         }
 

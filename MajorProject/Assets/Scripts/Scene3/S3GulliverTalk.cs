@@ -74,6 +74,11 @@ public class S3GulliverTalk : MonoBehaviour
 
     private void OnTriggerExit2D(Collider2D collision)
     {
+        if(collision.gameObject == bessieTrigger)
+        {
+            bessiePrompt.SetActive(false);
+        }
+
         if(collision.gameObject == leaveArea)
         {
             leaveCanvas.SetActive(false);

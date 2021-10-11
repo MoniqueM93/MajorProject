@@ -17,6 +17,29 @@ public class S6Triggers : MonoBehaviour
 
     public bool readyToSwitch = false;
 
+
+    //to stop talking in mid air
+//    public float talkWait;
+//    public playermove isGrounded;
+//    public bool talkCanStart = false;
+
+//    IEnumerator ToStartDialogue()
+//    {
+//        yield return new WaitForSeconds(talkWait);
+//        talkCanStart = true;
+//    }
+
+//    public void Update()
+//    {
+//        if(isGrounded.grounded == true)
+//        {
+//            StartCoroutine("ToStartDialogue");
+//        } else if (isGrounded.grounded == false)
+//        {
+//            talkCanStart = false;
+//        }
+//    }
+
     private void Start()
     {
         Time.timeScale = 1;
@@ -33,7 +56,6 @@ public class S6Triggers : MonoBehaviour
         {
             friendBTextPrompt.SetActive(true);
         }
-
         if (collision.gameObject == leaveTrigger)
         {
             leavePrompt.SetActive(true);
@@ -42,12 +64,11 @@ public class S6Triggers : MonoBehaviour
 
     private void OnTriggerStay2D(Collider2D collision)
     {
-        if (collision.gameObject == friendATalk)
-        {
-            if (Input.GetKey(KeyCode.W))
-            {
+        if (collision.gameObject == friendATalk) {
+            if (Input.GetKey(KeyCode.W)){
                 friendATalk.SetActive(true);
                 friendATalkText.TriggerDialogue();
+                friendATextPrompt.SetActive(false);
             }
         }        
         
@@ -57,6 +78,7 @@ public class S6Triggers : MonoBehaviour
             {
                 friendBTalk.SetActive(true);
                 friendBTalkText.TriggerDialogue();
+                friendBTextPrompt.SetActive(false);
             }
         }
 

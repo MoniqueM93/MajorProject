@@ -41,7 +41,7 @@ public class S10Triggers : MonoBehaviour
             friendBPrompt.SetActive(true);
         }
 
-        if (collision.gameObject == petDoor && isTalkDone == true)
+        if (collision.gameObject == petDoor)
         {
             doorPrompt.SetActive(true);
         }
@@ -56,6 +56,7 @@ public class S10Triggers : MonoBehaviour
                 friendATalk.SetActive(true);
                 friendATalkText.TriggerDialogue();
                 isTalkDone = true;
+                friendAPrompt.SetActive(false);
             }
         }
 
@@ -65,10 +66,11 @@ public class S10Triggers : MonoBehaviour
             {
                 friendBTalk.SetActive(true);
                 friendBTalkText.TriggerDialogue();
+                friendBPrompt.SetActive(false);
             }
         }
 
-        if (collision.gameObject == petDoor && isTalkDone == true && canEnterPetStore == false)
+        if (collision.gameObject == petDoor)
         {
             if (Input.GetKey(KeyCode.W))
             {
@@ -90,7 +92,7 @@ public class S10Triggers : MonoBehaviour
             friendBPrompt.SetActive(false);
         }
 
-        if (collision.gameObject == petDoor && isTalkDone == true)
+        if (collision.gameObject == petDoor)
         {
             doorPrompt.SetActive(false);
         }

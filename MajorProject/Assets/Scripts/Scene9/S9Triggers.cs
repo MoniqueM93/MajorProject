@@ -34,22 +34,33 @@ public class S9Triggers : MonoBehaviour
 
     public AudioSource swipeSound;
 
+    public bool hitTrigger = false;
+
     private void Start()
     {
         Time.timeScale = 1;
     }
+    
+    IEnumerator waitToLand()
+    {
+        yield return new WaitForSeconds(1);
+        standbyTalk.SetActive(true);
+        standbyTalkText.TriggerDialogue();
+        standbyTrigger.SetActive(false);
+        standbyBlock.SetActive(false);
+        chickRef.GetComponent<FollowCode>().enabled = false;
+        chickRef.GetComponent<FollowMovements>().enabled = false;
+        chickAnimateRef.GetComponent<Animator>().enabled = false;
+
+    }
 
     private void OnTriggerEnter2D(Collider2D collision)
     {
-        if (collision.gameObject == standbyTrigger)
+        if (collision.gameObject == standbyTrigger && hitTrigger == false)
         {
-            standbyTalk.SetActive(true);
-            standbyTalkText.TriggerDialogue();
-            standbyTrigger.SetActive(false);
-            standbyBlock.SetActive(false);
-            chickRef.GetComponent<FollowCode>().enabled = false;
-            chickRef.GetComponent<FollowMovements>().enabled = false;
-            chickAnimateRef.GetComponent<Animator>().enabled = false;
+            StartCoroutine("waitToLand");
+
+            hitTrigger = true;
         }
 
         if (collision.gameObject == foodCollect)

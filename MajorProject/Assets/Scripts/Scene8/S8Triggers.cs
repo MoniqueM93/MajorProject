@@ -70,6 +70,7 @@ public class S8Triggers : MonoBehaviour
                 friendAFirstText.TriggerDialogue();
                 isFirstTalkDone = true;
                 friendB.GetComponent<BoxCollider2D>().enabled = true;
+                friendAPrompt.SetActive(false);
             }
         }
 
@@ -80,6 +81,7 @@ public class S8Triggers : MonoBehaviour
                 friendBTalk.SetActive(true);
                 friendBTalkText.TriggerDialogue();
                 isSecondTalkDone = true;
+                friendBPrompt.SetActive(false);
             }
         }
 
@@ -90,6 +92,7 @@ public class S8Triggers : MonoBehaviour
                 friendASecond.SetActive(true);
                 friendASecondText.TriggerDialogue();
                 allTalkDone = true;
+                friendAPrompt.SetActive(false);
             }
         }
 

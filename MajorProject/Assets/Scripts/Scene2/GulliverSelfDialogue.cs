@@ -77,6 +77,7 @@ public class GulliverSelfDialogue : MonoBehaviour
             {
                 nestTalk.SetActive(true);
                 nestTalkText.TriggerDialogue();
+                nestPrompt.SetActive(false);
                 StartCoroutine("changeScene");
             }
         }

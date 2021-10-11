@@ -68,6 +68,7 @@ public class S15Triggers : MonoBehaviour
                 bessieTalk.SetActive(true);
                 bessieTalkText.TriggerDialogue();
                 leaveArea.SetActive(true);
+                bessieTalkPrompt.SetActive(false);
             }
         }
 
@@ -77,6 +78,7 @@ public class S15Triggers : MonoBehaviour
             {
                 nestAreaTalk.SetActive(true);
                 nestAreaTalkText.TriggerDialogue();
+                nestAreaPrompt.SetActive(false);
             }
         }
 

@@ -641,6 +641,7 @@ MonoBehaviour:
   leavePrompt: {fileID: 1097345088}
   letsLeave: 0
   swipeSound: {fileID: 71494377}
+  hitTrigger: 0
 --- !u!1 &324891205
 GameObject:
   m_ObjectHideFlags: 0
@@ -780,7 +781,7 @@ BoxCollider2D:
   m_IsTrigger: 1
   m_UsedByEffector: 0
   m_UsedByComposite: 0
-  m_Offset: {x: 0.6100888, y: 8.621338}
+  m_Offset: {x: 0.074440956, y: 7.5763845}
   m_SpriteTilingProperty:
     border: {x: 0, y: 0, z: 0, w: 0}
     pivot: {x: 0, y: 0}
@@ -791,7 +792,7 @@ BoxCollider2D:
     adaptiveTiling: 0
   m_AutoTiling: 0
   serializedVersion: 2
-  m_Size: {x: 1.1631861, y: 3.418724}
+  m_Size: {x: 2.2344818, y: 0.38045692}
   m_EdgeRadius: 0
 --- !u!1 &414035624
 GameObject:
@@ -2612,7 +2613,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1829209969}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: -0.01, y: 0.25, z: -1.99}
+  m_LocalPosition: {x: -0.01, y: 0.25, z: 1.88}
   m_LocalScale: {x: 0.08785731, y: 0.08785731, z: 0.08785731}
   m_Children: []
   m_Father: {fileID: 1876560806}

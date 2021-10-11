@@ -75,6 +75,7 @@ public class S12Triggers : MonoBehaviour
             {
                 friendATalk.SetActive(true);
                 friendATalkText.TriggerDialogue();
+                friendAPrompt.SetActive(false);
             }
         }
 
@@ -84,6 +85,7 @@ public class S12Triggers : MonoBehaviour
             {
                 friendBTalk.SetActive(true);
                 friendBTalkText.TriggerDialogue();
+                friendBPrompt.SetActive(false);
             }
         }
 
@@ -93,6 +95,7 @@ public class S12Triggers : MonoBehaviour
             {
                 friendCTalk.SetActive(true);
                 friendCTalkText.TriggerDialogue();
+                friendCPrompt.SetActive(false);
             }
         }
 
