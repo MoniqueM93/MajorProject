@@ -64,7 +64,8 @@ public class S6Triggers : MonoBehaviour
 
     private void OnTriggerStay2D(Collider2D collision)
     {
-        if (collision.gameObject == friendATalk) {
+        if (collision.gameObject == friendATalk)
+ {
             if (Input.GetKey(KeyCode.W)){
                 friendATalk.SetActive(true);
                 friendATalkText.TriggerDialogue();
