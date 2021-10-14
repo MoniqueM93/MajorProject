@@ -439,7 +439,7 @@ MeshRenderer:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 195022056}
-  m_Enabled: 1
+  m_Enabled: 0
   m_CastShadows: 1
   m_ReceiveShadows: 1
   m_DynamicOccludee: 1
@@ -489,11 +489,12 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 195022056}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: -17.4, y: -1.9, z: 0}
+  m_LocalPosition: {x: -17.4, y: -1.9, z: 4.58}
   m_LocalScale: {x: 1.8259, y: 1.8259, z: 1.8259}
   m_Children:
   - {fileID: 487348839}
   - {fileID: 437553943}
+  - {fileID: 1507762104}
   m_Father: {fileID: 0}
   m_RootOrder: 11
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
@@ -702,9 +703,29 @@ MonoBehaviour:
   dialogue:
     name: 
     sentences:
-    - 'gasdgh
+    - 'FRIEND
 
-      I am friend A'
+      Gulliver! Where have you been all day?'
+    - 'GULLIVER
+
+      It is a long story.'
+    - 'FRIEND
+
+      Is that a baby bird? Is it for me?'
+    - 'GULLIVER
+
+      No. Not the baby bird is not for you.'
+    - 'GULLIVER
+
+      It was attacked near my nest last night. I couldn''t leave
+      it. We are heading to the houses near here, it''s family could be there.'
+    - 'FRIEND
+
+      Good call. Humans tend to have little birds like that for pets.'
+    - 'FRIEND
+
+      Just be careful of any wild birds. They won''t be as friendly
+      as you are to the little one.'
   dialoguePrompt: {fileID: 0}
   clickToTalk: 0
 --- !u!1 &490468564
@@ -953,6 +974,88 @@ Transform:
   m_Father: {fileID: 530836601}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!1 &513500859
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 513500860}
+  - component: {fileID: 513500861}
+  m_Layer: 0
+  m_Name: seagullfriend_sprites_0
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &513500860
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 513500859}
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: 0, y: -0.067, z: 1.53}
+  m_LocalScale: {x: -0.2643221, y: 0.2643221, z: 0.2643221}
+  m_Children: []
+  m_Father: {fileID: 1507762104}
+  m_RootOrder: 0
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!212 &513500861
+SpriteRenderer:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 513500859}
+  m_Enabled: 1
+  m_CastShadows: 0
+  m_ReceiveShadows: 0
+  m_DynamicOccludee: 1
+  m_MotionVectors: 1
+  m_LightProbeUsage: 1
+  m_ReflectionProbeUsage: 1
+  m_RayTracingMode: 0
+  m_RayTraceProcedural: 0
+  m_RenderingLayerMask: 1
+  m_RendererPriority: 0
+  m_Materials:
+  - {fileID: 10754, guid: 0000000000000000f000000000000000, type: 0}
+  m_StaticBatchInfo:
+    firstSubMesh: 0
+    subMeshCount: 0
+  m_StaticBatchRoot: {fileID: 0}
+  m_ProbeAnchor: {fileID: 0}
+  m_LightProbeVolumeOverride: {fileID: 0}
+  m_ScaleInLightmap: 1
+  m_ReceiveGI: 1
+  m_PreserveUVs: 0
+  m_IgnoreNormalsForChartDetection: 0
+  m_ImportantGI: 0
+  m_StitchLightmapSeams: 1
+  m_SelectedEditorRenderState: 0
+  m_MinimumChartSize: 4
+  m_AutoUVMaxDistance: 0.5
+  m_AutoUVMaxAngle: 89
+  m_LightmapParameters: {fileID: 0}
+  m_SortingLayerID: 0
+  m_SortingLayer: 0
+  m_SortingOrder: 0
+  m_Sprite: {fileID: 8453726625036032471, guid: d96317d10e1133a40a7ea4e4d76e575f, type: 3}
+  m_Color: {r: 1, g: 1, b: 1, a: 1}
+  m_FlipX: 0
+  m_FlipY: 0
+  m_DrawMode: 0
+  m_Size: {x: 8.93, y: 7.270361}
+  m_AdaptiveModeThreshold: 0.5
+  m_SpriteTileMode: 0
+  m_WasSpriteAssigned: 1
+  m_MaskInteraction: 0
+  m_SpriteSortPoint: 0
 --- !u!1 &530836600
 GameObject:
   m_ObjectHideFlags: 0
@@ -1247,9 +1350,24 @@ MonoBehaviour:
   dialogue:
     name: 
     sentences:
-    - 'lksfghs
+    - 'FREDDIE
 
-      I am friend B'
+      Wel, well...I''ve never seen a tiny bird like this on the beach
+      before.'
+    - 'FREDDIE
+
+      It''s not like a Robin or a Sparrow.'
+    - 'FREDDIE
+
+      Cockaitels are not normally wild birds here. They are household
+      birds.'
+    - 'FREDDIE
+
+      Household birds need to ensure they stay above their comforable
+      body temperature.'
+    - 'FREDDIE
+
+      It''s not good if they don''t.'
   dialoguePrompt: {fileID: 0}
   clickToTalk: 0
 --- !u!1 &884474976
@@ -2162,9 +2280,25 @@ MonoBehaviour:
   dialogue:
     name: 
     sentences:
-    - 'gshsd
+    - 'ROCKY
 
-      I am Friend C'
+      A Cockatiel? I''ve heard about these little guys.'
+    - 'ROCKY
+
+      Did you know you can tell their mood from their mohawk?'
+    - 'ROCKY
+
+      if the mohawk is up, they are happy or excited.'
+    - 'ROCKY
+
+      Be careful if the mohawk is down though, that means they are
+      angry.'
+    - 'ROCKY
+
+      They are a lot like us in some ways.'
+    - 'ROCKY
+
+      Fumes from things like candles or hairspray can be toxic to them.'
   dialoguePrompt: {fileID: 0}
   clickToTalk: 0
 --- !u!1 &1363998656
@@ -2296,6 +2430,57 @@ MonoBehaviour:
       Okay, let''s leave!'
   dialoguePrompt: {fileID: 0}
   clickToTalk: 0
+--- !u!1 &1507762103
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1507762104}
+  - component: {fileID: 1507762105}
+  m_Layer: 0
+  m_Name: Animator
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &1507762104
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1507762103}
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: -3.75}
+  m_LocalScale: {x: 0.54767513, y: 0.54767513, z: 0.54767513}
+  m_Children:
+  - {fileID: 513500860}
+  m_Father: {fileID: 195022060}
+  m_RootOrder: 2
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!95 &1507762105
+Animator:
+  serializedVersion: 3
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1507762103}
+  m_Enabled: 1
+  m_Avatar: {fileID: 0}
+  m_Controller: {fileID: 9100000, guid: 2e3419b21fb23404b9da440ebaa9abff, type: 2}
+  m_CullingMode: 0
+  m_UpdateMode: 0
+  m_ApplyRootMotion: 0
+  m_LinearVelocityBlending: 0
+  m_WarningMessage: 
+  m_HasTransformHierarchy: 1
+  m_AllowConstantClipSamplingOptimization: 1
+  m_KeepAnimatorControllerStateOnDisable: 0
 --- !u!1 &1558537916
 GameObject:
   m_ObjectHideFlags: 0
