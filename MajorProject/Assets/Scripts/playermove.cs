@@ -30,7 +30,7 @@ public class playermove : MonoBehaviour
     }
 
     // Update is called once per frame
-    void Update()
+    void FixedUpdate()
     {
         currentSpeed = myRB.velocity.x;
 
@@ -65,7 +65,7 @@ public class playermove : MonoBehaviour
 
         //jump code begins
 
-        if (Input.GetKeyDown("space"))
+        if (Input.GetKey("space"))
         {
             myRB.AddForce(new Vector2(0, jumpforce));
         }

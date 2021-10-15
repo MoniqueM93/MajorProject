@@ -66,7 +66,7 @@ public class S17Triggers : MonoBehaviour
     {
         creditsInbound = true;
         yield return new WaitForSeconds(1);
-        print("Game has ended");
+        SceneManager.LoadScene("endingcredits");
     }
 
     private void OnTriggerEnter2D(Collider2D collision)

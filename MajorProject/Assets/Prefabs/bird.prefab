@@ -194,11 +194,11 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   myRB: {fileID: 2216346254223104996}
-  maxSpeed: 3
+  maxSpeed: 5
   acceleration: 10
   currentSpeed: 0
   verticalSpeed: 0
-  jumpforce: 400
+  jumpforce: 50
   grounded: 1
   animatorGO: {fileID: 2216346254271163123}
   respawnPoint: {fileID: 0}
