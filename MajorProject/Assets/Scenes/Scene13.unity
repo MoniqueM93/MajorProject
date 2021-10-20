@@ -140,7 +140,7 @@ AudioSource:
   OutputAudioMixerGroup: {fileID: 0}
   m_audioClip: {fileID: 8300000, guid: d333b3ab58fc53b46a73f2b086021a81, type: 3}
   m_PlayOnAwake: 1
-  m_Volume: 0.2
+  m_Volume: 0.046
   m_Pitch: 1
   Loop: 1
   Mute: 0
@@ -4410,6 +4410,7 @@ GameObject:
   m_Component:
   - component: {fileID: 2073918216}
   - component: {fileID: 2073918217}
+  - component: {fileID: 2073918218}
   m_Layer: 0
   m_Name: home_nest
   m_TagString: Untagged
@@ -4482,6 +4483,32 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
+--- !u!61 &2073918218
+BoxCollider2D:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2073918215}
+  m_Enabled: 1
+  m_Density: 1
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_UsedByEffector: 0
+  m_UsedByComposite: 0
+  m_Offset: {x: 0.013682932, y: -0.4214437}
+  m_SpriteTilingProperty:
+    border: {x: 0, y: 0, z: 0, w: 0}
+    pivot: {x: 0.5, y: 0.5}
+    oldSize: {x: 0.99, y: 1.24}
+    newSize: {x: 0.99, y: 1.24}
+    adaptiveTilingThreshold: 0.5
+    drawMode: 0
+    adaptiveTiling: 0
+  m_AutoTiling: 0
+  serializedVersion: 2
+  m_Size: {x: 0.5247708, y: 0.39711308}
+  m_EdgeRadius: 0
 --- !u!1001 &2092165546
 PrefabInstance:
   m_ObjectHideFlags: 0

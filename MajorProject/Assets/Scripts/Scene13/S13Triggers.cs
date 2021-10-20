@@ -56,17 +56,23 @@ public class S13Triggers : MonoBehaviour
         }
     }
 
+    IEnumerator WaitToLand()
+    {
+        yield return new WaitForSeconds(1);
+        chickTalk1.SetActive(true);
+        chickTalk1Text.TriggerDialogue();
+        chickTalk1Done = true;
+        babyChick.GetComponent<FollowCode>().enabled = false;
+        babyChick.GetComponent<FollowMovements>().enabled = false;
+        babyChickAnim.GetComponent<Animator>().enabled = false;
+        openingBlocks.SetActive(false);
+    }
+
     private void OnTriggerEnter2D(Collider2D collision)
     {
         if (collision.gameObject == chickTalk1 && chickTalk1Done == false)
         {
-            chickTalk1.SetActive(true);
-            chickTalk1Text.TriggerDialogue();
-            chickTalk1Done = true;
-            babyChick.GetComponent<FollowCode>().enabled = false;
-            babyChick.GetComponent<FollowMovements>().enabled = false;
-            babyChickAnim.GetComponent<Animator>().enabled = false;
-            openingBlocks.SetActive(false);
+            StartCoroutine("WaitToLand");
         }
 
         if (collision.gameObject == bessieChar)

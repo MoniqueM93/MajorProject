@@ -34,6 +34,8 @@ public class S17Triggers : MonoBehaviour
     public GameObject rightBlock;
     public GameObject endingTrigger;
 
+    public GameObject endingBlock;
+
     private void Start()
     {
         Time.timeScale = 1;
@@ -47,6 +49,7 @@ public class S17Triggers : MonoBehaviour
 
         if (hasSpokeToChick == true)
         {
+            endingBlock.SetActive(true);
             chickTrigger.SetActive(false);
             chickPrompt.SetActive(false);
         }

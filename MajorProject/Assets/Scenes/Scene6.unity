@@ -1358,9 +1358,12 @@ MonoBehaviour:
   dialogue:
     name: 
     sentences:
-    - 'gdsnglk
+    - 'LIZZIE
 
-      I am Friend A'
+      Sounds like a storm will be here soon.'
+    - 'LIZZIE
+
+      Us pigeons, can tell due to our sensitive hearing.'
   dialoguePrompt: {fileID: 0}
   clickToTalk: 0
 --- !u!114 &688632122 stripped
@@ -2432,7 +2435,7 @@ AudioSource:
   OutputAudioMixerGroup: {fileID: 0}
   m_audioClip: {fileID: 8300000, guid: 007ac1de4d097e948b5bd947502e826b, type: 3}
   m_PlayOnAwake: 1
-  m_Volume: 0.2
+  m_Volume: 0.046
   m_Pitch: 1
   Loop: 1
   Mute: 0
@@ -3684,9 +3687,12 @@ MonoBehaviour:
   dialogue:
     name: 
     sentences:
-    - 'gsdgs
+    - 'ROBYN
 
-      I am Friend B'
+      I hope the humans will leave some fruits or berries for me.'
+    - 'ROBYN
+
+      Those are my favourite.'
   dialoguePrompt: {fileID: 0}
   clickToTalk: 0
 --- !u!1 &2144961006

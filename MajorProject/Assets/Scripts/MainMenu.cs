@@ -17,7 +17,7 @@ public class MainMenu : MonoBehaviour
 
     public void HowToPlay()
     {
-        print("How to play the game");
+        SceneManager.LoadScene("howtoplay");
     }
 
     public void QuitGame()
