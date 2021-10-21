@@ -198,7 +198,7 @@ MonoBehaviour:
   acceleration: 10
   currentSpeed: 0
   verticalSpeed: 0
-  jumpforce: 50
+  jumpforce: 25
   grounded: 1
   animatorGO: {fileID: 2216346254271163123}
   respawnPoint: {fileID: 0}

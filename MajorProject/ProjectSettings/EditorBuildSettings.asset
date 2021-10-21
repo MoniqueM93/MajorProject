@@ -62,7 +62,4 @@ EditorBuildSettings:
   - enabled: 1
     path: Assets/Scenes/endingcredits.unity
     guid: 97ec255fbff3526499a350cb8e8249f7
-  - enabled: 1
-    path: Assets/Scenes/howtoplay.unity
-    guid: d45e99791689e074ba3bbdc8134c159b
   m_configObjects: {}

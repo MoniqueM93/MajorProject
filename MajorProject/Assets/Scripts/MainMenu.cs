@@ -5,6 +5,9 @@ using UnityEngine.SceneManagement;
 
 public class MainMenu : MonoBehaviour
 {
+    public GameObject mainMenu;
+    public GameObject tutorialMenu;
+
     public void StartGame()
     {
         print("Starting the game");
@@ -17,7 +20,14 @@ public class MainMenu : MonoBehaviour
 
     public void HowToPlay()
     {
-        SceneManager.LoadScene("howtoplay");
+        mainMenu.SetActive(false);
+        tutorialMenu.SetActive(true);
+    }
+
+    public void BackToMenu()
+    {
+        mainMenu.SetActive(true);
+        tutorialMenu.SetActive(false);
     }
 
     public void QuitGame()
