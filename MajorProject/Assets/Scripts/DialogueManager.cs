@@ -27,6 +27,8 @@ public class DialogueManager : MonoBehaviour
     Scene currentScene;
     string sceneName;
 
+    public OpeningCamera cameraRef;
+
     // Start is called before the first frame update
     void Start()
     {
@@ -48,6 +50,28 @@ public class DialogueManager : MonoBehaviour
         }
         
         DisplayNextSentence();
+    }
+
+    private void Update()
+    {
+        if (sceneName == "Scene1")
+        {
+            if(cameraRef.hasFinishedMove == true)
+            {
+                if (Input.GetKeyDown(KeyCode.W))
+                {
+                    DisplayNextSentence();
+                }
+            }
+        }
+
+        if (sceneName != "Scene1")
+        {
+            if (Input.GetKeyDown(KeyCode.W))
+            {
+                DisplayNextSentence();
+            }
+        }
     }
 
     public void DisplayNextSentence()

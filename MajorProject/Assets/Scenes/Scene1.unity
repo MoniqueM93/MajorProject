@@ -436,11 +436,11 @@ MonoBehaviour:
     - 'GULLIVER
 
       Only cause you were too lazy to go hunting.'
-    - 'GULLIVER
+    - 'FRIEND
 
       And I won''t be hunting tonight, thanks to you finally acting
       like a seagull.'
-    - 'GULLIVER
+    - 'FRIEND
 
       Now, get out of here. I want to eat my human food in peace.'
   dialoguePrompt: {fileID: 1785546974}
@@ -624,6 +624,10 @@ PrefabInstance:
       propertyPath: nameText
       value: 
       objectReference: {fileID: 611604705}
+    - target: {fileID: 8267251548424762328, guid: 5a719e2806005fb4f9453d038cdecefd, type: 3}
+      propertyPath: cameraRef
+      value: 
+      objectReference: {fileID: 1016092852}
     - target: {fileID: 8267251548424762328, guid: 5a719e2806005fb4f9453d038cdecefd, type: 3}
       propertyPath: toEndConvo
       value: 
