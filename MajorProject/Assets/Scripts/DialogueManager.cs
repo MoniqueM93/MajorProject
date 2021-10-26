@@ -58,7 +58,7 @@ public class DialogueManager : MonoBehaviour
         {
             if(cameraRef.hasFinishedMove == true)
             {
-                if (Input.GetKeyDown(KeyCode.W))
+                if (Input.GetKeyDown(KeyCode.Q))
                 {
                     DisplayNextSentence();
                 }
@@ -67,7 +67,7 @@ public class DialogueManager : MonoBehaviour
 
         if (sceneName != "Scene1")
         {
-            if (Input.GetKeyDown(KeyCode.W))
+            if (Input.GetKeyDown(KeyCode.Q))
             {
                 DisplayNextSentence();
             }
