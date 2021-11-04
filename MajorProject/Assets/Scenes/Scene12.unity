@@ -1034,13 +1034,13 @@ MonoBehaviour:
   dialogue:
     name: 
     sentences:
-    - 'FRIEND
+    - 'XANDER
 
       Gulliver! Where have you been all day?'
     - 'GULLIVER
 
       It is a long story.'
-    - 'FRIEND
+    - 'XANDER
 
       Is that a baby bird? Is it for me?'
     - 'GULLIVER
@@ -1050,10 +1050,10 @@ MonoBehaviour:
 
       It was attacked near my nest last night. I couldn''t leave
       it. We are heading to the houses near here, it''s family could be there.'
-    - 'FRIEND
+    - 'XANDER
 
       Good call. Humans tend to have little birds like that for pets.'
-    - 'FRIEND
+    - 'XANDER
 
       Just be careful of any wild birds. They won''t be as friendly
       as you are to the little one.'
@@ -2293,7 +2293,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 5995937950812928705, guid: 1d16a7b6d37c308418992c24fd35d928, type: 3}
       propertyPath: m_RootOrder
-      value: 11
+      value: 14
       objectReference: {fileID: 0}
     - target: {fileID: 5995937950812928705, guid: 1d16a7b6d37c308418992c24fd35d928, type: 3}
       propertyPath: m_AnchorMax.x

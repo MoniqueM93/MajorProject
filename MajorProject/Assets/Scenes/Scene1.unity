@@ -428,19 +428,19 @@ MonoBehaviour:
   dialogue:
     name: 
     sentences:
-    - "FRIEND\r\nWell, well. You have Seagull blood after all.\r"
+    - "XANDER\r\nWell, well. You have Seagull blood after all.\r"
     - "GULLIVER\r\nWhat can I say?\r"
-    - 'FRIEND
+    - 'XANDER
 
       One is lucky, two is skill. Dinner is on you tonight.'
     - 'GULLIVER
 
       Only cause you were too lazy to go hunting.'
-    - 'FRIEND
+    - 'XANDER
 
       And I won''t be hunting tonight, thanks to you finally acting
       like a seagull.'
-    - 'FRIEND
+    - 'XANDER
 
       Now, get out of here. I want to eat my human food in peace.'
   dialoguePrompt: {fileID: 1785546974}
@@ -2824,10 +2824,10 @@ MonoBehaviour:
   dialogue:
     name: 
     sentences:
-    - 'FRIEND
+    - 'XANDER
 
       C''mon Gulliver, the human won''t be there all day.'
-    - 'FRIEND
+    - 'XANDER
 
       Grab the food while the human is distracted.'
   dialoguePrompt: {fileID: 1785546974}
@@ -2946,30 +2946,30 @@ MonoBehaviour:
   dialogue:
     name: 
     sentences:
-    - "FRIEND\r\nWhat did you manage to steal today?\r"
-    - "FRIEND\r\nI stole one of those big rectangle things the humans are always
+    - "XANDER\r\nWhat did you manage to steal today?\r"
+    - "XANDER\r\nI stole one of those big rectangle things the humans are always
       staring at. It was so heavy, I dropped it.\r"
-    - "FRIEND\r\nI made the human panic and it was great!\r"
-    - "FRIEND\r\nHow about you?\r"
+    - "XANDER\r\nI made the human panic and it was great!\r"
+    - "XANDER\r\nHow about you?\r"
     - "GULLIVER\r\nNothing...\r"
-    - "FRIEND\r\nNothing? Nothing at all?\r"
+    - "XANDER\r\nNothing? Nothing at all?\r"
     - "GULLIVER\r\nStealing was never my talent. The humans are too fast and react
       too quickly. I don't get the same thrill as you do.\r"
-    - "FRIEND\r\nYou're a Seagull! It's your job to terrorise the humans.\r"
+    - "XANDER\r\nYou're a Seagull! It's your job to terrorise the humans.\r"
     - "GULLIVER\r\nI do my fair share!\r"
-    - "FRIEND\r\nBy being obnoxiously loud, yes.\r"
-    - "FRIEND\r\nBut that's child's play, you need to kick it up to the next level
+    - "XANDER\r\nBy being obnoxiously loud, yes.\r"
+    - "XANDER\r\nBut that's child's play, you need to kick it up to the next level
       and make the humans fear you.\r"
     - "GULLIVER\r\nI think I'm happy with just being loud.\r"
-    - "FRIEND\r\nAre you sure you're even a Seagull?\r"
-    - "FRIEND\r\nSee that human down there? Go and steal her food. You need to practice\r."
+    - "XANDER\r\nAre you sure you're even a Seagull?\r"
+    - "XANDER\r\nSee that human down there? Go and steal her food. You need to practice\r."
     - "GULLIVER\r\nI'll pass.\r"
-    - "FRIEND\r\nNo, you won't. I'm going to guide you. Just walk over to catch her
+    - "XANDER\r\nNo, you won't. I'm going to guide you. Just walk over to catch her
       off gaurd...\r"
-    - "FRIEND\r\n...and once you're close enough grab the food and fly. Can't go
+    - "XANDER\r\n...and once you're close enough grab the food and fly. Can't go
       wrong.\r"
     - "GULLIVER\r\nOk. but if I get caught, it's your fault.\r"
-    - "FRIEND\r\nI'm hungry, so don't mess it up.\r"
+    - "XANDER\r\nI'm hungry, so don't mess it up.\r"
   dialoguePrompt: {fileID: 1785546974}
   clickToTalk: 0
 --- !u!4 &1443673021

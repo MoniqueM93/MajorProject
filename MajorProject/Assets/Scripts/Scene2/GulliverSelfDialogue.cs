@@ -26,6 +26,12 @@ public class GulliverSelfDialogue : MonoBehaviour
 
     public bool hasGotBaby = false;
 
+    public GameObject emptyNestPrompt;
+    public GameObject emptyNestTrigger;
+    public GameObject emptyNestTalk;
+    public DialogueTrigger emptyNextTalkText;
+
+
     private void FixedUpdate()
     {
         if (cameraRef.hasFinishedMove == true && openingTalkDoneS2 == false)
@@ -39,6 +45,11 @@ public class GulliverSelfDialogue : MonoBehaviour
             selfDialogue1.SetActive(false);
 
         }
+
+        if(hasGotBaby == true)
+        {
+            emptyNestTrigger.SetActive(true);
+        }
     }
 
     private void OnTriggerEnter2D(Collider2D collision)
@@ -51,6 +62,11 @@ public class GulliverSelfDialogue : MonoBehaviour
         if (collision.gameObject == nestTrigger && hasGotBaby == true)
         {
             nestPrompt.SetActive(true);
+        }
+
+        if(collision.gameObject == emptyNestTrigger)
+        {
+            emptyNestPrompt.SetActive(true);
         }
     }
 
@@ -81,6 +97,15 @@ public class GulliverSelfDialogue : MonoBehaviour
                 StartCoroutine("changeScene");
             }
         }
+
+        if(collision.gameObject == emptyNestTrigger)
+        {
+            if (Input.GetKey(KeyCode.W)){
+                emptyNestTalk.SetActive(true);
+                emptyNextTalkText.TriggerDialogue();
+                emptyNestPrompt.SetActive(false);
+            }
+        }
     }
 
     IEnumerator changeScene()
@@ -99,6 +124,11 @@ public class GulliverSelfDialogue : MonoBehaviour
         if (collision.gameObject == nestTrigger && hasGotBaby == true)
         {
             nestPrompt.SetActive(false);
+        }
+
+        if(collision.gameObject == emptyNestTrigger)
+        {
+            emptyNestPrompt.SetActive(false);
         }
     }
 }
