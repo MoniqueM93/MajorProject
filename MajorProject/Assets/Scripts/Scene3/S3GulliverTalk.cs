@@ -17,6 +17,7 @@ public class S3GulliverTalk : MonoBehaviour
     public OpeningCameraS3 camRef;
 
     public bool openingTalkS3Done = false;
+    public bool hasSpokeToBessie = false;
 
     public GameObject leaveArea;
     public GameObject leaveCanvas;
@@ -46,7 +47,7 @@ public class S3GulliverTalk : MonoBehaviour
             bessiePrompt.SetActive(true);
         }
 
-        if (collision.gameObject == leaveArea)
+        if (collision.gameObject == leaveArea && hasSpokeToBessie == true)
         {
             leaveCanvas.SetActive(true);
         }
@@ -59,6 +60,7 @@ public class S3GulliverTalk : MonoBehaviour
 
             if (Input.GetKey(KeyCode.W))
             {
+                hasSpokeToBessie = true;
                 bessieSound.Play();
                 talkToBessie.SetActive(true);
                 talkToBessieText.TriggerDialogue();
@@ -67,7 +69,7 @@ public class S3GulliverTalk : MonoBehaviour
             }
         }
 
-        if (collision.gameObject == leaveArea && Input.GetKey(KeyCode.W)){
+        if (collision.gameObject == leaveArea && Input.GetKey(KeyCode.W) && hasSpokeToBessie == true){
             SceneManager.LoadScene("Scene4");
         }
     }
@@ -79,7 +81,7 @@ public class S3GulliverTalk : MonoBehaviour
             bessiePrompt.SetActive(false);
         }
 
-        if(collision.gameObject == leaveArea)
+        if(collision.gameObject == leaveArea && hasSpokeToBessie == true)
         {
             leaveCanvas.SetActive(false);
         }
