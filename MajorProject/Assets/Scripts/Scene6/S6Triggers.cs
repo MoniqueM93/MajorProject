@@ -17,6 +17,10 @@ public class S6Triggers : MonoBehaviour
 
     public bool readyToSwitch = false;
 
+    //Guides
+    public GameObject guideTrigger;
+    public GameObject playerGuide;
+
 
     //to stop talking in mid air
 //    public float talkWait;
@@ -59,6 +63,11 @@ public class S6Triggers : MonoBehaviour
         if (collision.gameObject == leaveTrigger)
         {
             leavePrompt.SetActive(true);
+        }
+
+        if (collision.gameObject == guideTrigger)
+        {
+            playerGuide.SetActive(true);
         }
     }
 
@@ -108,6 +117,11 @@ public class S6Triggers : MonoBehaviour
         if (collision.gameObject == leaveTrigger)
         {
             leavePrompt.SetActive(false);
+        }
+
+        if (collision.gameObject == guideTrigger)
+        {
+            playerGuide.SetActive(false);
         }
     }
 }

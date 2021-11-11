@@ -25,6 +25,10 @@ public class S3GulliverTalk : MonoBehaviour
     //audio
     public AudioSource bessieSound;
 
+    //Guide for player
+    public GameObject guideTrigger;
+    public GameObject playerGuide;
+
     private void FixedUpdate()
     {
         if (camRef.hasFinishedMove == true && openingTalkS3Done == false)
@@ -50,6 +54,11 @@ public class S3GulliverTalk : MonoBehaviour
         if (collision.gameObject == leaveArea && hasSpokeToBessie == true)
         {
             leaveCanvas.SetActive(true);
+        }
+
+        if (collision.gameObject == guideTrigger && hasSpokeToBessie == true)
+        {
+            playerGuide.SetActive(true);
         }
     }
 
@@ -84,6 +93,11 @@ public class S3GulliverTalk : MonoBehaviour
         if(collision.gameObject == leaveArea && hasSpokeToBessie == true)
         {
             leaveCanvas.SetActive(false);
+        }
+
+        if (collision.gameObject == guideTrigger && hasSpokeToBessie == true)
+        {
+            playerGuide.SetActive(false);
         }
     }
 }

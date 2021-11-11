@@ -42,6 +42,10 @@ public class S7Triggers : MonoBehaviour
 
     public AudioSource bessieSounds;
 
+    //Guides
+    public GameObject guideTrigger;
+    public GameObject playerGuide;
+
     private void Start()
     {
         Time.timeScale = 1;
@@ -61,6 +65,11 @@ public class S7Triggers : MonoBehaviour
         if (collision.gameObject == leaveTrigger && readyToGoWithBird == true)
         {
             leavePrompt.SetActive(true);
+        }
+
+        if (collision.gameObject == guideTrigger && readyToGoWithBird == true)
+        {
+            playerGuide.SetActive(true);
         }
     }
 
@@ -144,6 +153,11 @@ public class S7Triggers : MonoBehaviour
         if (collision.gameObject == leaveTrigger && readyToGoWithBird == true)
         {
             leavePrompt.SetActive(false);
+        }
+
+        if (collision.gameObject == guideTrigger && readyToGoWithBird == true)
+        {
+            playerGuide.SetActive(false);
         }
     }
 }

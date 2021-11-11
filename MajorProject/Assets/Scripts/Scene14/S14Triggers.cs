@@ -37,6 +37,9 @@ public class S14Triggers : MonoBehaviour
 
     public AudioSource catMeow;
 
+    //Guides
+    public GameObject guideTrigger;
+    public GameObject playerGuide;
     private void Start()
     {
         Time.timeScale = 1;
@@ -92,6 +95,11 @@ public class S14Triggers : MonoBehaviour
         if (collision.gameObject == leaveArea && leaveIsActive == true)
         {
             leavePrompt.SetActive(true);
+        }
+
+        if (collision.gameObject == guideTrigger && famTalkDone == true)
+        {
+            playerGuide.SetActive(true);
         }
     }
 
@@ -161,6 +169,11 @@ public class S14Triggers : MonoBehaviour
         if (collision.gameObject == leaveArea && leaveIsActive == true)
         {
             leavePrompt.SetActive(false);
+        }
+
+        if (collision.gameObject == guideTrigger && famTalkDone == true)
+        {
+            playerGuide.SetActive(false);
         }
     }
 }
