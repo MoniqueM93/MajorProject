@@ -248,7 +248,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 3771227890625568857, guid: a8b94aacdb2640040802750222c6f71e, type: 3}
       propertyPath: m_LocalPosition.y
-      value: 6.7299995
+      value: 2.1799994
       objectReference: {fileID: 0}
     - target: {fileID: 3771227890625568857, guid: a8b94aacdb2640040802750222c6f71e, type: 3}
       propertyPath: m_LocalPosition.z
@@ -888,8 +888,8 @@ MonoBehaviour:
     sentences:
     - 'GULLIVER
 
-      Hi there, we are looking for an aviary? We heard there would
-      be one in the backyards somewhere here.'
+      Hi there, we are looking for an aviary? We heard it may be
+      in one of the backyards.'
     - 'STEVIE
 
       You are right. There is an aviary in the backyard of the yellow
@@ -899,13 +899,13 @@ MonoBehaviour:
       They lost a baby yesterday.'
     - 'GULLIVER
 
-      I may have found, said baby.'
+      I may have found said baby.'
     - 'STEVIE
 
       That''s him! That''s Charlie.'
     - 'STEVIE
 
-      Where have you been, little one? You''re family have been worried
+      Where have you been, little one? Your family have been worried
       sick.'
     - 'STEVIE
 
@@ -1493,7 +1493,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 506266662}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: -26.37, y: 6.4, z: 0}
+  m_LocalPosition: {x: -26.37, y: 1.85, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children:
   - {fileID: 622913660}
@@ -1699,7 +1699,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 2216346254223104985, guid: a91181defd9b07f4280f966a98ae4296, type: 3}
       propertyPath: m_LocalPosition.y
-      value: 7.42
+      value: 2.87
       objectReference: {fileID: 0}
     - target: {fileID: 2216346254223104985, guid: a91181defd9b07f4280f966a98ae4296, type: 3}
       propertyPath: m_LocalPosition.z
@@ -2778,7 +2778,7 @@ BoxCollider2D:
   m_IsTrigger: 0
   m_UsedByEffector: 0
   m_UsedByComposite: 0
-  m_Offset: {x: -0.4615183, y: 1.8176212}
+  m_Offset: {x: -0.4615183, y: -0.42128682}
   m_SpriteTilingProperty:
     border: {x: 0, y: 0, z: 0, w: 0}
     pivot: {x: 0, y: 0}
@@ -2789,7 +2789,7 @@ BoxCollider2D:
     adaptiveTiling: 0
   m_AutoTiling: 0
   serializedVersion: 2
-  m_Size: {x: 1.9230366, y: 7.588683}
+  m_Size: {x: 1.9230366, y: 12.0665}
   m_EdgeRadius: 0
 --- !u!61 &1232757608
 BoxCollider2D:
@@ -2804,7 +2804,7 @@ BoxCollider2D:
   m_IsTrigger: 0
   m_UsedByEffector: 0
   m_UsedByComposite: 0
-  m_Offset: {x: -3.3978443, y: -1.936837}
+  m_Offset: {x: -3.3978443, y: -6.5991793}
   m_SpriteTilingProperty:
     border: {x: 0, y: 0, z: 0, w: 0}
     pivot: {x: 0, y: 0}
@@ -2815,7 +2815,7 @@ BoxCollider2D:
     adaptiveTiling: 0
   m_AutoTiling: 0
   serializedVersion: 2
-  m_Size: {x: 7.7956886, y: 0.5551019}
+  m_Size: {x: 7.7956886, y: 0.62891054}
   m_EdgeRadius: 0
 --- !u!4 &1232757609
 Transform:

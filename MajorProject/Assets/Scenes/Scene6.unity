@@ -364,7 +364,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 37158920}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 0, y: 2.85, z: 1.28}
+  m_LocalPosition: {x: 0, y: 2.85, z: -0.25}
   m_LocalScale: {x: 0.15959999, y: 0.20751527, z: 0.15959999}
   m_Children: []
   m_Father: {fileID: 165608016}
@@ -1726,7 +1726,7 @@ MonoBehaviour:
       Sounds like a storm will be here soon.'
     - 'LIZZIE
 
-      Us pigeons, can tell due to our sensitive hearing.'
+      Us pigeons can tell due to our sensitive hearing.'
   dialoguePrompt: {fileID: 0}
   clickToTalk: 0
 --- !u!114 &688632122 stripped
@@ -3150,7 +3150,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1540987745}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 0, y: 2.85, z: 1.4000001}
+  m_LocalPosition: {x: 0, y: 2.85, z: -0.25}
   m_LocalScale: {x: 0.1596, y: 0.2075153, z: 0.1596}
   m_Children: []
   m_Father: {fileID: 165608016}

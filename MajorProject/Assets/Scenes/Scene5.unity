@@ -3487,7 +3487,7 @@ BoxCollider2D:
   m_IsTrigger: 1
   m_UsedByEffector: 0
   m_UsedByComposite: 0
-  m_Offset: {x: -0.56717557, y: 0}
+  m_Offset: {x: -0.5671756, y: -0.17899752}
   m_SpriteTilingProperty:
     border: {x: 0, y: 0, z: 0, w: 0}
     pivot: {x: 0, y: 0}
@@ -3498,7 +3498,7 @@ BoxCollider2D:
     adaptiveTiling: 0
   m_AutoTiling: 0
   serializedVersion: 2
-  m_Size: {x: 2.1343498, y: 1}
+  m_Size: {x: 2.1343498, y: 0.64200497}
   m_EdgeRadius: 0
 --- !u!23 &1866507753
 MeshRenderer:
@@ -3935,7 +3935,7 @@ MonoBehaviour:
       You may have saved it''s life.'
     - 'GULLIVER
 
-      What can it eat? I have no idea what to feed it?'
+      What can it eat? I have no idea what to feed it.'
     - 'EADIE
 
       I can set you up with some seeds. That''s what household birds

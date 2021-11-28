@@ -2429,7 +2429,7 @@ MonoBehaviour:
       Get out of here, you demons!'
     - 'GULLIVER
 
-      I hope that baby is ok. I better find them.'
+      I hope that baby is okay. I better find them.'
   dialoguePrompt: {fileID: 0}
   clickToTalk: 0
 --- !u!1 &981213901
@@ -4084,7 +4084,7 @@ MonoBehaviour:
     sentences:
     - 'GULLIVER
 
-      Bessie must with the other pigeons today.'
+      Bessie must be with the other pigeons today.'
   dialoguePrompt: {fileID: 0}
   clickToTalk: 0
 --- !u!1 &1491621933
