@@ -122,7 +122,7 @@ public class S14Triggers : MonoBehaviour
             {
                 friendATalk2.SetActive(true);
                 friendATalk2Text.TriggerDialogue();
-                leaveIsActive = true;
+//                leaveIsActive = true;
                 friendTalkPrompt.SetActive(false);
             }
         }
@@ -131,6 +131,7 @@ public class S14Triggers : MonoBehaviour
         {
             if (Input.GetKey(KeyCode.W) && famTalkDone == false)
             {
+                leaveIsActive = true;
                 famTalkDone = true;
                 StartCoroutine("ToTalkToFamily");
                 famTalkPrompt.SetActive(false);
